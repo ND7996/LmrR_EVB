@@ -1,0 +1,8 @@
+"ncAA Name","Aromatic Ring","Catalysis/Function in Hydrazone or Iminium Ion Chemistry","Reference"
+"4-Fluorohistidine (4-FHis)","Yes","Alters imidazole pKa, can act as a catalytic base in imine chemistry","https://pmc.ncbi.nlm.nih.gov/articles/PMC11273360/"
+"4-Chlorophenylalanine (pClF)","Yes","Modulates cation–π interactions, stabilizes cationic intermediates","https://pmc.ncbi.nlm.nih.gov/articles/PMC11467907/"
+"4-Trifluoromethylphenylalanine (tFMeF)","Yes","Modulates cation–π interactions, stabilizes cationic intermediates","https://pmc.ncbi.nlm.nih.gov/articles/PMC11467907/"
+"4-Nitrophenylalanine (pNO2F)","Yes","Modulates cation–π interactions, stabilizes cationic intermediates","https://pmc.ncbi.nlm.nih.gov/articles/PMC11467907/"
+"2-Naphthylalanine (NapA)","Yes","Modulates cation–π interactions, stabilizes cationic intermediates","https://pmc.ncbi.nlm.nih.gov/articles/PMC11467907/"
+"(S)-2-amino-3-(4-hydroxy-3-(1H-imidazol-1-yl)phenyl)propanoic acid (ImiTyr)","Yes","Provides imidazole and phenol for redox and cationic stabilization","https://pubs.acs.org/doi/10.1021/acs.chemrev.4c00120"
+"(S)-2-amino-3-(thiophen-3-yl)propanoic acid (3ThA)","No (heteroaromatic)","Alters hydrogen bonding, not classic aromatic, but can modulate reactivity","https://pubs.acs.org/doi/10.1021/acs.chemrev.4c00136"
