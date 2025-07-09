@@ -1,0 +1,9 @@
+# FEP 1: Reactant State (RS) → Intermediate (IMI+INT)
+# q atom (q)     PDB ID     LIB ID (resname.name)      STATE 1         STATE 2
+q                501.C1     HEX.C1                     HEX.C1          IML.C1      # Enal carbonyl C, forms iminium
+q                501.O1     HEX.O1                     HEX.O1          IML.O1      # Enal carbonyl O, forms iminium
+q                501.C3     HEX.C3                     HEX.C3          INT.C3      # Enal beta carbon, site of attack
+q                601.C3     IND.C3                     IND.C3          INT.C3      # Indole C3, nucleophile
+q                15.NP      PAF.NP                     PAF.NP          IML.NP      # pAF para-amino N, forms iminium
+q                15.HNP1    PAF.HNP1                   PAF.HNP1        IML.HNP1    # pAF para-amino H, may be transferred
+q                501.HB     HEX.HB                     HEX.HB          INT.HB      # Enal beta H, may be transferred
