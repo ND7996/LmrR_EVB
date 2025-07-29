@@ -1,9 +1,0 @@
-# FEP 2: Intermediate (IMI+INT) → Product State (PRD+PAF)
-# q atom (q)     PDB ID     LIB ID (resname.name)      STATE 1         STATE 2
-q                501.C1     IML.C1                     IML.C1          PRD.C1      # Enal carbonyl C, iminium to product
-q                501.O1     IML.O1                     IML.O1          PRD.O1      # Enal carbonyl O
-q                501.C3     INT.C3                     INT.C3          PRD.C3      # Enal beta carbon, now bonded to indole
-q                601.C3     INT.C3                     INT.C3          PRD.C3      # Indole C3, now bonded to enal
-q                15.NP      IML.NP                     IML.NP          PAF.NP      # pAF para-amino N, iminium hydrolyzed
-q                15.HNP1    IML.HNP1                   IML.HNP1        PAF.HNP1    # pAF para-amino H, restored
-q                501.HB     INT.HB                     INT.HB          PRD.HB      # Enal beta H, now on product
