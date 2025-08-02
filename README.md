@@ -9,8 +9,8 @@ This repository documents an automated and modular pipeline for **computational 
 
 ## Project Scope
 
-**Protein**: LmrR (Lactococcal multidrug resistance regulator)  
-**Variant**: LmrR_pAF (p-aminophenylalanine at position V15)  
+**Protein**: LmrR (Lactococcal multidrug resistance regulator) / LmrR_pAF (p-aminophenylalanine at position V15)  
+
 **Target Reactions**:  
 -  *Friedel–Crafts Alkylation* (primary EVB model validation)  
 -  *Hydrazone Formation* (future application)
@@ -20,6 +20,8 @@ This repository documents an automated and modular pipeline for **computational 
 ## Workflow Overview
 
 The pipeline performs alanine scanning by systematically mutating catalytic site residues of LmrR to alanine, generating structures and calculating reaction profiles using the EVB method. It comprises 7 major steps:
+
+# This workflow is an extension of GPX6 protein EVB model 
 
 ---
 
