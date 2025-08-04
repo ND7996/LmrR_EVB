@@ -1,0 +1,18 @@
+# q atom (q)                    PDB ID          LIB ID (resname.name)
+# or neighbour (n)?             (resid.name)    STATE 1         STATE 2
+# iminium + 2-methylindole → alkylated intermediate
+q                               IMI.C3          IMI.C3          INT.C3
+q                               IMI.H3A         IMI.H3A         INT.H3A
+q                               IMI.H3B         IMI.H3B         INT.H3B
+q                               MID.C3          MID.C3          INT.C3I
+q                               MID.H3          MID.H3          INT.H3I
+q                               IMI.C2          IMI.C2          INT.C2
+q                               IMI.H2          IMI.H2          INT.H2A
+q                               IMI.C1          IMI.C1          INT.C1
+q                               IMI.NZ          IMI.NZ          INT.NZ
+q                               IMI.HZ          IMI.HZ          INT.HZ
+q                               MID.C2          MID.C2          INT.C2I
+q                               MID.N1          MID.N1          INT.N1
+q                               MID.H1          MID.H1          INT.H1
+q                               MID.C4          MID.C4          INT.C4I
+q                               MID.C5          MID.C5          INT.C5I

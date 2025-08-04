@@ -1,0 +1,21 @@
+# q atom (q)                    PDB ID          LIB ID (resname.name)
+# or neighbour (n)?             (resid.name)    STATE 1         STATE 2
+# alkylated intermediate + H2O → product + regenerated catalyst
+q                               INT.C1          INT.C1          PRD.C1
+q                               INT.NZ          INT.NZ          PAF.NZ
+q                               INT.HZ          INT.HZ          PAF.HZ1
+q                               WAT.O           WAT.O           PRD.O1
+q                               WAT.H1          WAT.H1          PRD.H1
+q                               WAT.H2          WAT.H2          PAF.HZ2
+q                               INT.H1          INT.H1          PRD.H1C
+q                               INT.C2          INT.C2          PRD.C2
+q                               INT.C3          INT.C3          PRD.C3
+q                               INT.H2A         INT.H2A         PRD.H2A
+q                               INT.H3A         INT.H3A         PRD.H3A
+q                               INT.H3B         INT.H3B         PRD.H3B
+q                               INT.C3I         INT.C3I         PRD.C3I
+q                               INT.C2I         INT.C2I         PRD.C2I
+q                               INT.N1          INT.N1          PRD.N1
+q                               INT.H1          INT.H1          PRD.H1I
+q                               15.CE1          PAF.CE1         PAF.CE1
+q                               15.CZ           PAF.CZ          PAF.CZ

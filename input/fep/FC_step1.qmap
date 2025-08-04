@@ -1,0 +1,28 @@
+# q atom (q)                    PDB ID          LIB ID (resname.name)
+# or neighbour (n)?             (resid.name)    STATE 1         STATE 2
+# trans-2-hexenal + pAF-NH2 → iminium + H2O
+q                               HEX.C1          HEX.C1          IMI.C1
+q                               HEX.O1          HEX.O1          WAT.O
+q                               HEX.H1          HEX.H1          IMI.H1
+q                               15.NZ           PAF.NZ          IMI.NZ
+q                               15.HZ1          PAF.HZ1         WAT.H1
+q                               15.HZ2          PAF.HZ2         IMI.HZ
+q                               HEX.C2          HEX.C2          IMI.C2
+q                               HEX.C3          HEX.C3          IMI.C3
+q                               HEX.H2          HEX.H2          IMI.H2
+q                               HEX.H3A         HEX.H3A         IMI.H3A
+q                               HEX.H3B         HEX.H3B         IMI.H3B
+q                               15.CE1          PAF.CE1         PAF.CE1
+q                               15.CZ           PAF.CZ          PAF.CZ
+
+
+
+
+
+HEX = trans-2-hexenal (substrate 1)
+MID = 2-methylindole (substrate 2)
+PAF = para-aminophenylalanine (catalyst at positioq 15)
+IMI = iminium intermediate
+INT = alkylated indole intermediate
+PRD = final Friedel-Crafts product
+WAT = water molecule

@@ -1,0 +1,24 @@
+
+
+# STEP 1: Hemiaminal Formation
+# 4-HBA + pAF-NH2 → hemiaminal
+# q atom (q)                    PDB ID          LIB ID (resname.name)
+# or neighbour (n)?             (resid.name)    STATE 1         STATE 2
+q                               HBA.C7          HBA.C7          HEM.C7
+q                               HBA.O7          HBA.O7          HEM.OH
+q                               HBA.H7          HBA.H7          HEM.HO
+q                               15.NH2          PAF.NH2         HEM.NH
+q                               15.HH21         PAF.HH21        HEM.HN1
+q                               15.HH22         PAF.HH22        HEM.HN2
+q                               15.CZ           PAF.CZ          PAF.CZ
+q                               92.NH1          ARG.NH1         ARG.NH1
+q                               92.NH2          ARG.NH2         ARG.NH2
+q                               93.ND1          HIS.ND1         HIS.ND1
+q                               96.CE2          TRP.CE2         TRP.CE2
+
+
+
+
+Step 1: 4-HBA + pAF-NH₂ → hemiaminal
+Step 2: hemiaminal → iminium + H₂O
+Step 3: iminium + NBD-NHNH₂ → hydrazone + pAF-NH₂
