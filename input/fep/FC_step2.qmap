@@ -1,18 +1,70 @@
+# Step 2: Friedel-Crafts alkylation (C-C bond formation)
 # q atom (q)                    PDB ID          LIB ID (resname.name)
 # or neighbour (n)?             (resid.name)    STATE 1         STATE 2
-# iminium + 2-methylindole → alkylated intermediate
-q                               IMI.C3          IMI.C3          INT.C3
-q                               IMI.H3A         IMI.H3A         INT.H3A
-q                               IMI.H3B         IMI.H3B         INT.H3B
-q                               MID.C3          MID.C3          INT.C3I
-q                               MID.H3          MID.H3          INT.H3I
-q                               IMI.C2          IMI.C2          INT.C2
-q                               IMI.H2          IMI.H2          INT.H2A
-q                               IMI.C1          IMI.C1          INT.C1
-q                               IMI.NZ          IMI.NZ          INT.NZ
-q                               IMI.HZ          IMI.HZ          INT.HZ
-q                               MID.C2          MID.C2          INT.C2I
-q                               MID.N1          MID.N1          INT.N1
-q                               MID.H1          MID.H1          INT.H1
-q                               MID.C4          MID.C4          INT.C4I
-q                               MID.C5          MID.C5          INT.C5I
+
+# KEY C-C BOND FORMATION (β-carbon + indole C3)
+q                               IMI.C2          IMI.C2          INT.C2          # β-carbon (electrophile)
+q                               MID.C3          MID.C3          INT.C2          # indole C3 → SAME ATOM (bond formed!)
+q                               IMI.H2          IMI.H2          INT.H2A         # remaining β-hydrogen
+q                               MID.H3          MID.H3          INT.H3T         # indole H3 → transferred
+
+# IMINIUM PORTION (α-carbon and beyond)
+q                               IMI.C1          IMI.C1          INT.C1          # α-carbon (iminium)
+q                               IMI.NZ          IMI.NZ          INT.NZ          # iminium nitrogen
+q                               IMI.HZ          IMI.HZ          INT.HZ          # iminium hydrogen
+q                               IMI.C3          IMI.C3          INT.C3          # γ-carbon
+q                               IMI.H3A         IMI.H3A         INT.H3A         # γ-hydrogen A
+q                               IMI.H3B         IMI.H3B         INT.H3B         # γ-hydrogen B
+q                               IMI.C4          IMI.C4          INT.C4          # δ-carbon
+q                               IMI.H4A         IMI.H4A         INT.H4A         # δ-hydrogen A
+q                               IMI.H4B         IMI.H4B         INT.H4B         # δ-hydrogen B
+q                               IMI.C5          IMI.C5          INT.C5          # ε-carbon
+q                               IMI.H5A         IMI.H5A         INT.H5A         # ε-hydrogen A
+q                               IMI.H5B         IMI.H5B         INT.H5B         # ε-hydrogen B
+q                               IMI.C6          IMI.C6          INT.C6          # terminal methyl
+q                               IMI.H6A         IMI.H6A         INT.H6A         # methyl H A
+q                               IMI.H6B         IMI.H6B         INT.H6B         # methyl H B
+q                               IMI.H6C         IMI.H6C         INT.H6C         # methyl H C
+
+# 2-METHYLINDOLE RING SYSTEM
+q                               MID.C2          MID.C2          INT.C2I         # indole C2
+q                               MID.CM          MID.CM          INT.CMI         # methyl on C2
+q                               MID.HM1         MID.HM1         INT.HM1I        # methyl H1
+q                               MID.HM2         MID.HM2         INT.HM2I        # methyl H2  
+q                               MID.HM3         MID.HM3         INT.HM3I        # methyl H3
+q                               MID.N1          MID.N1          INT.N1I         # indole nitrogen
+q                               MID.H1          MID.H1          INT.H1I         # indole NH
+q                               MID.C4          MID.C4          INT.C4I         # indole C4
+q                               MID.H4          MID.H4          INT.H4I         # indole H4
+q                               MID.C5          MID.C5          INT.C5I         # indole C5
+q                               MID.H5          MID.H5          INT.H5I         # indole H5
+q                               MID.C6          MID.C6          INT.C6I         # indole C6
+q                               MID.H6          MID.H6          INT.H6I         # indole H6
+q                               MID.C7          MID.C7          INT.C7I         # indole C7
+q                               MID.H7          MID.H7          INT.H7I         # indole H7
+q                               MID.C8          MID.C8          INT.C8I         # indole C8 (fused ring)
+q                               MID.C9          MID.C9          INT.C9I         # indole C9 (fused ring)
+
+# pAF AROMATIC RING (unchanged from iminium)
+q                               PAF.CB          PAF.CB          PAF.CB          # pAF β-carbon
+q                               PAF.CG          PAF.CG          PAF.CG          # pAF γ-carbon
+q                               PAF.CD1         PAF.CD1         PAF.CD1         # pAF δ1-carbon
+q                               PAF.HD1         PAF.HD1         PAF.HD1         # pAF δ1-hydrogen
+q                               PAF.CD2         PAF.CD2         PAF.CD2         # pAF δ2-carbon
+q                               PAF.HD2         PAF.HD2         PAF.HD2         # pAF δ2-hydrogen
+q                               PAF.CE1         PAF.CE1         PAF.CE1         # pAF ε1-carbon
+q                               PAF.HE1         PAF.HE1         PAF.HE1         # pAF ε1-hydrogen
+q                               PAF.CE2         PAF.CE2         PAF.CE2         # pAF ε2-carbon
+q                               PAF.HE2         PAF.HE2         PAF.HE2         # pAF ε2-hydrogen
+q                               PAF.CZ          PAF.CZ          PAF.CZ          # pAF ζ-carbon
+q                               PAF.HZ          PAF.HZ          PAF.HZ          # pAF ζ-hydrogen
+
+
+REACTANTS:
+- pAF (para-aminophenylalanine at position 15)  
+- MID (2-methylindole)
+- IMI (iminium ion)
+
+PRODUCTS:
+- INT (alkylated intermediate)
+- pAF (para-aminophenylalanine at position 15)  

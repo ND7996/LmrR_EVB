@@ -1,24 +1,45 @@
+# STEP 1: Hemiaminal Formation (RATE-DETERMINING)
+# 4-HBA + pAF-NH2 → hemiaminal intermediate
+# Based on Leveson-Gower et al. 2025 & Mayer et al. 2018
+
+# Core Chemical Transformation
+q    HBA.C7          HBA.C7          HEM.C7          # Aldehyde carbon (sp2→sp3)
+q    HBA.O7          HBA.O7          HEM.OH          # Carbonyl oxygen → hydroxyl
+q    HBA.H7          HBA.H7          HEM.HO          # Aldehyde H → hydroxyl H
+q    15.NH2          PAF.NH2         HEM.NH          # pAF amino nitrogen (nucleophile)
+q    15.HH21         PAF.HH21        HEM.HN1         # Amino H (one transfers to O)
+q    15.HH22         PAF.HH22        HEM.HN2         # Amino H (one stays on N)
+
+# Critical Catalytic Residues (from both papers)
+q    92.NH1          ARG.NH1         ARG.NH1         # Arg92 - stabilizes neg. charge
+q    92.NH2          ARG.NH2         ARG.NH2         # Arg92 - H-bond donor
+q    92.HH11         ARG.HH11        ARG.HH11        # Arg92 proton for H-bonding
+q    92.HH12         ARG.HH12        ARG.HH12        # Arg92 proton for H-bonding
+q    92.HH21         ARG.HH21        ARG.HH21        # Arg92 proton for H-bonding
+q    92.HH22         ARG.HH22        ARG.HH22        # Arg92 proton for H-bonding
+
+# His93 - Proton shuttle (model as doubly protonated HIP)
+q    93.ND1          HIP.ND1         HIP.ND1         # His93 delta nitrogen
+q    93.NE2          HIP.NE2         HIP.NE2         # His93 epsilon nitrogen
+q    93.HD1          HIP.HD1         HIP.HD1         # His93 delta proton
+q    93.HE2          HIP.HE2         HIP.HE2         # His93 epsilon proton
+
+# N19M region - Critical for His93 function (from 2018 paper)
+q    19.CB           ASN.CB          MET.CB          # N19M mutation site
+q    19.CG           ASN.CG          MET.CG          # Side chain carbon
+q    19.SD           -               MET.SD          # Methionine sulfur (new in mutant)
+
+# Binding pocket residues
+q    15.CZ           PAF.CZ          PAF.CZ          # pAF aromatic ring connection
+q    96.CE2          TRP.CE2         TRP.CE2         # Trp96 - binding pocket
+q    96.NE1          TRP.NE1         TRP.NE1         # Trp96 indole nitrogen
 
 
-# STEP 1: Hemiaminal Formation
-# 4-HBA + pAF-NH2 → hemiaminal
-# q atom (q)                    PDB ID          LIB ID (resname.name)
-# or neighbour (n)?             (resid.name)    STATE 1         STATE 2
-q                               HBA.C7          HBA.C7          HEM.C7
-q                               HBA.O7          HBA.O7          HEM.OH
-q                               HBA.H7          HBA.H7          HEM.HO
-q                               15.NH2          PAF.NH2         HEM.NH
-q                               15.HH21         PAF.HH21        HEM.HN1
-q                               15.HH22         PAF.HH22        HEM.HN2
-q                               15.CZ           PAF.CZ          PAF.CZ
-q                               92.NH1          ARG.NH1         ARG.NH1
-q                               92.NH2          ARG.NH2         ARG.NH2
-q                               93.ND1          HIS.ND1         HIS.ND1
-q                               96.CE2          TRP.CE2         TRP.CE2
+REACTANTS (Initial State - State 1):
+Primary Substrate:
+4-Hydroxybenzaldehyde (4-HBA)
+para-Aminophenylalanine (pAF) at position 15
 
-
-
-
-Step 1: 4-HBA + pAF-NH₂ → hemiaminal
-Step 2: hemiaminal → iminium + H₂O
-Step 3: iminium + NBD-NHNH₂ → hydrazone + pAF-NH₂
+PRODUCTS (Hemiaminal Intermediate - State 2):
+Hemiaminal Intermediate:
+Covalent adduct between 4-HBA and pAF15

@@ -1,28 +1,53 @@
+# Step 1: Iminium formation (condensation + dehydration)
 # q atom (q)                    PDB ID          LIB ID (resname.name)
 # or neighbour (n)?             (resid.name)    STATE 1         STATE 2
-# trans-2-hexenal + pAF-NH2 → iminium + H2O
-q                               HEX.C1          HEX.C1          IMI.C1
-q                               HEX.O1          HEX.O1          WAT.O
-q                               HEX.H1          HEX.H1          IMI.H1
-q                               15.NZ           PAF.NZ          IMI.NZ
-q                               15.HZ1          PAF.HZ1         WAT.H1
-q                               15.HZ2          PAF.HZ2         IMI.HZ
-q                               HEX.C2          HEX.C2          IMI.C2
-q                               HEX.C3          HEX.C3          IMI.C3
-q                               HEX.H2          HEX.H2          IMI.H2
-q                               HEX.H3A         HEX.H3A         IMI.H3A
-q                               HEX.H3B         HEX.H3B         IMI.H3B
-q                               15.CE1          PAF.CE1         PAF.CE1
-q                               15.CZ           PAF.CZ          PAF.CZ
 
+# ALDEHYDE TO IMINIUM CONVERSION
+q                               HEX.C1          HEX.C1          IMI.C1          # aldehyde C=O → iminium C=N+
+q                               HEX.O1          HEX.O1          WAT.O           # carbonyl O → water O
+q                               HEX.H1          HEX.H1          WAT.H2          # aldehyde H → water H
 
+# pAF NITROGEN ATTACHMENT
+q                               15.NZ           PAF.NZ          IMI.NZ          # pAF nitrogen → iminium N+
+q                               15.HZ1          PAF.HZ1         WAT.H1          # one NH2 H → water H
+q                               15.HZ2          PAF.HZ2         IMI.HZ          # other NH2 H → iminium NH+
 
+# HEXENAL ALKYL CHAIN (C2-C6)
+q                               HEX.C2          HEX.C2          IMI.C2          # β-carbon (C=C)
+q                               HEX.H2          HEX.H2          IMI.H2          # β-hydrogen
+q                               HEX.C3          HEX.C3          IMI.C3          # γ-carbon
+q                               HEX.H3A         HEX.H3A         IMI.H3A         # γ-hydrogen A
+q                               HEX.H3B         HEX.H3B         IMI.H3B         # γ-hydrogen B
+q                               HEX.C4          HEX.C4          IMI.C4          # δ-carbon
+q                               HEX.H4A         HEX.H4A         IMI.H4A         # δ-hydrogen A
+q                               HEX.H4B         HEX.H4B         IMI.H4B         # δ-hydrogen B
+q                               HEX.C5          HEX.C5          IMI.C5          # ε-carbon
+q                               HEX.H5A         HEX.H5A         IMI.H5A         # ε-hydrogen A
+q                               HEX.H5B         HEX.H5B         IMI.H5B         # ε-hydrogen B
+q                               HEX.C6          HEX.C6          IMI.C6          # terminal methyl carbon
+q                               HEX.H6A         HEX.H6A         IMI.H6A         # methyl H A
+q                               HEX.H6B         HEX.H6B         IMI.H6B         # methyl H B
+q                               HEX.H6C         HEX.H6C         IMI.H6C         # methyl H C
 
+# pAF AROMATIC RING (unchanged)
+q                               15.CB           PAF.CB          PAF.CB          # β-carbon of pAF
+q                               15.CG           PAF.CG          PAF.CG          # γ-carbon of pAF
+q                               15.CD1          PAF.CD1         PAF.CD1         # δ1-carbon
+q                               15.HD1          PAF.HD1         PAF.HD1         # δ1-hydrogen
+q                               15.CD2          PAF.CD2         PAF.CD2         # δ2-carbon
+q                               15.HD2          PAF.HD2         PAF.HD2         # δ2-hydrogen
+q                               15.CE1          PAF.CE1         PAF.CE1         # ε1-carbon
+q                               15.HE1          PAF.HE1         PAF.HE1         # ε1-hydrogen
+q                               15.CE2          PAF.CE2         PAF.CE2         # ε2-carbon
+q                               15.HE2          PAF.HE2         PAF.HE2         # ε2-hydrogen
+q                               15.CZ           PAF.CZ          PAF.CZ          # ζ-carbon (para to NH2)
+q                               15.HZ           PAF.HZ          PAF.HZ          # ζ-hydrogen
 
-HEX = trans-2-hexenal (substrate 1)
-MID = 2-methylindole (substrate 2)
-PAF = para-aminophenylalanine (catalyst at positioq 15)
-IMI = iminium intermediate
-INT = alkylated indole intermediate
-PRD = final Friedel-Crafts product
-WAT = water molecule
+REACTANTS:
+- HEX (trans-2-hexenal)
+- pAF (para-aminophenylalanine at position 15)  
+
+PRODUCTS:
+- WAT (water - byproduct)
+- IMI (iminium ion)
+- pAF (para-aminophenylalanine at position 15)  
