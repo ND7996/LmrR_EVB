@@ -1,0 +1,18 @@
+CLUSTAL
+
+6i8n         MAEIPKEMLRAQTN?ILLNVLKQGDNYVYGIIKQVKEASNGEMELNEATLYTIFKRLEKDGII
+model_01     MAEIPKEMLRAQTNI-LLNVLKQGDNYVYGIIKQVKEASNGEMELNEATLYTIFKRLEKDGII
+             ***********     ******************************************* ***
+
+6i8n         SSYWGDGR----RKYYRLTEIGHENMRLAFESWSRVDKIIENLEANKKAEIPKEMLRAQTN?I
+model_01     SSYWGDESQGGRRKYYRLTEIGHENMRLAFESWSRVDKIIENLEANKKAEIPKEMLRAQTNI-
+             ****        ***********************************************    
+
+6i8n         LLNVLKQGDNYVYGIIKQVKEASNGEMELNEATLYTIFKRLEKDGIISSYWGDESQGGRRKYY
+model_01     LLNVLKQGDNYVYGIIKQVKEASNGEMELNEATLYTIFKRLEKDGIISSYWGDESQGGRRKYY
+             ***************************************** ********** **********
+
+6i8n         RLTEIGHENMRLAFESWSRVDKIIENLEANKKSEAI                           
+model_01     RLTEIGHENMRLAFESWSRVDKIIENLEANKKSEAI                           
+             ***********************************                            
+
