@@ -43,3 +43,36 @@ para-Aminophenylalanine (pAF) at position 15
 PRODUCTS (Hemiaminal Intermediate - State 2):
 Hemiaminal Intermediate:
 Covalent adduct between 4-HBA and pAF15
+
+
+# Aldehyde to Hemiaminal
+q    HBA.C7        HBA.C7        HEM.C7         # Aldehyde carbon (sp2→sp3)[attached_image:1]
+q    HBA.O7        HBA.O7        HEM.OH         # Aldehyde oxygen → hydroxyl[attached_image:1]
+q    HBA.H7        HBA.H7        HEM.HO         # Aldehyde H → hydroxyl H[attached_image:1]
+q    PAF.NH2       PAF.NH2       HEM.NH         # pAF amino nitrogen (nucleophile)[attached_image:1]
+q    PAF.HH21      PAF.HH21      HEM.HN1        # Amino H (transferred to O)[attached_image:1]
+q    PAF.HH22      PAF.HH22      HEM.HN2        # Amino H (remains on N)[attached_image:1]
+
+# Critical Catalytic Residues
+q    ARG.NH1       ARG.NH1       ARG.NH1        # Arg92 NH1, charge stabilization[attached_image:1]
+q    ARG.NH2       ARG.NH2       ARG.NH2        # Arg92 NH2, H-bond donor[attached_image:1]
+q    ARG.HH11      ARG.HH11      ARG.HH11       # Arg92 proton (NH1)[attached_image:1]
+q    ARG.HH12      ARG.HH12      ARG.HH12       # Arg92 proton (NH1)[attached_image:1]
+q    ARG.HH21      ARG.HH21      ARG.HH21       # Arg92 proton (NH2)[attached_image:1]
+q    ARG.HH22      ARG.HH22      ARG.HH22       # Arg92 proton (NH2)[attached_image:1]
+
+# Proton Shuttle - His93
+q    HIP.ND1       HIP.ND1       HIP.ND1        # His93 ND1[attached_image:1]
+q    HIP.NE2       HIP.NE2       HIP.NE2        # His93 NE2[attached_image:1]
+q    HIP.HD1       HIP.HD1       HIP.HD1        # His93 HD1[attached_image:1]
+q    HIP.HE2       HIP.HE2       HIP.HE2        # His93 HE2[attached_image:1]
+
+# N19M Mutation Region
+q    ASN.CB        ASN.CB        MET.CB         # Site of N19M mutation[attached_image:1]
+q    ASN.CG        ASN.CG        MET.CG         # Side chain carbon[attached_image:1]
+q    -             -             MET.SD         # Methionine sulfur (mutation product)[attached_image:1]
+
+# Binding Pocket Residues
+q    PAF.CZ        PAF.CZ        PAF.CZ         # Aromatic ring connection[attached_image:1]
+q    TRP.CE2       TRP.CE2       TRP.CE2        # Trp96 pocket residue[attached_image:1]
+q    TRP.NE1       TRP.NE1       TRP.NE1        # Trp96 indole nitrogen[attached_image:1]
