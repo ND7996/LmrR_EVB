@@ -1,5 +1,4 @@
 # Precise qmap for given structure - Reactant to Product
-
 # FORMAT: q   PDB_ID       LIB_ID (resname.name)    STATE 1          STATE 2
 
 # pAF side chain with sulfur and oxygens
@@ -8,41 +7,41 @@ q   O1        O1           O1                   O1               O1
 q   O2        O2           O2                   O2               O2
 q   O3        O3           O3                   O3               O3
 
-# Alkyl/aryl chain carbons C1-C7 and attached atoms
-q   C1        C1           C1                   C1               PROD.C1         # reaction center carbon (e.g. forming bond)
-q   H1        H1           H1                   H1               none            # hydrogen lost in product
-q   C2        C2           C2                   C2               PROD.C2
-q   H2        H2           H2                   H2               PROD.H2
-q   C3        C3           C3                   C3               PROD.C3
-q   H3        H3           H3                   H3               PROD.H3
-q   C4        C4           C4                   C4               C4
-q   H4        H4           H4                   H4               H4
-q   C5        C5           C5                   C5               C5
-q   H5        H5           H5                   H5               H5
-q   C6        C6           C6                   C6               C6
-q   O4        O4           O4                   O4               O4
-q   C7        C7           C7                   C7               C7
+# Aldehyde (trans-2-hexenal) substrate atoms
+q   HEX.C1    HEX.C1       HEX.C1                HEX.C1           PROD.C1         # aldehyde carbon, reaction center
+q   HEX.H1    HEX.H1       HEX.H1                HEX.H1           none            # aldehyde proton lost during reaction
+q   HEX.O1    HEX.O1       HEX.O1                HEX.O1           WAT.O           # aldehyde oxygen released as water
+q   HEX.C2    HEX.C2       HEX.C2                HEX.C2           PROD.C2
+q   HEX.H2    HEX.H2       HEX.H2                HEX.H2           PROD.H2
+q   HEX.C3    HEX.C3       HEX.C3                HEX.C3           PROD.C3
+q   HEX.H3    HEX.H3       HEX.H3                HEX.H3           PROD.H3
+q   HEX.C4    HEX.C4       HEX.C4                HEX.C4           HEX.C4
+q   HEX.H4    HEX.H4       HEX.H4                HEX.H4           HEX.H4
+q   HEX.C5    HEX.C5       HEX.C5                HEX.C5           HEX.C5
+q   HEX.H5    HEX.H5       HEX.H5                HEX.H5           HEX.H5
+q   HEX.C6    HEX.C6       HEX.C6                HEX.C6           HEX.C6
+q   HEX.H6    HEX.H6       HEX.H6                HEX.H6           HEX.H6
 
-# pAF amine nitrogen and attached hydrogens
-q   N1        N1           N1                   N1               N1
-q   HZ1       HZ1          HZ1                  HZ1              WAT.H1          # proton leaves as water
-q   HZ2       HZ2          HZ2                  HZ2              HZ2
+# pAF amine nitrogen and its hydrogens (attached to N1)
+q   N1        N1           N1                    N1               N1
+q   HZ1       HZ1          HZ1                   HZ1              WAT.H1         # proton leaves to water
+q   HZ2       HZ2          HZ2                   HZ2              HZ2
 
-# Indole ring atoms (example, adapt as needed)
-q   IND.N1    IND.N1       IND.N1                IND.N1           IND.N1
-q   IND.C2    IND.C2       IND.C2                IND.C2           IND.C2
-q   IND.C3    IND.C3       IND.C3                IND.C3           PROD.IND.C3     # nucleophilic carbon, forms bond here
-q   IND.H3    IND.H3       IND.H3                IND.H3           none            # proton lost during bond formation
-q   IND.C4    IND.C4       IND.C4                IND.C4           IND.C4
-q   IND.H4    IND.H4       IND.H4                IND.H4           IND.H4
-q   IND.C5    IND.C5       IND.C5                IND.C5           IND.C5
-q   IND.H5    IND.H5       IND.H5                IND.H5           IND.H5
-q   IND.C6    IND.C6       IND.C6                IND.C6           IND.C6
-q   IND.H6    IND.H6       IND.H6                IND.H6           IND.H6
-q   IND.C7    IND.C7       IND.C7                IND.C7           IND.C7
-q   IND.H7    IND.H7       IND.H7                IND.H7           IND.H7
+# Indole ring atoms
+q   IND.N1    IND.N1       IND.N1                 IND.N1          IND.N1
+q   IND.C2    IND.C2       IND.C2                 IND.C2          IND.C2
+q   IND.C3    IND.C3       IND.C3                 IND.C3          PROD.IND.C3   # nucleophilic carbon, forms bond in product state
+q   IND.H3    IND.H3       IND.H3                 IND.H3          none          # lost proton during bond formation
+q   IND.C4    IND.C4       IND.C4                 IND.C4          IND.C4
+q   IND.H4    IND.H4       IND.H4                 IND.H4          IND.H4
+q   IND.C5    IND.C5       IND.C5                 IND.C5          IND.C5
+q   IND.H5    IND.H5       IND.H5                 IND.H5          IND.H5
+q   IND.C6    IND.C6       IND.C6                 IND.C6          IND.C6
+q   IND.H6    IND.H6       IND.H6                 IND.H6          IND.H6
+q   IND.C7    IND.C7       IND.C7                 IND.C7          IND.C7
+q   IND.H7    IND.H7       IND.H7                 IND.H7          IND.H7
 
-# Water molecule formed (state 2 onward)
-q   WAT.O     none         none                  WAT.O            WAT.O
-q   WAT.H1    none         none                  WAT.H1           WAT.H1
-q   WAT.H2    none         none                  WAT.H2           WAT.H2
+# Water molecule formed during reaction
+q   WAT.O     none         none                   WAT.O           WAT.O
+q   WAT.H1    none         none                   WAT.H1          WAT.H1
+q   WAT.H2    none         none                   WAT.H2          WAT.H2
