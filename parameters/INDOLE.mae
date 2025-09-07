@@ -1,0 +1,89 @@
+{ 
+ s_m_m2io_version
+ :::
+ 2.0.0 
+} 
+
+f_m_ct { 
+ s_m_title
+ i_m_Source_File_Index
+ s_m_Source_File
+ s_m_Source_Path
+ s_m_entry_id
+ s_m_entry_name
+ s_pdb_PDB_format_version
+ i_m_ct_format
+ :::
+ INDOLE 
+ 1
+ INDOLE.pdb 
+ D:\PhD_Thesis\LmrR_EVB\structures\Substrates 
+ 2 
+ INDOLE.1 
+ 3.0 
+  2
+ m_atom[16] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  s_m_pdb_residue_name
+  s_m_pdb_atom_name
+  i_m_atomic_number
+  i_m_representation
+  s_m_color_rgb
+  s_m_atom_name
+  i_m_pdb_convert_problem
+  i_pdb_PDB_serial
+  r_m_pdb_occupancy
+  :::
+  1 26 4.678000 -0.608000 0.000000 1 38 "UNL " " N  " 7 3 2E2EFF  N1  4 1 1
+  2 4 3.732000 -0.303000 0.000000 1 10 "UNL " " C  " 6 3 1EE11E  C2  4 2 1
+  3 4 3.732000 0.697000 0.000000 1 10 "UNL " " C  " 6 3 1EE11E  C3  4 3 1
+  4 4 4.678000 1.002000 0.000000 1 10 "UNL " " C  " 6 3 1EE11E  C4  4 4 1
+  5 4 2.866000 -0.803000 0.000000 1 10 "UNL " " C  " 6 3 1EE11E  C5  4 5 1
+  6 4 2.866000 1.197000 0.000000 1 10 "UNL " " C  " 6 3 1EE11E  C6  4 6 1
+  7 4 5.262000 0.197000 0.000000 1 10 "UNL " " C  " 6 3 1EE11E  C7  4 7 1
+  8 4 2.000000 -0.303000 0.000000 1 10 "UNL " " C  " 6 3 1EE11E  C8  4 8 1
+  9 4 2.000000 0.697000 0.000000 1 10 "UNL " " C  " 6 3 1EE11E  C9  4 9 1
+  10 43 4.871000 -1.197000 0.000000 1 21 "UNL " " H  " 1 3 FFFFFF  H10  4 10 1
+  11 41 4.871000 1.591000 0.000000 1 21 "UNL " " H  " 1 3 FFFFFF  H11  4 11 1
+  12 41 2.866000 -1.423000 0.000000 1 21 "UNL " " H  " 1 3 FFFFFF  H12  4 12 1
+  13 41 2.866000 1.817000 0.000000 1 21 "UNL " " H  " 1 3 FFFFFF  H13  4 13 1
+  14 41 5.882000 0.197000 0.000000 1 21 "UNL " " H  " 1 3 FFFFFF  H14  4 14 1
+  15 41 1.463000 -0.613000 0.000000 1 21 "UNL " " H  " 1 3 FFFFFF  H15  4 15 1
+  16 41 1.463000 1.007000 0.000000 1 21 "UNL " " H  " 1 3 FFFFFF  H16  4 16 1
+  :::
+ } 
+ m_bond[17] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  i_m_from_rep
+  i_m_to_rep
+  :::
+  1 1 2 1 3 3
+  2 1 7 1 3 3
+  3 1 10 1 3 3
+  4 2 3 1 3 3
+  5 2 5 1 3 3
+  6 3 4 1 3 3
+  7 3 6 1 3 3
+  8 4 7 1 3 3
+  9 4 11 1 3 3
+  10 5 8 1 3 3
+  11 5 12 1 3 3
+  12 6 9 1 3 3
+  13 6 13 1 3 3
+  14 7 14 1 3 3
+  15 8 9 1 3 3
+  16 8 15 1 3 3
+  17 9 16 1 3 3
+  :::
+ } 
+} 
+
