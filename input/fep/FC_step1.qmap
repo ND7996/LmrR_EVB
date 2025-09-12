@@ -3,14 +3,14 @@
 q   pAF.CA        pAF.CA                         pAF.CA            pAF.CA           pAF.CA
 q   pAF.CB        pAF.CB                         pAF.CB            pAF.CB           pAF.CB
 q   pAF.CG        pAF.CG                         pAF.CG            pAF.CG           pAF.CG
-# === Amine group of pAF (catalytic center) ===
-q   pAF.N1        pAF.N1                         pAF.N1            pAF.N1           pAF.N1
-q   pAF.HZ1       pAF.HZ1                        pAF.HZ1           pAF.HZ1          WAT.H1      # leaves as water
-q   pAF.HZ2       pAF.HZ2                        pAF.HZ2           pAF.HZ2          pAF.HZ2
+# === Amine group of pAF (catalytic center) and proton transfer ===
+q   pAF.N1        pAF.N1                         pAF.N1            pAF.N1           pAF.N1                # Amino N stays
+q   pAF.HZ1       pAF.HZ1                        pAF.HZ1           pAF.HZ1          WAT.H1                # Proton transferred to water in product
+q   pAF.HZ2       pAF.HZ2                        pAF.HZ2           pAF.HZ2          pAF.HZ2               # Proton retained on amine
 # === trans-2-hexenal substrate atoms ===
-q   HEX.C1        HEX.C1                         HEX.C1            HEX.C1           PROD.C1     # reaction center
-q   HEX.H1        HEX.H1                         HEX.H1            HEX.H1           none        # proton lost to water
-q   HEX.O1        HEX.O1                         HEX.O1            HEX.O1           WAT.O       # oxygen lost as water
+q   HEX.C1        HEX.C1                         HEX.C1            HEX.C1           PROD.C1               # Carbonyl Carbon (attack site)
+q   HEX.H1        HEX.H1                         HEX.H1            HEX.H1           HEX.H1                # Proton retained
+q   HEX.O1        HEX.O1                         HEX.O1            HEX.O1           WAT.O                 # Carbonyl Oxygen leaves to water
 q   HEX.C2        HEX.C2                         HEX.C2            HEX.C2           PROD.C2
 q   HEX.H2        HEX.H2                         HEX.H2            HEX.H2           PROD.H2
 q   HEX.C3        HEX.C3                         HEX.C3            HEX.C3           PROD.C3
@@ -24,8 +24,8 @@ q   HEX.H6        HEX.H6                         HEX.H6            HEX.H6       
 # === Indole ring atoms ===
 q   IND.N1        IND.N1                        IND.N1            IND.N1           IND.N1
 q   IND.C2        IND.C2                        IND.C2            IND.C2           IND.C2
-q   IND.C3        IND.C3                        IND.C3            IND.C3           PROD.C3      # forms new bond with HEX.C1
-q   IND.H3        IND.H3                        IND.H3            IND.H3           none         # lost in product
+q   IND.C3        IND.C3                        IND.C3            IND.C3           PROD.C3                # Forms new bond with HEX.C1
+q   IND.H3        IND.H3                        IND.H3            IND.H3           IND.H3                # Proton retained (note: check if lost)
 q   IND.C4        IND.C4                        IND.C4            IND.C4           IND.C4
 q   IND.H4        IND.H4                        IND.H4            IND.H4           IND.H4
 q   IND.C5        IND.C5                        IND.C5            IND.C5           IND.C5
@@ -35,6 +35,10 @@ q   IND.H6        IND.H6                        IND.H6            IND.H6        
 q   IND.C7        IND.C7                        IND.C7            IND.C7           IND.C7
 q   IND.H7        IND.H7                        IND.H7            IND.H7           IND.H7
 # === Water molecule formed during reaction ===
-q   WAT.O         none                          none              none             WAT.O
-q   WAT.H1        none                          none              none             WAT.H1
-q   WAT.H2        none                          none              none             WAT.H2
+q   WAT.O         WAT.O                         WAT.O             WAT.O            WAT.O                 # Water oxygen
+q   WAT.H1        WAT.H1                        WAT.H1            WAT.H1           WAT.H1                # Water proton 1
+q   WAT.H2        WAT.H2                        WAT.H2            WAT.H2           WAT.H2                # Water proton 2
+
+
+
+
