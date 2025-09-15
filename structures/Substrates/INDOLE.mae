@@ -1,0 +1,86 @@
+{ 
+ s_m_m2io_version
+ :::
+ 2.0.0 
+} 
+
+f_m_ct { 
+ s_m_title
+ i_m_Source_File_Index
+ s_m_Source_File
+ s_m_Source_Path
+ s_m_entry_id
+ s_m_entry_name
+ s_pdb_PDB_format_version
+ i_m_ct_format
+ :::
+ INDOLE 
+ 1
+ INDOLE.pdb 
+ D:\PhD_Thesis\LmrR_EVB\structures\Substrates 
+ 1 
+ INDOLE.1 
+ 3.0 
+  2
+ m_atom[16] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  s_m_pdb_residue_name
+  s_m_pdb_atom_name
+  i_m_atomic_number
+  s_m_color_rgb
+  s_m_atom_name
+  i_m_pdb_convert_problem
+  i_pdb_PDB_serial
+  r_m_pdb_occupancy
+  :::
+  1 26 1.561000 1.112000 -0.000000 1 38 "UNL " " N  " 7 2E2EFF  N1  4 1 1
+  2 4 0.254000 0.681000 0.000000 1 10 "UNL " " C  " 6 1EE11E  C2  4 2 1
+  3 4 0.281000 -0.716000 0.000000 1 10 "UNL " " C  " 6 1EE11E  C3  4 3 1
+  4 4 1.650000 -1.106000 0.000000 1 10 "UNL " " C  " 6 1EE11E  C4  4 4 1
+  5 4 -0.939000 1.412000 -0.000000 1 10 "UNL " " C  " 6 1EE11E  C5  4 5 1
+  6 4 -0.940000 -1.418000 -0.000000 1 10 "UNL " " C  " 6 1EE11E  C6  4 6 1
+  7 4 2.412000 0.040000 0.000000 1 2 "UNL " " C  " 6 A0A0A0  C7  4 7 1
+  8 4 -2.138000 0.694000 0.000000 1 10 "UNL " " C  " 6 1EE11E  C8  4 8 1
+  9 4 -2.141000 -0.700000 0.000000 1 10 "UNL " " C  " 6 1EE11E  C9  4 9 1
+  10 43 1.850000 2.081000 -0.000000 1 21 "UNL " " H  " 1 FFFFFF  H10  4 10 1
+  11 41 2.037000 -2.115000 0.000000 1 21 "UNL " " H  " 1 FFFFFF  H11  4 11 1
+  12 41 -0.939000 2.497000 -0.000000 1 21 "UNL " " H  " 1 FFFFFF  H12  4 12 1
+  13 41 -0.956000 -2.504000 -0.000000 1 21 "UNL " " H  " 1 FFFFFF  H13  4 13 1
+  14 6 3.937696 0.249409 0.000000 1 2 "UNL " "    " 6 A0A0A0  C14  4 14 1
+  15 41 -3.083000 1.232000 0.000000 1 21 "UNL " " H  " 1 FFFFFF  H15  4 15 1
+  16 41 -3.086000 -1.236000 0.000000 1 21 "UNL " " H  " 1 FFFFFF  H16  4 16 1
+  :::
+ } 
+ m_bond[17] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 1 7 1
+  3 1 10 1
+  4 2 3 1
+  5 2 5 1
+  6 3 4 1
+  7 3 6 1
+  8 4 7 1
+  9 4 11 1
+  10 5 8 1
+  11 5 12 1
+  12 6 9 1
+  13 6 13 1
+  14 7 14 1
+  15 8 9 1
+  16 8 15 1
+  17 9 16 1
+  :::
+ } 
+} 
+
