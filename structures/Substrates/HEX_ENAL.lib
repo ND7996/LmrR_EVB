@@ -1,0 +1,25 @@
+! Library file for UNK
+! Generated from ffld_server output
+
+RESI UNK     0.000
+GROUP
+ATOM O    0      0.0000
+ATOM C    0      0.0000
+ATOM C    0      0.0000
+ATOM C    0      0.0000
+ATOM C    0      0.0000
+ATOM C    0      0.0000
+ATOM C    0      0.0000
+ATOM H    0      0.0000
+ATOM H    0      0.0000
+ATOM H    0      0.0000
+ATOM H    0      0.0000
+ATOM H    0      0.0000
+ATOM H    0      0.0000
+ATOM H    0      0.0000
+ATOM H    0      0.0000
+ATOM H    0      0.0000
+ATOM H    0      0.0000
+
+! BOND connectivity - add manually based on CONECT records
+! Example: BOND C1 C2
