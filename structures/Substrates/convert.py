@@ -15,24 +15,26 @@ def parse_pdb(pdb_file):
         for line in f:
             if line.startswith('HETATM') or line.startswith('ATOM'):
                 # Standard PDB format
-                atom_num = int(line[6:11].strip())
-                atom_name = line[12:16].strip()
-                res_name = line[17:20].strip()
-                res_num = int(line[22:26].strip())
-                x = float(line[30:38].strip())
-                y = float(line[38:46].strip())
-                z = float(line[46:54].strip())
-                element = line[76:78].strip()
-                
-                atoms.append({
-                    'num': atom_num,
-                    'name': atom_name,
-                    'res_name': res_name,
-                    'res_num': res_num,
-                    'x': x, 'y': y, 'z': z,
-                    'element': element
-                })
-                print(f"Parsed atom: {atom_num}, name: {atom_name}, element: {element}")
+                try:
+                    atom_num = int(line[6:11].strip())
+                    atom_name = line[12:16].strip()
+                    res_name = line[17:20].strip()
+                    res_num = int(line[22:26].strip())
+                    x = float(line[30:38].strip())
+                    y = float(line[38:46].strip())
+                    z = float(line[46:54].strip())
+                    element = line[76:78].strip()
+                    
+                    atoms.append({
+                        'num': atom_num,
+                        'name': atom_name,
+                        'res_name': res_name,
+                        'res_num': res_num,
+                        'x': x, 'y': y, 'z': z,
+                        'element': element
+                    })
+                except (ValueError, IndexError):
+                    continue
     return atoms
 
 def parse_ffld_log(ffld_file):
@@ -52,101 +54,134 @@ def parse_ffld_log(ffld_file):
     total_charge = float(charge_match.group(1)) if charge_match else 0.0
     print(f"Total charge: {total_charge}")
     
-    # Extract atom types and charges
+    # Extract atom types and charges from the detailed table
     atom_charges = {}
     atom_types = {}
+    atom_names = {}
     
-    # Look for atom assignment section
-    # Common pattern: "Atom  Type   Charge" or similar header
-    lines = content.split('\n')
-    in_atom_section = False
-    
-    for i, line in enumerate(lines):
-        line_lower = line.lower()
-        
-        # Look for start of atom section
-        if any(keyword in line_lower for keyword in ['atom', 'type', 'charge', 'opls']):
-            if 'atom' in line_lower and ('type' in line_lower or 'charge' in line_lower):
-                in_atom_section = True
-                print(f"Found atom section header: {line.strip()}")
-                continue
-        
-        # Process atom data lines
-        if in_atom_section and line.strip():
-            parts = line.split()
-            if len(parts) >= 4:
-                try:
-                    atom_num = int(parts[0])
-                    atom_name = parts[1]
-                    
-                    # Look for OPLS type and charge
-                    charge = None
-                    opls_type = None
-                    
-                    for part in parts[2:]:
-                        if 'opls_' in part:
-                            opls_type = int(part.split('_')[1])
-                        elif '.' in part or '-' in part or '+' in part:
-                            try:
-                                charge = float(part)
-                            except ValueError:
-                                pass
-                    
-                    if opls_type is not None and charge is not None:
-                        atom_charges[atom_num] = charge
-                        atom_types[atom_name] = opls_type
-                        print(f"Found atom: {atom_num}, {atom_name}, opls_{opls_type}, charge: {charge}")
-                        
-                except (ValueError, IndexError):
-                    continue
-            else:
-                # If we hit a line that doesn't look like atom data, maybe we're done
-                if len(parts) < 2 or not parts[0].isdigit():
-                    in_atom_section = False
-    
-    # If we didn't find atoms using the section method, try pattern matching
-    if not atom_charges:
-        print("Trying pattern matching for atoms...")
-        patterns = [
-            r'^\s*(\d+)\s+(\S+)\s+opls_(\d+)\s+([-+]?\d*\.?\d+)',
-            r'Atom\s+(\d+).*?opls_(\d+).*?([-+]?\d*\.?\d+)',
-            r'(\d+)\s+(\S+)\s+([-+]?\d*\.?\d+)\s+opls_(\d+)',
-        ]
-        
-        for pattern in patterns:
-            matches = re.findall(pattern, content, re.MULTILINE | re.IGNORECASE)
-            for match in matches:
-                if len(match) == 4:
-                    atom_num = int(match[0])
-                    atom_name = match[1]
-                    opls_type = int(match[2] if match[2].isdigit() else match[3])
-                    charge = float(match[3] if '.' in match[3] or 'e' in match[3].lower() else match[2])
-                    
-                    atom_charges[atom_num] = charge
-                    atom_types[atom_name] = opls_type
-                    print(f"Pattern found atom: {atom_num}, {atom_name}, opls_{opls_type}, charge: {charge}")
-    
-    # Parse bond information
-    bonds = []
-    bond_patterns = [
-        r'BOND\s+(\S+)\s+(\S+)\s+([\d.]+)\s+([\d.]+)',
-        r'(\S+)-(\S+)\s+[\d.]+\s+([\d.]+)\s+([\d.]+)',
+    # Try multiple patterns to find the atom table
+    patterns = [
+        r'atom\s+type\s+vdw\s+symbol\s+charge.*?\n(.*?)\n-{70,}',
+        r'atom.*?type.*?vdw.*?symbol.*?charge.*?\n(.*?)(?:\n\n|\n\s*[A-Z]|\Z)',
+        r'Atom.*?Type.*?Vdw.*?Symbol.*?Charge.*?\n(.*?)(?:\n\n|\n\s*[A-Z]|\Z)',
+        r'atom.*?opls.*?charge.*?\n(.*?)(?:\n\n|\n\s*[A-Z]|\Z)'
     ]
     
-    for pattern in bond_patterns:
-        matches = re.findall(pattern, content)
-        for match in matches:
-            if len(match) == 4:
-                atom1, atom2, length, force_const = match
-                bonds.append({
-                    'atom1': atom1,
-                    'atom2': atom2,
-                    'length': float(length),
-                    'force_const': float(force_const)
-                })
-                print(f"Found bond: {atom1}-{atom2}, length: {length}, force_const: {force_const}")
+    atom_table_found = False
+    for pattern in patterns:
+        atom_table_match = re.search(pattern, content, re.IGNORECASE | re.DOTALL)
+        if atom_table_match:
+            print("Found atom parameter table")
+            atom_lines = atom_table_match.group(1).strip().split('\n')
+            for line in atom_lines:
+                parts = line.split()
+                if len(parts) >= 5:
+                    try:
+                        atom_name = parts[0]
+                        opls_type = int(parts[1])
+                        charge = float(parts[4])
+                        
+                        # Map atom names to numbers (O1 -> 1, C2 -> 2, etc.)
+                        atom_num_match = re.search(r'(\d+)$', atom_name)
+                        if atom_num_match:
+                            atom_num = int(atom_num_match.group(1))
+                            atom_charges[atom_num] = charge
+                            atom_types[atom_num] = opls_type
+                            atom_names[atom_num] = atom_name
+                            print(f"Table atom: {atom_num}, {atom_name}, opls_{opls_type}, charge: {charge}")
+                    except (ValueError, IndexError):
+                        continue
+            atom_table_found = True
+            break
     
-    return mol_name, total_charge, atom_charges, atom_types, bonds
+    if not atom_table_found:
+        print("Warning: Could not find atom parameter table")
+        print("Trying to extract charges from energy components...")
+        
+        # Try to find charges in the energy breakdown
+        charge_pattern = r'(\w+\d+)\s+[-\d\.]+\s+[-\d\.]+\s+([-\d\.]+)'
+        charge_matches = re.findall(charge_pattern, content)
+        for atom_name, charge_str in charge_matches:
+            try:
+                charge = float(charge_str)
+                atom_num_match = re.search(r'(\d+)$', atom_name)
+                if atom_num_match:
+                    atom_num = int(atom_num_match.group(1))
+                    atom_charges[atom_num] = charge
+                    atom_names[atom_num] = atom_name
+                    print(f"Charge atom: {atom_num}, {atom_name}, charge: {charge}")
+            except ValueError:
+                continue
+    
+    # Parse bond information from various sections
+    bonds = []
+    bond_patterns = [
+        r'Stretch.*?k.*?r0.*?\n(.*?)(?=\n\n|\n [A-Z]|\Z)',
+        r'Bond.*?Force.*?Length.*?\n(.*?)(?=\n\n|\n [A-Z]|\Z)',
+        r'(\w+\d+)\s+(\w+\d+)\s+([\d\.]+)\s+([\d\.]+)'
+    ]
+    
+    bond_found = False
+    for pattern in bond_patterns:
+        bond_section_match = re.search(pattern, content, re.IGNORECASE | re.DOTALL)
+        if bond_section_match:
+            print("Found bond section")
+            if pattern == bond_patterns[2]:  # Direct bond pattern
+                bond_matches = re.findall(pattern, content)
+                for match in bond_matches:
+                    try:
+                        atom1_name, atom2_name, force_const_str, length_str = match
+                        force_const = float(force_const_str)
+                        length = float(length_str)
+                        
+                        # Get atom numbers from names
+                        atom1_num = int(re.search(r'(\d+)$', atom1_name).group(1))
+                        atom2_num = int(re.search(r'(\d+)$', atom2_name).group(1))
+                        
+                        bonds.append({
+                            'atom1': atom_names.get(atom1_num, atom1_name),
+                            'atom2': atom_names.get(atom2_num, atom2_name),
+                            'atom1_num': atom1_num,
+                            'atom2_num': atom2_num,
+                            'length': length,
+                            'force_const': force_const
+                        })
+                        print(f"Bond: {atom1_name}-{atom2_name}, length: {length}, force_const: {force_const}")
+                    except (ValueError, AttributeError):
+                        continue
+            else:
+                bond_lines = bond_section_match.group(1).strip().split('\n')
+                for line in bond_lines:
+                    parts = line.split()
+                    if len(parts) >= 5:
+                        try:
+                            atom1_name = parts[0]
+                            atom2_name = parts[1]
+                            force_const = float(parts[2])
+                            length = float(parts[3])
+                            
+                            # Get atom numbers from names
+                            atom1_num = int(re.search(r'(\d+)$', atom1_name).group(1))
+                            atom2_num = int(re.search(r'(\d+)$', atom2_name).group(1))
+                            
+                            bonds.append({
+                                'atom1': atom_names.get(atom1_num, atom1_name),
+                                'atom2': atom_names.get(atom2_num, atom2_name),
+                                'atom1_num': atom1_num,
+                                'atom2_num': atom2_num,
+                                'length': length,
+                                'force_const': force_const
+                            })
+                            print(f"Bond: {atom1_name}-{atom2_name}, length: {length}, force_const: {force_const}")
+                        except (ValueError, IndexError, AttributeError):
+                            continue
+            bond_found = True
+            break
+    
+    if not bond_found:
+        print("Warning: Could not find bond section")
+    
+    return mol_name, total_charge, atom_charges, atom_types, bonds, atom_names
 
 def write_prm_file(mol_name, atom_types, bonds, output_file):
     """Write .prm file with OPLS parameters"""
@@ -155,16 +190,15 @@ def write_prm_file(mol_name, atom_types, bonds, output_file):
         f.write(f"! Generated from ffld_server output\n\n")
         
         # Write bond parameters
+        f.write("BONDS\n")
         if bonds:
-            f.write("BONDS\n")
             for bond in bonds:
-                type1 = atom_types.get(bond['atom1'], 0)
-                type2 = atom_types.get(bond['atom2'], 0)
+                type1 = atom_types.get(bond['atom1_num'], 0)
+                type2 = atom_types.get(bond['atom2_num'], 0)
                 kb = bond['force_const'] * 100.0  # Convert to appropriate units
                 r0 = bond['length']
                 f.write(f"{type1:>4d} {type2:>4d} {kb:8.2f} {r0:8.4f}  ! {bond['atom1']}-{bond['atom2']}\n")
         else:
-            f.write("BONDS\n")
             f.write("! No bond parameters found\n")
         
         f.write("\nANGLES\n")
@@ -187,7 +221,7 @@ def write_prm_file(mol_name, atom_types, bonds, output_file):
         else:
             f.write("! No atom types found\n")
 
-def write_lib_file(mol_name, atoms, atom_charges, atom_types, output_file):
+def write_lib_file(mol_name, atoms, atom_charges, atom_types, atom_names, bonds, output_file):
     """Write .lib file with residue definition"""
     with open(output_file, 'w') as f:
         f.write(f"! Library file for {mol_name}\n")
@@ -199,17 +233,21 @@ def write_lib_file(mol_name, atoms, atom_charges, atom_types, output_file):
         f.write(f"RESI {mol_name}    {total_charge:6.3f}\n")
         f.write("GROUP\n")
         
-        # Write atom definitions
+        # Write atom definitions - match PDB order with ffld charges
         for atom in atoms:
-            atom_name = atom['name']
-            opls_type = atom_types.get(atom_name, 0)
-            charge = atom_charges.get(atom['num'], 0.0)
+            atom_num = atom['num']
+            opls_type = atom_types.get(atom_num, 0)
+            charge = atom_charges.get(atom_num, 0.0)
             
-            f.write(f"ATOM {atom_name:<4s} {opls_type:<4d} {charge:8.4f}\n")
+            f.write(f"ATOM {atom['name']:<4s} {opls_type:<4d} {charge:8.4f}\n")
         
-        f.write("\n")
-        f.write("! BOND connectivity - add manually based on CONECT records\n")
-        f.write("! Example: BOND C1 C2\n")
+        # Add bond connectivity based on parsed bonds
+        f.write("\nBOND\n")
+        if bonds:
+            for bond in bonds:
+                f.write(f"BOND {bond['atom1']} {bond['atom2']}\n")
+        else:
+            f.write("! No bond information found - add manually based on CONECT records\n")
 
 def main():
     if len(sys.argv) != 3:
@@ -232,7 +270,7 @@ def main():
     atoms = parse_pdb(pdb_file)
     
     print("\nParsing FFLD file...")
-    mol_name, total_charge, atom_charges, atom_types, bonds = parse_ffld_log(ffld_file)
+    mol_name, total_charge, atom_charges, atom_types, bonds, atom_names = parse_ffld_log(ffld_file)
     
     # Generate output filenames
     base_name = os.path.splitext(os.path.basename(pdb_file))[0]
@@ -244,7 +282,7 @@ def main():
     write_prm_file(mol_name, atom_types, bonds, prm_file)
     
     print(f"Writing {lib_file}...")
-    write_lib_file(mol_name, atoms, atom_charges, atom_types, lib_file)
+    write_lib_file(mol_name, atoms, atom_charges, atom_types, atom_names, bonds, lib_file)
     
     print(f"\nGenerated {prm_file} and {lib_file}")
     print(f"Molecule: {mol_name}")

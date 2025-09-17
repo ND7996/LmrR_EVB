@@ -21,5 +21,5 @@ ATOM H    0      0.0000
 ATOM H    0      0.0000
 ATOM H    0      0.0000
 
-! BOND connectivity - add manually based on CONECT records
-! Example: BOND C1 C2
+BOND
+! No bond information found - add manually based on CONECT records
