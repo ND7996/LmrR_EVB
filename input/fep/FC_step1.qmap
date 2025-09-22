@@ -1,13 +1,13 @@
 # q atom (q)         PDB ID      RS          PS
 # pAF (para-aminophenylalanine) backbone and side chain atoms
-q     pAF.N          pAF.N       PAF.N       IML.N1       # Backbone amide nitrogen (becomes iminium N)
-q     pAF.HN         pAF.HN      PAF.HN      IML.HN       # Backbone amide hydrogen
-q     pAF.CA         pAF.CA      PAF.CA      IML.CA       # Alpha carbon
-q     pAF.HA         pAF.HA      PAF.HA      IML.HA       # Alpha hydrogen
-q     pAF.CB         pAF.CB      PAF.CB      IML.CB       # Beta carbon
+q     pAF.N          pAF.N       PAF.N       IML.N1       # Backbone amide N becomes iminium N
+q     pAF.HN         pAF.HN      PAF.HN      IML.HN
+q     pAF.CA         pAF.CA      PAF.CA      IML.CA
+q     pAF.HA         pAF.HA      PAF.HA      IML.HA
+q     pAF.CB         pAF.CB      PAF.CB      IML.CB
 q     pAF.HB1        pAF.HB1     PAF.HB1     IML.HB1
 q     pAF.HB2        pAF.HB2     PAF.HB2     IML.HB2
-q     pAF.CG         pAF.CG      PAF.CG      IML.CG       # Aromatic ring carbons
+q     pAF.CG         pAF.CG      PAF.CG      IML.CG
 q     pAF.CD1        pAF.CD1     PAF.CD1     IML.CD1
 q     pAF.HD1        pAF.HD1     PAF.HD1     IML.HD1
 q     pAF.CD2        pAF.CD2     PAF.CD2     IML.CD2
@@ -16,20 +16,18 @@ q     pAF.CE1        pAF.CE1     PAF.CE1     IML.CE1
 q     pAF.HE1        pAF.HE1     PAF.HE1     IML.HE1
 q     pAF.CE2        pAF.CE2     PAF.CE2     IML.CE2
 q     pAF.HE2        pAF.HE2     PAF.HE2     IML.HE2
-q     pAF.CZ         pAF.CZ      PAF.CZ      IML.CZ       # Aromatic para carbon
-q     pAF.NZ         pAF.NZ      PAF.NZ      IML.N1       # Amine N, bonds HEX.C1 in product
-q     pAF.HZ1        pAF.HZ1     PAF.HZ1     WAT.H1       # Proton transferred to water oxygen
-q     pAF.HZ2        pAF.HZ2     PAF.HZ2     IML.HZ2      # Proton retained on amine N
-q     pAF.C          pAF.C       PAF.C       IML.C        # Backbone carbonyl carbon
-q     pAF.O          pAF.O       PAF.O       IML.O        # Backbone carbonyl oxygen
+q     pAF.CZ         pAF.CZ      PAF.CZ      IML.CZ
+q     pAF.NZ         pAF.NZ      PAF.NZ      IML.N1       # Bonds HEX.C1 (iminium formation)
+q     pAF.HZ1        pAF.HZ1     PAF.HZ1     WAT.H1       # Proton transferred to water
+q     pAF.HZ2        pAF.HZ2     PAF.HZ2     IML.HZ2      # Proton retained on N
 
 # trans-2-hexenal (HEX)
-q     HEX.C1         HEX.C1      HEX.C1      IML.C1       # Aldehyde carbonyl C bonds pAF.NZ
-q     HEX.O1         HEX.O1      HEX.O1      WAT.O        # Carbonyl oxygen leaves as water O
-q     HEX.H1         HEX.H1      HEX.H1      WAT.H2       # Hydrogen forms water proton
+q     HEX.C1         HEX.C1      HEX.C1      IML.C1       # Bonds pAF.NZ (iminium)
+q     HEX.O1         HEX.O1      HEX.O1      WAT.O        # Water oxygen from carbonyl O
+q     HEX.H1         HEX.H1      HEX.H1      WAT.H2       # Water proton from HEX hydrogen
 q     HEX.C2         HEX.C2      HEX.C2      HEP.C2
 q     HEX.H2         HEX.H2      HEX.H2      HEP.H2
-q     HEX.C3         HEX.C3      HEX.C3      HEP.C3       # Beta carbon forms bond with IND.C3
+q     HEX.C3         HEX.C3      HEX.C3      HEP.C3       # Bonds IND.C3 (Friedel-Crafts alkylation)
 q     HEX.H3         HEX.H3      HEX.H3      HEP.H3
 q     HEX.C4         HEX.C4      HEX.C4      HEP.C4
 q     HEX.H4         HEX.H4      HEX.H4      HEP.H4
@@ -38,10 +36,10 @@ q     HEX.H5         HEX.H5      HEX.H5      HEP.H5
 q     HEX.C6         HEX.C6      HEX.C6      HEP.C6
 q     HEX.H6         HEX.H6      HEX.H6      HEP.H6
 
-# Indole (IND) ring atoms
+# Indole (IND)
 q     IND.N1         IND.N1      IND.N1      INP.N1
 q     IND.C2         IND.C2      IND.C2      INP.C2
-q     IND.C3         IND.C3      IND.C3      HEP.C3       # Forms new bond with HEX.C3 in product
+q     IND.C3         IND.C3      IND.C3      HEP.C3       # Bond formed with HEX.C3
 q     IND.H3         IND.H3      IND.H3      INP.H3
 q     IND.C4         IND.C4      IND.C4      INP.C4
 q     IND.H4         IND.H4      IND.H4      INP.H4
