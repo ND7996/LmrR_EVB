@@ -1,51 +1,47 @@
-#Remarks LigParGen generated for Q (by Leela Dodda and Israel Cabeza de Vaca)
+# Generated with q_ffld2q.py, version 0.7.0
+# Date: Tue Sep 23 13:04:03 2025
+#
+{HEX}
+    [atoms]
+        1  O1     hex.O1        -0.450000
+        2  C1     hex.C1        -0.120000
+        3  C2     hex.C2        -0.120000
+        4  C3     hex.C3        -0.115000
+        5  C4     hex.C4        -0.115000
+        6  C5     hex.C5         0.450000
+        7  C6     hex.C6        -0.180000
+        8  H1     hex.H1         0.060000
+        9  H2     hex.H2         0.060000
+       10  H3     hex.H3         0.060000
+       11  H4     hex.H4         0.060000
+       12  H5     hex.H5         0.115000
+       13  H6     hex.H6         0.115000
+       14  H7     hex.H7         0.000000
+       15  H8     hex.H8         0.060000
+       16  H9     hex.H9         0.060000
+       17  H10    hex.H10        0.060000
+    [bonds]
+        O1    C5
+        C1    C2
+        C1    C3
+        C1    H1
+        C1    H2
+        C2    C5
+        C2    H3
+        C2    H4
+        C3    C4
+        C3    H5
+        C4    C6
+        C4    H6
+        C5    H7
+        C6    H8
+        C6    H9
+        C6    H10
+    [impropers]
+        C1    C3    C4    H5
+        C3    C4    C6    H6
+        C2    C5    H7    O1
+    [charge_groups]
+        O1 C1 C2 C3 C4 C5 C6 H1 H2 H3 H4 H5 H6 H7 H8 H9 H10
+*--------------------------------------------------------------------------------
 
-{UNL}
-[atoms]
-       1    H00   H800   0.1337 
-       2    C01   C801  -0.2034 
-       3    C02   C802  -0.1359 
-       4    C03   C803  -0.1845 
-       5    C04   C804  -0.2508 
-       6    H05   H805   0.1100 
-       7    H06   H806   0.1100 
-       8    C07   C807   0.2601 
-       9    H08   H808   0.1235 
-      10    H09   H809   0.1235 
-      11    O0A   O810  -0.3907 
-      12    H0B   H811   0.1021 
-      13    C0C   C812  -0.2069 
-      14    H0D   H813   0.1364 
-      15    H0E   H814   0.0909 
-      16    H0F   H815   0.0909 
-      17    H0G   H816   0.0909 
-[bonds]
-     C01      H00
-     C02      C01
-     C03      C01
-     C04      C02
-     H05      C02
-     H06      C02
-     C07      C04
-     H08      C04
-     H09      C04
-     O0A      C07
-     H0B      C07
-     C0C      C03
-     H0D      C03
-     H0E      C0C
-     H0F      C0C
-     H0G      C0C
-[impropers]
-C03   C01   H00   C02 
-H05   C02   C01   C04 
-H06   C02   C01   C04 
-H08   C04   C02   C07 
-H09   C04   C02   C07 
-H0B   C07   C04   O0A 
-H0D   C03   C01   C0C 
-H0F   C0C   C03   H0E 
-H0G   C0C   C03   H0E 
-[charge_groups]
- H00 C01 C02 C03 C04 H05 H06 C07 H08 H09 O0A H0B C0C H0D H0E H0F H0G
-*------------------------------------------------------------------

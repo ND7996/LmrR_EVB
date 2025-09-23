@@ -1,0 +1,69 @@
+# Generated with q_ffld2q.py, version 0.7.0
+# Date: Tue Sep 23 13:09:53 2025
+#
+{PAF}
+    [atoms]
+        1  O      paf.O         -0.530000
+        2  OXT    paf.OXT       -0.440000
+        3  N      paf.N         -0.943900
+        4  NZ     paf.NZ        -0.900000
+        5  CB     paf.CB        -0.005000
+        6  CA     paf.CA         0.163900
+        7  CG     paf.CG        -0.115000
+        8  CD1    paf.CD1       -0.115000
+        9  CD2    paf.CD2       -0.115000
+       10  C      paf.C          0.520000
+       11  CE1    paf.CE1       -0.115000
+       12  CE2    paf.CE2       -0.115000
+       13  CZ     paf.CZ         0.180000
+       14  HB1    paf.HB1        0.060000
+       15  HB2    paf.HB2        0.060000
+       16  HA     paf.HA         0.060000
+       17  HD1    paf.HD1        0.115000
+       18  HD2    paf.HD2        0.115000
+       19  HE1    paf.HE1        0.115000
+       20  HE2    paf.HE2        0.115000
+       21  HN1    paf.HN1        0.360000
+       22  HN2    paf.HN2        0.360000
+       23  HZ1    paf.HZ1        0.360000
+       24  HZ2    paf.HZ2        0.360000
+       25  HO     paf.HO         0.450000
+    [bonds]
+        O     C
+        O     HO
+        OXT   C
+        N     CA
+        N     HN1
+        N     HN2
+        NZ    CZ
+        NZ    HZ1
+        NZ    HZ2
+        CB    CA
+        CB    CG
+        CB    HB1
+        CB    HB2
+        CA    C
+        CA    HA
+        CG    CD1
+        CG    CD2
+        CD1   CE1
+        CD1   HD1
+        CD2   CE2
+        CD2   HD2
+        CE1   CZ
+        CE1   HE1
+        CE2   CZ
+        CE2   HE2
+    [impropers]
+        CZ    NZ    HZ1   HZ2
+        CB    CG    CD1   CD2
+        CE1   CD1   CG    HD1
+        CE2   CD2   CG    HD2
+        CA    C     O     OXT
+        CD1   CE1   CZ    HE1
+        CD2   CE2   CZ    HE2
+        CE1   CZ    CE2   NZ
+    [charge_groups]
+        O OXT N NZ CB CA CG CD1 CD2 C CE1 CE2 CZ HB1 HB2 HA HD1 HD2 HE1 HE2 HN1 HN2 HZ1 HZ2 HO
+*--------------------------------------------------------------------------------
+

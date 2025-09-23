@@ -1,207 +1,115 @@
-! LigParGen generated PRM file for NAMD/CHARMM 
+# Generated with q_ffld2q.py, version 0.7.0
+# Date: Tue Sep 23 13:04:03 2025
+#
+[options]
 
-BOND 
-C801 H800 340.000 1.080 
-C802 C801 317.000 1.510 
-C803 C801 549.000 1.340 
-C804 C802 268.000 1.529 
-H805 C802 340.000 1.090 
-H806 C802 340.000 1.090 
-C807 C804 317.000 1.522 
-H808 C804 340.000 1.090 
-H809 C804 340.000 1.090 
-O810 C807 570.000 1.229 
-H811 C807 340.000 1.090 
-C812 C803 317.000 1.510 
-H813 C803 340.000 1.080 
-H814 C812 340.000 1.090 
-H815 C812 340.000 1.090 
-H816 C812 340.000 1.090 
 
-ANGLE 
-H800 C801 C802 35.000 117.000 
-H800 C801 C803 35.000 120.000 
-C801 C802 C804 63.000 111.100 
-C801 C802 H805 35.000 109.500 
-C801 C802 H806 35.000 109.500 
-C802 C804 C807 63.000 111.100 
-C802 C804 H808 37.500 110.700 
-C802 C804 H809 37.500 110.700 
-C804 C807 O810 80.000 120.400 
-C804 C807 H811 35.000 115.000 
-C801 C803 C812 70.000 124.000 
-C801 C803 H813 35.000 120.000 
-C803 C812 H814 35.000 109.500 
-C803 C812 H815 35.000 109.500 
-C803 C812 H816 35.000 109.500 
-C812 C803 H813 35.000 117.000 
-H814 C812 H815 33.000 107.800 
-H808 C804 H809 33.000 107.800 
-H815 C812 H816 33.000 107.800 
-C804 C802 H806 37.500 110.700 
-H814 C812 H816 33.000 107.800 
-C802 C801 C803 70.000 124.000 
-C807 C804 H809 35.000 109.500 
-H805 C802 H806 33.000 107.800 
-C804 C802 H805 37.500 110.700 
-C807 C804 H808 35.000 109.500 
-O810 C807 H811 35.000 123.000 
+[atom_types]
+hex.C1          944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
+hex.C2          944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
+hex.C3        1103.5878  1103.5878    24.6673   780.3544    17.4424     12.011 # FFLD: CM_C3_141 high alkene C (RH-C=) all atom
+hex.C4        1103.5878  1103.5878    24.6673   780.3544    17.4424     12.011 # FFLD: CM_C3_141 high alkene C (RH-C=) all atom
+hex.C5        1802.2385  1802.2385    34.1758  1274.3751    24.1659     12.011 # FFLD: CO4_C2_277 high C: aldehyde - for C-alpha use 135
+hex.C6          944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
+hex.H1          84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+hex.H10         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+hex.H2          84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+hex.H3          49.2003    49.2003     3.4715    34.7899     2.4547     1.0079 # FFLD: HC_H7_140 high H on C-alpha in ketone & aldehyde
+hex.H4          49.2003    49.2003     3.4715    34.7899     2.4547     1.0079 # FFLD: HC_H7_140 high H on C-alpha in ketone & aldehyde
+hex.H5          69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HC_H6_146 high alkene H (H-C=) all atom
+hex.H6          69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HC_H6_146 high alkene H (H-C=) all atom
+hex.H7          49.2003    49.2003     3.4715    34.7899     2.4547     1.0079 # FFLD: HC_H7_146 high H-alpha in aldehyde & formamide & formic acid
+hex.H8          84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+hex.H9          84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+hex.O1         616.4387   616.4387    23.7692    435.888    16.8074     15.999 # FFLD: O_O2_281 high O: ketone, aldehyde, ester, acid
 
-DIHEDRAL 
-C804 C802 C801 H800 0.00000 1 0.00000 
-C804 C802 C801 H800 -4.00000 2 180.00000 
-C804 C802 C801 H800 0.00000 3 0.00000 
-C804 C802 C801 H800 0.00000 4 180.00000 
-C807 C804 C802 C801 -1.03000 1 0.00000 
-C807 C804 C802 C801 -0.15650 2 180.00000 
-C807 C804 C802 C801 0.15750 3 0.00000 
-C807 C804 C802 C801 0.00000 4 180.00000 
-O810 C807 C804 C802 0.00000 1 0.00000 
-O810 C807 C804 C802 0.00000 2 180.00000 
-O810 C807 C804 C802 0.00000 3 0.00000 
-O810 C807 C804 C802 0.00000 4 180.00000 
-C812 C803 C801 H800 0.00000 1 0.00000 
-C812 C803 C801 H800 7.00000 2 180.00000 
-C812 C803 C801 H800 0.00000 3 0.00000 
-C812 C803 C801 H800 0.00000 4 180.00000 
-H814 C812 C803 C801 0.00000 1 0.00000 
-H814 C812 C803 C801 0.00000 2 180.00000 
-H814 C812 C803 C801 -0.18600 3 0.00000 
-H814 C812 C803 C801 0.00000 4 180.00000 
-H814 C812 C803 H813 0.00000 1 0.00000 
-H814 C812 C803 H813 0.00000 2 180.00000 
-H814 C812 C803 H813 0.15900 3 0.00000 
-H814 C812 C803 H813 0.00000 4 180.00000 
-H816 C812 C803 H813 0.00000 1 0.00000 
-H816 C812 C803 H813 0.00000 2 180.00000 
-H816 C812 C803 H813 0.15900 3 0.00000 
-H816 C812 C803 H813 0.00000 4 180.00000 
-H816 C812 C803 C801 0.00000 1 0.00000 
-H816 C812 C803 C801 0.00000 2 180.00000 
-H816 C812 C803 C801 -0.18600 3 0.00000 
-H816 C812 C803 C801 0.00000 4 180.00000 
-C807 C804 C802 H805 0.00000 1 0.00000 
-C807 C804 C802 H805 0.00000 2 180.00000 
-C807 C804 C802 H805 -0.05000 3 0.00000 
-C807 C804 C802 H805 0.00000 4 180.00000 
-H805 C802 C801 C803 0.00000 1 0.00000 
-H805 C802 C801 C803 0.00000 2 180.00000 
-H805 C802 C801 C803 -0.18600 3 0.00000 
-H805 C802 C801 C803 0.00000 4 180.00000 
-H815 C812 C803 C801 0.00000 1 0.00000 
-H815 C812 C803 C801 0.00000 2 180.00000 
-H815 C812 C803 C801 -0.18600 3 0.00000 
-H815 C812 C803 C801 0.00000 4 180.00000 
-H806 C802 C801 H800 0.00000 1 0.00000 
-H806 C802 C801 H800 0.00000 2 180.00000 
-H806 C802 C801 H800 0.15900 3 0.00000 
-H806 C802 C801 H800 0.00000 4 180.00000 
-H809 C804 C802 C801 0.00000 1 0.00000 
-H809 C804 C802 C801 0.00000 2 180.00000 
-H809 C804 C802 C801 0.18300 3 0.00000 
-H809 C804 C802 C801 0.00000 4 180.00000 
-H813 C803 C801 C802 0.00000 1 0.00000 
-H813 C803 C801 C802 7.00000 2 180.00000 
-H813 C803 C801 C802 0.00000 3 0.00000 
-H813 C803 C801 C802 0.00000 4 180.00000 
-C812 C803 C801 C802 0.00000 1 0.00000 
-C812 C803 C801 C802 7.00000 2 180.00000 
-C812 C803 C801 C802 0.00000 3 0.00000 
-C812 C803 C801 C802 0.00000 4 180.00000 
-H815 C812 C803 H813 0.00000 1 0.00000 
-H815 C812 C803 H813 0.00000 2 180.00000 
-H815 C812 C803 H813 0.15900 3 0.00000 
-H815 C812 C803 H813 0.00000 4 180.00000 
-H811 C807 C804 C802 0.00000 1 0.00000 
-H811 C807 C804 C802 0.00000 2 180.00000 
-H811 C807 C804 C802 0.00000 3 0.00000 
-H811 C807 C804 C802 0.00000 4 180.00000 
-O810 C807 C804 H809 0.00000 1 0.00000 
-O810 C807 C804 H809 0.00000 2 180.00000 
-O810 C807 C804 H809 0.00000 3 0.00000 
-O810 C807 C804 H809 0.00000 4 180.00000 
-H805 C802 C801 H800 0.00000 1 0.00000 
-H805 C802 C801 H800 0.00000 2 180.00000 
-H805 C802 C801 H800 0.15900 3 0.00000 
-H805 C802 C801 H800 0.00000 4 180.00000 
-H808 C804 C802 H805 0.00000 1 0.00000 
-H808 C804 C802 H805 0.00000 2 180.00000 
-H808 C804 C802 H805 0.15000 3 0.00000 
-H808 C804 C802 H805 0.00000 4 180.00000 
-C807 C804 C802 H806 0.00000 1 0.00000 
-C807 C804 C802 H806 0.00000 2 180.00000 
-C807 C804 C802 H806 -0.05000 3 0.00000 
-C807 C804 C802 H806 0.00000 4 180.00000 
-H809 C804 C802 H806 0.00000 1 0.00000 
-H809 C804 C802 H806 0.00000 2 180.00000 
-H809 C804 C802 H806 0.15000 3 0.00000 
-H809 C804 C802 H806 0.00000 4 180.00000 
-O810 C807 C804 H808 0.00000 1 0.00000 
-O810 C807 C804 H808 0.00000 2 180.00000 
-O810 C807 C804 H808 0.00000 3 0.00000 
-O810 C807 C804 H808 0.00000 4 180.00000 
-C804 C802 C801 C803 0.17300 1 0.00000 
-C804 C802 C801 C803 0.20250 2 180.00000 
-C804 C802 C801 C803 -0.45200 3 0.00000 
-C804 C802 C801 C803 0.00000 4 180.00000 
-H808 C804 C802 C801 0.00000 1 0.00000 
-H808 C804 C802 C801 0.00000 2 180.00000 
-H808 C804 C802 C801 0.18300 3 0.00000 
-H808 C804 C802 C801 0.00000 4 180.00000 
-H811 C807 C804 H809 0.00000 1 0.00000 
-H811 C807 C804 H809 0.00000 2 180.00000 
-H811 C807 C804 H809 0.18000 3 0.00000 
-H811 C807 C804 H809 0.00000 4 180.00000 
-H806 C802 C801 C803 0.00000 1 0.00000 
-H806 C802 C801 C803 0.00000 2 180.00000 
-H806 C802 C801 C803 -0.18600 3 0.00000 
-H806 C802 C801 C803 0.00000 4 180.00000 
-H811 C807 C804 H808 0.00000 1 0.00000 
-H811 C807 C804 H808 0.00000 2 180.00000 
-H811 C807 C804 H808 0.18000 3 0.00000 
-H811 C807 C804 H808 0.00000 4 180.00000 
-H808 C804 C802 H806 0.00000 1 0.00000 
-H808 C804 C802 H806 0.00000 2 180.00000 
-H808 C804 C802 H806 0.15000 3 0.00000 
-H808 C804 C802 H806 0.00000 4 180.00000 
-H809 C804 C802 H805 0.00000 1 0.00000 
-H809 C804 C802 H805 0.00000 2 180.00000 
-H809 C804 C802 H805 0.15000 3 0.00000 
-H809 C804 C802 H805 0.00000 4 180.00000 
-H813 C803 C801 H800 0.00000 1 0.00000 
-H813 C803 C801 H800 7.00000 2 180.00000 
-H813 C803 C801 H800 0.00000 3 0.00000 
-H813 C803 C801 H800 0.00000 4 180.00000 
-X    X    X    X    0.00000 1 0.000000 ! WILD CARD FOR MISSING TORSION PARAMETERS
+[bonds]
+hex.C1       hex.C2            536.0      1.529 # FFLD: high 0 => 0 CT-CT ==> CT-CT
+hex.C1       hex.C3            634.0       1.51 # FFLD: high 0 => 0 CT-CM ==> CT-CM
+hex.C1       hex.H1            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+hex.C1       hex.H2            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+hex.C2       hex.C5            634.0      1.522 # FFLD: high 0 => 0 CT-CO4 ==> CT-CO4
+hex.C2       hex.H3            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+hex.C2       hex.H4            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+hex.C3       hex.C4           1098.0       1.34 # FFLD: high 0 => 0 CM-CM ==> CM-CM
+hex.C3       hex.H5            680.0       1.08 # FFLD: high 0 => 0 CM-HC ==> HC-CM
+hex.C4       hex.C6            634.0       1.51 # FFLD: high 0 => 0 CM-CT ==> CT-CM
+hex.C4       hex.H6            680.0       1.08 # FFLD: high 0 => 0 CM-HC ==> HC-CM
+hex.C5       hex.H7            680.0       1.09 # FFLD: high 0 => 0 CO4-HC ==> HC-CO4
+hex.C5       hex.O1           1140.0      1.229 # FFLD: high 0 => 0 O-CO4 ==> O-CO4
+hex.C6       hex.H10           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+hex.C6       hex.H8            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+hex.C6       hex.H9            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
 
-IMPROPER 
-C803 C801 H800 C802 2.50000 2 180.00000 
-H805 C802 C801 C804 0.00000 2 180.00000 
-H806 C802 C801 C804 0.00000 2 180.00000 
-H808 C804 C802 C807 0.00000 2 180.00000 
-H809 C804 C802 C807 0.00000 2 180.00000 
-H811 C807 C804 O810 10.50000 2 180.00000 
-H813 C803 C801 C812 2.50000 2 180.00000 
-H815 C812 C803 H814 0.00000 2 180.00000 
-H816 C812 C803 H814 0.00000 2 180.00000 
-X    X    X    X    0.00000 1 0.000000 ! WILD CARD FOR MISSING IMPROPER PARAMETERS 
+[angles]
+hex.C1       hex.C2       hex.C5            126.0      111.1 # FFLD: high 0 CT-CT-CO4 ==> CT-CT-CO4
+hex.C1       hex.C2       hex.H3             75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
+hex.C1       hex.C2       hex.H4             75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
+hex.C1       hex.C3       hex.C4            140.0      124.0 # FFLD: high 0 CT-CM-CM ==> CT-CM-CM
+hex.C1       hex.C3       hex.H5             70.0      117.0 # FFLD: high 0 CT-CM-HC ==> HC-CM-CT
+hex.C2       hex.C1       hex.C3            140.0    112.027 # FFLD: high 0 CT-CT-CM ==> CT-CT-CM
+hex.C2       hex.C1       hex.H1             75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
+hex.C2       hex.C1       hex.H2             75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
+hex.C2       hex.C5       hex.H7             70.0      115.0 # FFLD: high 0 CT-CO4-HC ==> HC-CO4-CT
+hex.C2       hex.C5       hex.O1            160.0      120.4 # FFLD: high 0 O-CO4-CT ==> O-CO4-CT
+hex.C3       hex.C1       hex.H1             70.0      109.5 # FFLD: high 0 CM-CT-HC ==> HC-CT-CM
+hex.C3       hex.C1       hex.H2             70.0      109.5 # FFLD: high 0 CM-CT-HC ==> HC-CT-CM
+hex.C3       hex.C4       hex.C6            140.0      124.0 # FFLD: high 0 CM-CM-CT ==> CT-CM-CM
+hex.C3       hex.C4       hex.H6             70.0      120.0 # FFLD: high 0 CM-CM-HC ==> HC-CM-CM
+hex.C4       hex.C3       hex.H5             70.0      120.0 # FFLD: high 0 CM-CM-HC ==> HC-CM-CM
+hex.C4       hex.C6       hex.H10            70.0      109.5 # FFLD: high 0 CM-CT-HC ==> HC-CT-CM
+hex.C4       hex.C6       hex.H8             70.0      109.5 # FFLD: high 0 CM-CT-HC ==> HC-CT-CM
+hex.C4       hex.C6       hex.H9             70.0      109.5 # FFLD: high 0 CM-CT-HC ==> HC-CT-CM
+hex.C5       hex.C2       hex.H3             70.0      109.5 # FFLD: high 0 CO4-CT-HC ==> HC-CT-CO4
+hex.C5       hex.C2       hex.H4             70.0      109.5 # FFLD: high 0 CO4-CT-HC ==> HC-CT-CO4
+hex.C6       hex.C4       hex.H6             70.0      117.0 # FFLD: high 0 CT-CM-HC ==> HC-CM-CT
+hex.H1       hex.C1       hex.H2             66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+hex.H10      hex.C6       hex.H8             66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+hex.H10      hex.C6       hex.H9             66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+hex.H3       hex.C2       hex.H4             66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+hex.H7       hex.C5       hex.O1             70.0      123.0 # FFLD: high 0 O-CO4-HC ==> O-CO4-HC
+hex.H8       hex.C6       hex.H9             66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
 
-NONBONDED nbxmod 5 atom cdiel switch vatom vdistance vswitch - 
-cutnb 14.0 ctofnb 12.0 ctonnb 11.5 eps 1.0 e14fac 0.5  geom
-H800 0.00 -0.030000 1.403078 0.00 -0.015000 1.403078 
-C801 0.00 -0.076000 1.992370 0.00 -0.038000 1.992370 
-C802 0.00 -0.066000 1.964309 0.00 -0.033000 1.964309 
-C803 0.00 -0.076000 1.992370 0.00 -0.038000 1.992370 
-C804 0.00 -0.066000 1.964309 0.00 -0.033000 1.964309 
-H805 0.00 -0.030000 1.403078 0.00 -0.015000 1.403078 
-H806 0.00 -0.030000 1.403078 0.00 -0.015000 1.403078 
-C807 0.00 -0.070000 1.992370 0.00 -0.035000 1.992370 
-H808 0.00 -0.030000 1.403078 0.00 -0.015000 1.403078 
-H809 0.00 -0.030000 1.403078 0.00 -0.015000 1.403078 
-O810 0.00 -0.210000 1.661244 0.00 -0.105000 1.661244 
-H811 0.00 -0.030000 1.403078 0.00 -0.015000 1.403078 
-C812 0.00 -0.066000 1.964309 0.00 -0.033000 1.964309 
-H813 0.00 -0.030000 1.403078 0.00 -0.015000 1.403078 
-H814 0.00 -0.030000 1.403078 0.00 -0.015000 1.403078 
-H815 0.00 -0.030000 1.403078 0.00 -0.015000 1.403078 
-H816 0.00 -0.030000 1.403078 0.00 -0.015000 1.403078 
+[torsions]
+hex.C1       hex.C2       hex.C5       hex.H7           0.7455   1.0        0.0   1.0 # FFLD: high 0 CT-CT-CO4-HC ==> CT-CT-C-HC
+hex.C1       hex.C2       hex.C5       hex.H7           -0.005   2.0      180.0   1.0 # FFLD: high 0 CT-CT-CO4-HC ==> CT-CT-C-HC
+hex.C1       hex.C2       hex.C5       hex.O1           0.3015   2.0      180.0   1.0 # FFLD: high 0 CT-CT-CO4-O ==> ??-CT-C-O
+hex.C1       hex.C3       hex.C4       hex.C6              7.0   2.0      180.0   1.0 # FFLD: high 0 CT-CM-CM-CT ==> ??-CM-CM-??
+hex.C1       hex.C3       hex.C4       hex.H6              7.0   2.0      180.0   1.0 # FFLD: high 0 CT-CM-CM-HC ==> ??-CM-CM-??
+hex.C2       hex.C1       hex.C3       hex.C4           0.0985   1.0        0.0   1.0 # FFLD: high 0 CT-CT-CM-CM ==> CT-CT-CM-CM
+hex.C2       hex.C1       hex.C3       hex.C4           0.1525   2.0      180.0   1.0 # FFLD: high 0 CT-CT-CM-CM ==> CT-CT-CM-CM
+hex.C2       hex.C1       hex.C3       hex.C4          -0.5065   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CM-CM ==> CT-CT-CM-CM
+hex.C2       hex.C1       hex.C3       hex.H5              0.0   1.0        0.0   1.0 # FFLD: high 0 CT-CT-CM-HC ==> ??-CT-CM-HC
+hex.C3       hex.C1       hex.C2       hex.C5           -0.988   1.0        0.0   1.0 # FFLD: high 0 CM-CT-CT-CO4 ==> CM-CT-CT-C
+hex.C3       hex.C1       hex.C2       hex.C5            0.488   2.0      180.0   1.0 # FFLD: high 0 CM-CT-CT-CO4 ==> CM-CT-CT-C
+hex.C3       hex.C1       hex.C2       hex.C5            0.768   3.0        0.0   1.0 # FFLD: high 0 CM-CT-CT-CO4 ==> CM-CT-CT-C
+hex.C3       hex.C1       hex.C2       hex.H3             0.15   3.0        0.0   1.0 # FFLD: high 0 CM-CT-CT-HC ==> HC-CT-CT-??
+hex.C3       hex.C1       hex.C2       hex.H4             0.15   3.0        0.0   1.0 # FFLD: high 0 CM-CT-CT-HC ==> HC-CT-CT-??
+hex.C3       hex.C4       hex.C6       hex.H10             0.0   1.0        0.0   1.0 # FFLD: high 0 CM-CM-CT-HC ==> HC-CT-CM-CM
+hex.C3       hex.C4       hex.C6       hex.H8              0.0   1.0        0.0   1.0 # FFLD: high 0 CM-CM-CT-HC ==> HC-CT-CM-CM
+hex.C3       hex.C4       hex.C6       hex.H9              0.0   1.0        0.0   1.0 # FFLD: high 0 CM-CM-CT-HC ==> HC-CT-CM-CM
+hex.C4       hex.C3       hex.C1       hex.H1              0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT-CM-CM ==> HC-CT-CM-CM
+hex.C4       hex.C3       hex.C1       hex.H2              0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT-CM-CM ==> HC-CT-CM-CM
+hex.C5       hex.C2       hex.C1       hex.H1          -0.1125   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-CO4 ==> HC-CT-CT-C
+hex.C5       hex.C2       hex.C1       hex.H2          -0.1125   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-CO4 ==> HC-CT-CT-C
+hex.C6       hex.C4       hex.C3       hex.H5              7.0   2.0      180.0   1.0 # FFLD: high 0 HC-CM-CM-CT ==> ??-CM-CM-??
+hex.H1       hex.C1       hex.C2       hex.H3             0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
+hex.H1       hex.C1       hex.C2       hex.H4             0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
+hex.H1       hex.C1       hex.C3       hex.H5            0.331   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CM-HC ==> HC-CT-CM-HC
+hex.H10      hex.C6       hex.C4       hex.H6            0.331   3.0        0.0   1.0 # FFLD: high 0 HC-CM-CT-HC ==> HC-CT-CM-HC
+hex.H2       hex.C1       hex.C2       hex.H3             0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
+hex.H2       hex.C1       hex.C2       hex.H4             0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
+hex.H2       hex.C1       hex.C3       hex.H5            0.331   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CM-HC ==> HC-CT-CM-HC
+hex.H3       hex.C2       hex.C5       hex.H7              0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT-CO4-HC ==> HC-CT-C-??
+hex.H3       hex.C2       hex.C5       hex.O1              0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT-CO4-O ==> HC-CT-C-O
+hex.H4       hex.C2       hex.C5       hex.H7              0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT-CO4-HC ==> HC-CT-C-??
+hex.H4       hex.C2       hex.C5       hex.O1              0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT-CO4-O ==> HC-CT-C-O
+hex.H5       hex.C3       hex.C4       hex.H6              7.0   2.0      180.0   1.0 # FFLD: high 0 HC-CM-CM-HC ==> ??-CM-CM-??
+hex.H6       hex.C4       hex.C6       hex.H8            0.331   3.0        0.0   1.0 # FFLD: high 0 HC-CM-CT-HC ==> HC-CT-CM-HC
+hex.H6       hex.C4       hex.C6       hex.H9            0.331   3.0        0.0   1.0 # FFLD: high 0 HC-CM-CT-HC ==> HC-CT-CM-HC
+
+[impropers]
+hex.C1       hex.C3       hex.C4       hex.H5             15.0      180.0 # FFLD: high C= double bonded
+hex.C2       hex.C5       hex.H7       hex.O1             10.5      180.0 # FFLD: high carbonyl and analogs
+hex.C3       hex.C4       hex.C6       hex.H6             15.0      180.0 # FFLD: high C= double bonded
+
