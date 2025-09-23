@@ -1,345 +1,187 @@
-! LigParGen generated PRM file for NAMD/CHARMM 
+# Generated with q_ffld2q.py, version 0.7.0
+# Date: Tue Sep 23 13:09:53 2025
+#
+[options]
 
-BOND 
-O801 H800 553.000 0.945 
-C802 O801 450.000 1.364 
-C803 C802 317.000 1.522 
-O804 C802 570.000 1.229 
-C805 C803 268.000 1.529 
-N806 C803 382.000 1.448 
-H807 C803 340.000 1.090 
-C808 C805 317.000 1.510 
-H809 C805 340.000 1.090 
-H810 C805 340.000 1.090 
-C811 C808 469.000 1.400 
-C812 C808 469.000 1.400 
-H813 C811 367.000 1.080 
-C814 C811 469.000 1.400 
-H815 C812 367.000 1.080 
-C816 C812 469.000 1.400 
-H817 C814 367.000 1.080 
-C818 C814 469.000 1.400 
-H819 C816 367.000 1.080 
-N820 C818 481.000 1.340 
-H821 N820 434.000 1.010 
-H822 N820 434.000 1.010 
-H823 N806 434.000 1.010 
-H824 N806 434.000 1.010 
-C818 C816 469.000 1.400 
 
-ANGLE 
-H800 O801 C802 35.000 113.000 
-O801 C802 C803 70.000 108.000 
-O801 C802 O804 80.000 121.000 
-C802 C803 C805 63.000 111.100 
-C802 C803 N806 80.000 111.200 
-C802 C803 H807 35.000 109.500 
-C803 C805 C808 63.000 114.000 
-C803 C805 H809 37.500 110.700 
-C803 C805 H810 37.500 110.700 
-C805 C808 C811 70.000 120.000 
-C805 C808 C812 70.000 120.000 
-C808 C811 H813 35.000 120.000 
-C808 C811 C814 63.000 120.000 
-C808 C812 H815 35.000 120.000 
-C808 C812 C816 63.000 120.000 
-C811 C814 H817 35.000 120.000 
-C811 C814 C818 63.000 120.000 
-C812 C816 H819 35.000 120.000 
-C814 C818 N820 70.000 120.000 
-C818 N820 H821 35.000 116.000 
-C818 N820 H822 35.000 116.000 
-C803 N806 H823 35.000 109.500 
-C803 N806 H824 35.000 109.500 
-H817 C814 C818 35.000 120.000 
-N806 C803 H807 35.000 109.500 
-C811 C808 C812 63.000 120.000 
-H821 N820 H822 43.600 106.400 
-C805 C803 N806 56.200 109.470 
-H809 C805 H810 33.000 107.800 
-C803 C802 O804 80.000 120.400 
-H813 C811 C814 35.000 120.000 
-H815 C812 C816 35.000 120.000 
-C805 C803 H807 37.500 110.700 
-C808 C805 H809 35.000 109.500 
-C808 C805 H810 35.000 109.500 
-C812 C816 C818 63.000 120.000 
-C814 C818 C816 63.000 120.000 
-H823 N806 H824 43.600 106.400 
-C818 C816 H819 35.000 120.000 
-C816 C818 N820 70.000 120.000 
+[atom_types]
+paf.C         1802.2385  1802.2385    34.1758  1274.3751    24.1659     12.011 # FFLD: C_C2_267 high CO in CC(=O)OH carboxylic acid
+paf.CA          944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT1_C1_224 high C alpha
+paf.CB          944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
+paf.CD1       1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: CA_C4_145 high Benzene C - 12 site JACS,112,4768-90
+paf.CD2       1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: CA_C4_145 high Benzene C - 12 site JACS,112,4768-90
+paf.CE1       1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: CA_C4_145 high Benzene C - 12 site JACS,112,4768-90
+paf.CE2       1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: CA_C4_145 high Benzene C - 12 site JACS,112,4768-90
+paf.CG        1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: CA_C4_145 high Benzene C - 12 site JACS,112,4768-90
+paf.CZ        1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: CA_C4_145 high Benzene C - 12 site JACS,112,4768-90
+paf.HA           59.802     59.802     3.8273    42.2864     2.7063     1.0079 # FFLD: HC_H2_140 high H(C)-N in glycin
+paf.HB1         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+paf.HB2         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+paf.HD1         69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HA_H6_146 high Benzene H - 12 site JACS,112,4768-90
+paf.HD2         69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HA_H6_146 high Benzene H - 12 site JACS,112,4768-90
+paf.HE1         69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HA_H6_146 high Benzene H - 12 site JACS,112,4768-90
+paf.HE2         69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HA_H6_146 high Benzene H - 12 site JACS,112,4768-90
+paf.HN1          0.0054     0.0054     0.0433     0.0038     0.0306     1.0079 # FFLD: H_H8_240 high H on neutral N
+paf.HN2          0.0054     0.0054     0.0433     0.0038     0.0306     1.0079 # FFLD: H_H8_240 high H on neutral N
+paf.HO           0.0054     0.0054     0.0433     0.0038     0.0306     1.0079 # FFLD: HO_H8_240 high H(O): alcohols
+paf.HZ1          0.0054     0.0054     0.0433     0.0038     0.0306     1.0079 # FFLD: H_H8_240 high H on neutral N
+paf.HZ2          0.0054     0.0054     0.0433     0.0038     0.0306     1.0079 # FFLD: H_H8_240 high H on neutral N
+paf.N         1064.9718  1064.9718    29.6344   753.0488    20.9547     14.007 # FFLD: NT_N4_900 high N primary aliphatic amines
+paf.NZ        1064.9718  1064.9718    29.6344   753.0488    20.9547     14.007 # FFLD: NE_N4_6003 high N attached to 6-membered aromatic ring
+paf.O          601.1488   601.1488    22.2648   425.0764    15.7436     15.999 # FFLD: OH_O4_268 high OH in CC(=O)OH R in RC(=O)OH is
+paf.OXT        616.4387   616.4387    23.7692    435.888    16.8074     15.999 # FFLD: O_O2_269 high Oc in CC(=O)OH neutral; use 135-140
 
-DIHEDRAL 
-C803 C802 O801 H800 0.75000 1 0.00000 
-C803 C802 O801 H800 2.75000 2 180.00000 
-C803 C802 O801 H800 0.00000 3 0.00000 
-C803 C802 O801 H800 0.00000 4 180.00000 
-C805 C803 C802 O801 0.50000 1 0.00000 
-C805 C803 C802 O801 0.27300 2 180.00000 
-C805 C803 C802 O801 0.22500 3 0.00000 
-C805 C803 C802 O801 0.00000 4 180.00000 
-C808 C805 C803 C802 -0.84850 1 0.00000 
-C808 C805 C803 C802 -0.22800 2 180.00000 
-C808 C805 C803 C802 0.29250 3 0.00000 
-C808 C805 C803 C802 0.00000 4 180.00000 
-C811 C808 C805 C803 0.00000 1 0.00000 
-C811 C808 C805 C803 0.00000 2 180.00000 
-C811 C808 C805 C803 0.00000 3 0.00000 
-C811 C808 C805 C803 0.00000 4 180.00000 
-H813 C811 C808 C805 0.00000 1 0.00000 
-H813 C811 C808 C805 3.62500 2 180.00000 
-H813 C811 C808 C805 0.00000 3 0.00000 
-H813 C811 C808 C805 0.00000 4 180.00000 
-H815 C812 C808 C805 0.00000 1 0.00000 
-H815 C812 C808 C805 3.62500 2 180.00000 
-H815 C812 C808 C805 0.00000 3 0.00000 
-H815 C812 C808 C805 0.00000 4 180.00000 
-H817 C814 C811 C808 0.00000 1 0.00000 
-H817 C814 C811 C808 3.62500 2 180.00000 
-H817 C814 C811 C808 0.00000 3 0.00000 
-H817 C814 C811 C808 0.00000 4 180.00000 
-H821 N820 C818 C814 0.00000 1 0.00000 
-H821 N820 C818 C814 1.01500 2 180.00000 
-H821 N820 C818 C814 0.00000 3 0.00000 
-H821 N820 C818 C814 0.00000 4 180.00000 
-H823 N806 C803 C802 -0.09500 1 0.00000 
-H823 N806 C803 C802 -0.20850 2 180.00000 
-H823 N806 C803 C802 0.20900 3 0.00000 
-H823 N806 C803 C802 0.00000 4 180.00000 
-C814 C818 C816 C812 0.00000 1 0.00000 
-C814 C818 C816 C812 3.62500 2 180.00000 
-C814 C818 C816 C812 0.00000 3 0.00000 
-C814 C818 C816 C812 0.00000 4 180.00000 
-N806 C803 C802 O804 0.00000 1 0.00000 
-N806 C803 C802 O804 0.00000 2 180.00000 
-N806 C803 C802 O804 0.00000 3 0.00000 
-N806 C803 C802 O804 0.00000 4 180.00000 
-C812 C808 C805 H809 0.00000 1 0.00000 
-C812 C808 C805 H809 0.00000 2 180.00000 
-C812 C808 C805 H809 0.00000 3 0.00000 
-C812 C808 C805 H809 0.00000 4 180.00000 
-C811 C808 C805 H809 0.00000 1 0.00000 
-C811 C808 C805 H809 0.00000 2 180.00000 
-C811 C808 C805 H809 0.00000 3 0.00000 
-C811 C808 C805 H809 0.00000 4 180.00000 
-H813 C811 C808 C812 0.00000 1 0.00000 
-H813 C811 C808 C812 3.62500 2 180.00000 
-H813 C811 C808 C812 0.00000 3 0.00000 
-H813 C811 C808 C812 0.00000 4 180.00000 
-C818 C814 C811 C808 0.00000 1 0.00000 
-C818 C814 C811 C808 3.62500 2 180.00000 
-C818 C814 C811 C808 0.00000 3 0.00000 
-C818 C814 C811 C808 0.00000 4 180.00000 
-O804 C802 O801 H800 0.00000 1 0.00000 
-O804 C802 O801 H800 2.75000 2 180.00000 
-O804 C802 O801 H800 0.00000 3 0.00000 
-O804 C802 O801 H800 0.00000 4 180.00000 
-C816 C818 C814 C811 0.00000 1 0.00000 
-C816 C818 C814 C811 3.62500 2 180.00000 
-C816 C818 C814 C811 0.00000 3 0.00000 
-C816 C818 C814 C811 0.00000 4 180.00000 
-C814 C811 C808 C805 0.00000 1 0.00000 
-C814 C811 C808 C805 3.62500 2 180.00000 
-C814 C811 C808 C805 0.00000 3 0.00000 
-C814 C811 C808 C805 0.00000 4 180.00000 
-H822 N820 C818 C814 0.00000 1 0.00000 
-H822 N820 C818 C814 1.01500 2 180.00000 
-H822 N820 C818 C814 0.00000 3 0.00000 
-H822 N820 C818 C814 0.00000 4 180.00000 
-N820 C818 C814 C811 0.00000 1 0.00000 
-N820 C818 C814 C811 3.62500 2 180.00000 
-N820 C818 C814 C811 0.00000 3 0.00000 
-N820 C818 C814 C811 0.00000 4 180.00000 
-H807 C803 C802 O801 0.00000 1 0.00000 
-H807 C803 C802 O801 0.00000 2 180.00000 
-H807 C803 C802 O801 0.00000 3 0.00000 
-H807 C803 C802 O801 0.00000 4 180.00000 
-H810 C805 C803 N806 -0.50650 1 0.00000 
-H810 C805 C803 N806 -0.35450 2 180.00000 
-H810 C805 C803 N806 0.23650 3 0.00000 
-H810 C805 C803 N806 0.00000 4 180.00000 
-H809 C805 C803 H807 0.00000 1 0.00000 
-H809 C805 C803 H807 0.00000 2 180.00000 
-H809 C805 C803 H807 0.15000 3 0.00000 
-H809 C805 C803 H807 0.00000 4 180.00000 
-H819 C816 C812 H815 0.00000 1 0.00000 
-H819 C816 C812 H815 3.62500 2 180.00000 
-H819 C816 C812 H815 0.00000 3 0.00000 
-H819 C816 C812 H815 0.00000 4 180.00000 
-H807 C803 C802 O804 0.00000 1 0.00000 
-H807 C803 C802 O804 0.00000 2 180.00000 
-H807 C803 C802 O804 0.00000 3 0.00000 
-H807 C803 C802 O804 0.00000 4 180.00000 
-H809 C805 C803 C802 0.00000 1 0.00000 
-H809 C805 C803 C802 0.00000 2 180.00000 
-H809 C805 C803 C802 -0.05000 3 0.00000 
-H809 C805 C803 C802 0.00000 4 180.00000 
-N820 C818 C816 C812 0.00000 1 0.00000 
-N820 C818 C816 C812 3.62500 2 180.00000 
-N820 C818 C816 C812 0.00000 3 0.00000 
-N820 C818 C816 C812 0.00000 4 180.00000 
-C818 C814 C811 H813 0.00000 1 0.00000 
-C818 C814 C811 H813 3.62500 2 180.00000 
-C818 C814 C811 H813 0.00000 3 0.00000 
-C818 C814 C811 H813 0.00000 4 180.00000 
-C812 C808 C805 H810 0.00000 1 0.00000 
-C812 C808 C805 H810 0.00000 2 180.00000 
-C812 C808 C805 H810 0.00000 3 0.00000 
-C812 C808 C805 H810 0.00000 4 180.00000 
-C816 C812 C808 C805 0.00000 1 0.00000 
-C816 C812 C808 C805 3.62500 2 180.00000 
-C816 C812 C808 C805 0.00000 3 0.00000 
-C816 C812 C808 C805 0.00000 4 180.00000 
-H824 N806 C803 C805 -0.09500 1 0.00000 
-H824 N806 C803 C805 -0.20850 2 180.00000 
-H824 N806 C803 C805 0.20900 3 0.00000 
-H824 N806 C803 C805 0.00000 4 180.00000 
-H815 C812 C808 C811 0.00000 1 0.00000 
-H815 C812 C808 C811 3.62500 2 180.00000 
-H815 C812 C808 C811 0.00000 3 0.00000 
-H815 C812 C808 C811 0.00000 4 180.00000 
-H824 N806 C803 H807 0.00000 1 0.00000 
-H824 N806 C803 H807 0.00000 2 180.00000 
-H824 N806 C803 H807 0.20000 3 0.00000 
-H824 N806 C803 H807 0.00000 4 180.00000 
-H819 C816 C812 C808 0.00000 1 0.00000 
-H819 C816 C812 C808 3.62500 2 180.00000 
-H819 C816 C812 C808 0.00000 3 0.00000 
-H819 C816 C812 C808 0.00000 4 180.00000 
-C812 C808 C805 C803 0.00000 1 0.00000 
-C812 C808 C805 C803 0.00000 2 180.00000 
-C812 C808 C805 C803 0.00000 3 0.00000 
-C812 C808 C805 C803 0.00000 4 180.00000 
-H823 N806 C803 C805 -0.09500 1 0.00000 
-H823 N806 C803 C805 -0.20850 2 180.00000 
-H823 N806 C803 C805 0.20900 3 0.00000 
-H823 N806 C803 C805 0.00000 4 180.00000 
-C808 C805 C803 H807 0.00000 1 0.00000 
-C808 C805 C803 H807 0.00000 2 180.00000 
-C808 C805 C803 H807 0.23100 3 0.00000 
-C808 C805 C803 H807 0.00000 4 180.00000 
-C808 C805 C803 N806 -0.40000 1 0.00000 
-C808 C805 C803 N806 0.00000 2 180.00000 
-C808 C805 C803 N806 0.00000 3 0.00000 
-C808 C805 C803 N806 0.00000 4 180.00000 
-H809 C805 C803 N806 -0.50650 1 0.00000 
-H809 C805 C803 N806 -0.35450 2 180.00000 
-H809 C805 C803 N806 0.23650 3 0.00000 
-H809 C805 C803 N806 0.00000 4 180.00000 
-H819 C816 C818 C814 0.00000 1 0.00000 
-H819 C816 C818 C814 3.62500 2 180.00000 
-H819 C816 C818 C814 0.00000 3 0.00000 
-H819 C816 C818 C814 0.00000 4 180.00000 
-H823 N806 C803 H807 0.00000 1 0.00000 
-H823 N806 C803 H807 0.00000 2 180.00000 
-H823 N806 C803 H807 0.20000 3 0.00000 
-H823 N806 C803 H807 0.00000 4 180.00000 
-H810 C805 C803 H807 0.00000 1 0.00000 
-H810 C805 C803 H807 0.00000 2 180.00000 
-H810 C805 C803 H807 0.15000 3 0.00000 
-H810 C805 C803 H807 0.00000 4 180.00000 
-C818 C816 C812 H815 0.00000 1 0.00000 
-C818 C816 C812 H815 3.62500 2 180.00000 
-C818 C816 C812 H815 0.00000 3 0.00000 
-C818 C816 C812 H815 0.00000 4 180.00000 
-N820 C818 C816 H819 0.00000 1 0.00000 
-N820 C818 C816 H819 3.62500 2 180.00000 
-N820 C818 C816 H819 0.00000 3 0.00000 
-N820 C818 C816 H819 0.00000 4 180.00000 
-H817 C814 C818 C816 0.00000 1 0.00000 
-H817 C814 C818 C816 3.62500 2 180.00000 
-H817 C814 C818 C816 0.00000 3 0.00000 
-H817 C814 C818 C816 0.00000 4 180.00000 
-H822 N820 C818 C816 0.00000 1 0.00000 
-H822 N820 C818 C816 1.01500 2 180.00000 
-H822 N820 C818 C816 0.00000 3 0.00000 
-H822 N820 C818 C816 0.00000 4 180.00000 
-N806 C803 C802 O801 2.63000 1 0.00000 
-N806 C803 C802 O801 0.41000 2 180.00000 
-N806 C803 C802 O801 0.00000 3 0.00000 
-N806 C803 C802 O801 0.00000 4 180.00000 
-C811 C808 C805 H810 0.00000 1 0.00000 
-C811 C808 C805 H810 0.00000 2 180.00000 
-C811 C808 C805 H810 0.00000 3 0.00000 
-C811 C808 C805 H810 0.00000 4 180.00000 
-H821 N820 C818 C816 0.00000 1 0.00000 
-H821 N820 C818 C816 1.01500 2 180.00000 
-H821 N820 C818 C816 0.00000 3 0.00000 
-H821 N820 C818 C816 0.00000 4 180.00000 
-C805 C803 C802 O804 0.00000 1 0.00000 
-C805 C803 C802 O804 0.00000 2 180.00000 
-C805 C803 C802 O804 0.00000 3 0.00000 
-C805 C803 C802 O804 0.00000 4 180.00000 
-C816 C812 C808 C811 0.00000 1 0.00000 
-C816 C812 C808 C811 3.62500 2 180.00000 
-C816 C812 C808 C811 0.00000 3 0.00000 
-C816 C812 C808 C811 0.00000 4 180.00000 
-N820 C818 C814 H817 0.00000 1 0.00000 
-N820 C818 C814 H817 3.62500 2 180.00000 
-N820 C818 C814 H817 0.00000 3 0.00000 
-N820 C818 C814 H817 0.00000 4 180.00000 
-C818 C816 C812 C808 0.00000 1 0.00000 
-C818 C816 C812 C808 3.62500 2 180.00000 
-C818 C816 C812 C808 0.00000 3 0.00000 
-C818 C816 C812 C808 0.00000 4 180.00000 
-H810 C805 C803 C802 0.00000 1 0.00000 
-H810 C805 C803 C802 0.00000 2 180.00000 
-H810 C805 C803 C802 -0.05000 3 0.00000 
-H810 C805 C803 C802 0.00000 4 180.00000 
-H817 C814 C811 H813 0.00000 1 0.00000 
-H817 C814 C811 H813 3.62500 2 180.00000 
-H817 C814 C811 H813 0.00000 3 0.00000 
-H817 C814 C811 H813 0.00000 4 180.00000 
-C814 C811 C808 C812 0.00000 1 0.00000 
-C814 C811 C808 C812 3.62500 2 180.00000 
-C814 C811 C808 C812 0.00000 3 0.00000 
-C814 C811 C808 C812 0.00000 4 180.00000 
-H824 N806 C803 C802 -0.09500 1 0.00000 
-H824 N806 C803 C802 -0.20850 2 180.00000 
-H824 N806 C803 C802 0.20900 3 0.00000 
-H824 N806 C803 C802 0.00000 4 180.00000 
-X    X    X    X    0.00000 1 0.000000 ! WILD CARD FOR MISSING TORSION PARAMETERS
+[bonds]
+paf.C        paf.CA            634.0      1.522 # FFLD: high 0 => 0 CT1-C ==> CT1-C
+paf.C        paf.O             900.0      1.364 # FFLD: high 0 => 0 OH-C ==> OH-C
+paf.C        paf.OXT          1140.0      1.229 # FFLD: high 0 => 0 O-C ==> O-C
+paf.CA       paf.CB            536.0      1.529 # FFLD: high 0 => 0 CT-CT1 ==> CT1-CT
+paf.CA       paf.HA            680.0       1.09 # FFLD: high 0 => 0 CT1-HC ==> HC-CT1
+paf.CA       paf.N             610.0      1.457 # FFLD: high 0 => 0 NT-CT1 ==> NT-CT1
+paf.CB       paf.CG            634.0       1.51 # FFLD: high 0 => 0 CT-CA ==> CT-CA
+paf.CB       paf.HB1           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+paf.CB       paf.HB2           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+paf.CD1      paf.CE1           938.0        1.4 # FFLD: high 0 => 0 CA-CA ==> CA-CA
+paf.CD1      paf.CG            938.0        1.4 # FFLD: high 0 => 0 CA-CA ==> CA-CA
+paf.CD1      paf.HD1           734.0       1.08 # FFLD: high 0 => 0 CA-HA ==> HA-CA
+paf.CD2      paf.CE2           938.0        1.4 # FFLD: high 0 => 0 CA-CA ==> CA-CA
+paf.CD2      paf.CG            938.0        1.4 # FFLD: high 0 => 0 CA-CA ==> CA-CA
+paf.CD2      paf.HD2           734.0       1.08 # FFLD: high 0 => 0 CA-HA ==> HA-CA
+paf.CE1      paf.CZ            938.0        1.4 # FFLD: high 0 => 0 CA-CA ==> CA-CA
+paf.CE1      paf.HE1           734.0       1.08 # FFLD: high 0 => 0 CA-HA ==> HA-CA
+paf.CE2      paf.CZ            938.0        1.4 # FFLD: high 0 => 0 CA-CA ==> CA-CA
+paf.CE2      paf.HE2           734.0       1.08 # FFLD: high 0 => 0 CA-HA ==> HA-CA
+paf.CZ       paf.NZ            962.0      1.393 # FFLD: high 0 => 0 NE-CA ==> NE-CA
+paf.HN1      paf.N             868.0       1.01 # FFLD: high 0 => 0 NT-H ==> NT-H
+paf.HN2      paf.N             868.0       1.01 # FFLD: high 0 => 0 NT-H ==> NT-H
+paf.HO       paf.O            1106.0      0.945 # FFLD: high 0 => 0 OH-HO ==> OH-HO
+paf.HZ1      paf.NZ            868.0       1.01 # FFLD: high 0 => 0 NE-H ==> NE-H
+paf.HZ2      paf.NZ            868.0       1.01 # FFLD: high 0 => 0 NE-H ==> NE-H
 
-IMPROPER 
-O804 C802 O801 C803 10.50000 2 180.00000 
-N806 C803 C802 C805 0.00000 2 180.00000 
-H807 C803 C802 C805 0.00000 2 180.00000 
-H809 C805 C803 C808 0.00000 2 180.00000 
-H810 C805 C803 C808 0.00000 2 180.00000 
-C812 C808 C805 C811 2.50000 2 180.00000 
-C814 C811 C808 H813 2.50000 2 180.00000 
-C816 C812 C808 H815 2.50000 2 180.00000 
-C818 C814 C811 H817 2.50000 2 180.00000 
-H819 C816 C812 C818 2.50000 2 180.00000 
-N820 C818 C814 C816 2.50000 2 180.00000 
-H822 N820 C818 H821 0.00000 2 180.00000 
-H824 N806 C803 H823 0.00000 2 180.00000 
-X    X    X    X    0.00000 1 0.000000 ! WILD CARD FOR MISSING IMPROPER PARAMETERS 
+[angles]
+paf.C        paf.CA       paf.CB            126.0      111.1 # FFLD: high 0 CT-CT1-C ==> CT-CT1-C
+paf.C        paf.CA       paf.HA             70.0      109.5 # FFLD: high 0 C-CT1-HC ==> HC-CT1-C
+paf.C        paf.CA       paf.N             150.0     111.54 # FFLD: high 0 NT-CT1-C ==> NT-CT1-C
+paf.C        paf.O        paf.HO             70.0      113.0 # FFLD: high 0 C-OH-HO ==> HO-OH-C
+paf.CA       paf.C        paf.O             160.0    116.875 # FFLD: high 0 OH-C-CT1 ==> OH-C-CT1
+paf.CA       paf.C        paf.OXT           160.0      120.4 # FFLD: high 0 O-C-CT1 ==> O-C-CT1
+paf.CA       paf.CB       paf.CG            126.0      114.0 # FFLD: high 0 CT1-CT-CA ==> CT1-CT-CA
+paf.CA       paf.CB       paf.HB1            75.0      110.7 # FFLD: high 0 CT1-CT-HC ==> HC-CT-CT1
+paf.CA       paf.CB       paf.HB2            75.0      110.7 # FFLD: high 0 CT1-CT-HC ==> HC-CT-CT1
+paf.CA       paf.N        paf.HN1           100.0    111.553 # FFLD: high 0 CT1-NT-H ==> H-NT-CT1
+paf.CA       paf.N        paf.HN2           100.0    111.553 # FFLD: high 0 CT1-NT-H ==> H-NT-CT1
+paf.CB       paf.CA       paf.HA             75.0      110.7 # FFLD: high 0 CT-CT1-HC ==> HC-CT1-CT
+paf.CB       paf.CA       paf.N             160.0     111.22 # FFLD: high 0 NT-CT1-CT ==> NT-CT1-CT
+paf.CB       paf.CG       paf.CD1           140.0      120.0 # FFLD: high 0 CT-CA-CA ==> CT-CA-CA
+paf.CB       paf.CG       paf.CD2           140.0      120.0 # FFLD: high 0 CT-CA-CA ==> CT-CA-CA
+paf.CD1      paf.CE1      paf.CZ            126.0      120.0 # FFLD: high 0 CA-CA-CA ==> CA-CA-CA
+paf.CD1      paf.CE1      paf.HE1            70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
+paf.CD1      paf.CG       paf.CD2           126.0      120.0 # FFLD: high 0 CA-CA-CA ==> CA-CA-CA
+paf.CD2      paf.CE2      paf.CZ            126.0      120.0 # FFLD: high 0 CA-CA-CA ==> CA-CA-CA
+paf.CD2      paf.CE2      paf.HE2            70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
+paf.CE1      paf.CD1      paf.CG            126.0      120.0 # FFLD: high 0 CA-CA-CA ==> CA-CA-CA
+paf.CE1      paf.CD1      paf.HD1            70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
+paf.CE1      paf.CZ       paf.CE2           126.0      120.0 # FFLD: high 0 CA-CA-CA ==> CA-CA-CA
+paf.CE1      paf.CZ       paf.NZ            140.0      120.1 # FFLD: high 0 NE-CA-CA ==> NE-CA-CA
+paf.CE2      paf.CD2      paf.CG            126.0      120.0 # FFLD: high 0 CA-CA-CA ==> CA-CA-CA
+paf.CE2      paf.CD2      paf.HD2            70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
+paf.CE2      paf.CZ       paf.NZ            140.0      120.1 # FFLD: high 0 NE-CA-CA ==> NE-CA-CA
+paf.CG       paf.CB       paf.HB1            70.0      109.5 # FFLD: high 0 CA-CT-HC ==> HC-CT-CA
+paf.CG       paf.CB       paf.HB2            70.0      109.5 # FFLD: high 0 CA-CT-HC ==> HC-CT-CA
+paf.CG       paf.CD1      paf.HD1            70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
+paf.CG       paf.CD2      paf.HD2            70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
+paf.CZ       paf.CE1      paf.HE1            70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
+paf.CZ       paf.CE2      paf.HE2            70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
+paf.CZ       paf.NZ       paf.HZ1            70.0      113.5 # FFLD: high 0 CA-NE-H ==> H-NE-CA
+paf.CZ       paf.NZ       paf.HZ2            70.0      113.5 # FFLD: high 0 CA-NE-H ==> H-NE-CA
+paf.HA       paf.CA       paf.N             100.0     109.55 # FFLD: high 0 NT-CT1-HC ==> NT-CT1-HC
+paf.HB1      paf.CB       paf.HB2            66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+paf.HN1      paf.N        paf.HN2            87.2      106.4 # FFLD: high 0 H-NT-H ==> H-NT-H
+paf.HZ1      paf.NZ       paf.HZ2            70.0      109.0 # FFLD: high 0 H-NE-H ==> H-NE-H
+paf.O        paf.C        paf.OXT           200.0     123.32 # FFLD: high 0 OH-C-O ==> OH-C-O
 
-NONBONDED nbxmod 5 atom cdiel switch vatom vdistance vswitch - 
-cutnb 14.0 ctofnb 12.0 ctonnb 11.5 eps 1.0 e14fac 0.5  geom
-H800 0.00 -0.000000 0.000000 0.00 -0.000000 0.000000 
-O801 0.00 -0.170000 1.751041 0.00 -0.085000 1.751041 
-C802 0.00 -0.070000 1.992370 0.00 -0.035000 1.992370 
-C803 0.00 -0.066000 1.964309 0.00 -0.033000 1.964309 
-O804 0.00 -0.210000 1.661244 0.00 -0.105000 1.661244 
-C805 0.00 -0.066000 1.964309 0.00 -0.033000 1.964309 
-N806 0.00 -0.170000 1.852062 0.00 -0.085000 1.852062 
-H807 0.00 -0.030000 1.403078 0.00 -0.015000 1.403078 
-C808 0.00 -0.070000 1.992370 0.00 -0.035000 1.992370 
-H809 0.00 -0.030000 1.403078 0.00 -0.015000 1.403078 
-H810 0.00 -0.030000 1.403078 0.00 -0.015000 1.403078 
-C811 0.00 -0.070000 1.992370 0.00 -0.035000 1.992370 
-C812 0.00 -0.070000 1.992370 0.00 -0.035000 1.992370 
-H813 0.00 -0.030000 1.358179 0.00 -0.015000 1.358179 
-C814 0.00 -0.070000 1.992370 0.00 -0.035000 1.992370 
-H815 0.00 -0.030000 1.358179 0.00 -0.015000 1.358179 
-C816 0.00 -0.070000 1.992370 0.00 -0.035000 1.992370 
-H817 0.00 -0.030000 1.358179 0.00 -0.015000 1.358179 
-C818 0.00 -0.070000 1.992370 0.00 -0.035000 1.992370 
-H819 0.00 -0.030000 1.358179 0.00 -0.015000 1.358179 
-N820 0.00 -0.170000 1.852062 0.00 -0.085000 1.852062 
-H821 0.00 -0.000000 0.000000 0.00 -0.000000 0.000000 
-H822 0.00 -0.000000 0.000000 0.00 -0.000000 0.000000 
-H823 0.00 -0.000000 0.000000 0.00 -0.000000 0.000000 
-H824 0.00 -0.000000 0.000000 0.00 -0.000000 0.000000 
+[torsions]
+paf.C        paf.CA       paf.CB       paf.CG          -0.8485   1.0        0.0   1.0 # FFLD: high 0 CA-CT-CT1-C ==> C-CT1-CT-CA
+paf.C        paf.CA       paf.CB       paf.CG           -0.228   2.0      180.0   1.0 # FFLD: high 0 CA-CT-CT1-C ==> C-CT1-CT-CA
+paf.C        paf.CA       paf.CB       paf.CG           0.2925   3.0        0.0   1.0 # FFLD: high 0 CA-CT-CT1-C ==> C-CT1-CT-CA
+paf.C        paf.CA       paf.CB       paf.HB1          -0.038   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT1-C ==> C-CT1-CT-HC
+paf.C        paf.CA       paf.CB       paf.HB2          -0.038   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT1-C ==> C-CT1-CT-HC
+paf.C        paf.CA       paf.N        paf.HN1           0.219   1.0        0.0   1.0 # FFLD: high 0 H-NT-CT1-C ==> H-NT-CT-C
+paf.C        paf.CA       paf.N        paf.HN1          -0.249   2.0      180.0   1.0 # FFLD: high 0 H-NT-CT1-C ==> H-NT-CT-C
+paf.C        paf.CA       paf.N        paf.HN1           0.152   3.0        0.0   1.0 # FFLD: high 0 H-NT-CT1-C ==> H-NT-CT-C
+paf.C        paf.CA       paf.N        paf.HN2           0.219   1.0        0.0   1.0 # FFLD: high 0 H-NT-CT1-C ==> H-NT-CT-C
+paf.C        paf.CA       paf.N        paf.HN2          -0.249   2.0      180.0   1.0 # FFLD: high 0 H-NT-CT1-C ==> H-NT-CT-C
+paf.C        paf.CA       paf.N        paf.HN2           0.152   3.0        0.0   1.0 # FFLD: high 0 H-NT-CT1-C ==> H-NT-CT-C
+paf.CA       paf.C        paf.O        paf.HO              1.5   1.0        0.0   1.0 # FFLD: high 0 HO-OH-C-CT1 ==> HO-OH-C-CT
+paf.CA       paf.C        paf.O        paf.HO             2.45   2.0      180.0   1.0 # FFLD: high 0 HO-OH-C-CT1 ==> HO-OH-C-CT
+paf.CA       paf.CB       paf.CG       paf.CD1             0.0   1.0        0.0   1.0 # FFLD: high 0 CT1-CT-CA-CA ==> CT1-CT-CA-CA
+paf.CA       paf.CB       paf.CG       paf.CD2             0.0   1.0        0.0   1.0 # FFLD: high 0 CT1-CT-CA-CA ==> CT1-CT-CA-CA
+paf.CB       paf.CA       paf.C        paf.O               0.5   1.0        0.0   1.0 # FFLD: high 0 CT-CT1-C-OH ==> CT-CT-C-OH
+paf.CB       paf.CA       paf.C        paf.O             0.273   2.0      180.0   1.0 # FFLD: high 0 CT-CT1-C-OH ==> CT-CT-C-OH
+paf.CB       paf.CA       paf.C        paf.O             0.225   3.0        0.0   1.0 # FFLD: high 0 CT-CT1-C-OH ==> CT-CT-C-OH
+paf.CB       paf.CA       paf.C        paf.OXT             0.0   1.0        0.0   1.0 # FFLD: high 0 CT-CT1-C-O ==> CT-CT1-C-O
+paf.CB       paf.CA       paf.N        paf.HN1         -0.0595   1.0        0.0   1.0 # FFLD: high 0 H-NT-CT1-CT ==> H-NT-CT-CT
+paf.CB       paf.CA       paf.N        paf.HN1          0.0885   2.0      180.0   1.0 # FFLD: high 0 H-NT-CT1-CT ==> H-NT-CT-CT
+paf.CB       paf.CA       paf.N        paf.HN1          0.1175   3.0        0.0   1.0 # FFLD: high 0 H-NT-CT1-CT ==> H-NT-CT-CT
+paf.CB       paf.CA       paf.N        paf.HN2         -0.0595   1.0        0.0   1.0 # FFLD: high 0 H-NT-CT1-CT ==> H-NT-CT-CT
+paf.CB       paf.CA       paf.N        paf.HN2          0.0885   2.0      180.0   1.0 # FFLD: high 0 H-NT-CT1-CT ==> H-NT-CT-CT
+paf.CB       paf.CA       paf.N        paf.HN2          0.1175   3.0        0.0   1.0 # FFLD: high 0 H-NT-CT1-CT ==> H-NT-CT-CT
+paf.CB       paf.CG       paf.CD1      paf.CE1           3.625   2.0      180.0   1.0 # FFLD: high 0 CT-CA-CA-CA ==> CT-CA-CA-CA
+paf.CB       paf.CG       paf.CD1      paf.HD1           3.625   2.0      180.0   1.0 # FFLD: high 0 CT-CA-CA-HA ==> HA-CA-CA-CT
+paf.CB       paf.CG       paf.CD2      paf.CE2           3.625   2.0      180.0   1.0 # FFLD: high 0 CT-CA-CA-CA ==> CT-CA-CA-CA
+paf.CB       paf.CG       paf.CD2      paf.HD2           3.625   2.0      180.0   1.0 # FFLD: high 0 CT-CA-CA-HA ==> HA-CA-CA-CT
+paf.CD1      paf.CE1      paf.CZ       paf.CE2           3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-CA ==> CA-CA-CA-CA
+paf.CD1      paf.CE1      paf.CZ       paf.NZ            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-NE ==> ??-CA-CA-??
+paf.CD1      paf.CG       paf.CB       paf.HB1             0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT-CA-CA ==> HC-CT-CA-CA
+paf.CD1      paf.CG       paf.CB       paf.HB2             0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT-CA-CA ==> HC-CT-CA-CA
+paf.CD1      paf.CG       paf.CD2      paf.CE2           3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-CA ==> CA-CA-CA-CA
+paf.CD1      paf.CG       paf.CD2      paf.HD2           3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-HA ==> HA-CA-CA-CA
+paf.CD2      paf.CE2      paf.CZ       paf.CE1           3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-CA ==> CA-CA-CA-CA
+paf.CD2      paf.CE2      paf.CZ       paf.NZ            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-NE ==> ??-CA-CA-??
+paf.CD2      paf.CG       paf.CB       paf.HB1             0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT-CA-CA ==> HC-CT-CA-CA
+paf.CD2      paf.CG       paf.CB       paf.HB2             0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT-CA-CA ==> HC-CT-CA-CA
+paf.CD2      paf.CG       paf.CD1      paf.CE1           3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-CA ==> CA-CA-CA-CA
+paf.CD2      paf.CG       paf.CD1      paf.HD1           3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-HA ==> HA-CA-CA-CA
+paf.CE1      paf.CZ       paf.CE2      paf.HE2           3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-CA ==> HA-CA-CA-CA
+paf.CE1      paf.CZ       paf.NZ       paf.HZ1             1.0   2.0      180.0   1.0 # FFLD: high 0 H-NE-CA-CA ==> H-NE-CA-CA
+paf.CE1      paf.CZ       paf.NZ       paf.HZ2             1.0   2.0      180.0   1.0 # FFLD: high 0 H-NE-CA-CA ==> H-NE-CA-CA
+paf.CE2      paf.CZ       paf.CE1      paf.HE1           3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-CA ==> HA-CA-CA-CA
+paf.CE2      paf.CZ       paf.NZ       paf.HZ1             1.0   2.0      180.0   1.0 # FFLD: high 0 H-NE-CA-CA ==> H-NE-CA-CA
+paf.CE2      paf.CZ       paf.NZ       paf.HZ2             1.0   2.0      180.0   1.0 # FFLD: high 0 H-NE-CA-CA ==> H-NE-CA-CA
+paf.CG       paf.CB       paf.CA       paf.HA            0.231   3.0        0.0   1.0 # FFLD: high 0 CA-CT-CT1-HC ==> HC-CT1-CT-CA
+paf.CG       paf.CB       paf.CA       paf.N            0.8375   1.0        0.0   1.0 # FFLD: high 0 CA-CT-CT1-NT ==> NT-CT-CT-CA
+paf.CG       paf.CB       paf.CA       paf.N             0.322   2.0      180.0   1.0 # FFLD: high 0 CA-CT-CT1-NT ==> NT-CT-CT-CA
+paf.CG       paf.CB       paf.CA       paf.N             0.706   3.0        0.0   1.0 # FFLD: high 0 CA-CT-CT1-NT ==> NT-CT-CT-CA
+paf.CG       paf.CD1      paf.CE1      paf.CZ            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-CA ==> CA-CA-CA-CA
+paf.CG       paf.CD1      paf.CE1      paf.HE1           3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-HA ==> HA-CA-CA-CA
+paf.CG       paf.CD2      paf.CE2      paf.CZ            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-CA ==> CA-CA-CA-CA
+paf.CG       paf.CD2      paf.CE2      paf.HE2           3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-HA ==> HA-CA-CA-CA
+paf.CZ       paf.CE1      paf.CD1      paf.HD1           3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-CA ==> HA-CA-CA-CA
+paf.CZ       paf.CE2      paf.CD2      paf.HD2           3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-CA ==> HA-CA-CA-CA
+paf.HA       paf.CA       paf.C        paf.O               0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT1-C-OH ==> HC-CT-C-OH
+paf.HA       paf.CA       paf.C        paf.OXT             0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT1-C-O ==> HC-CT1-C-O
+paf.HA       paf.CA       paf.CB       paf.HB1            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT1-HC ==> HC-CT1-CT-HC
+paf.HA       paf.CA       paf.CB       paf.HB2            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT1-HC ==> HC-CT1-CT-HC
+paf.HA       paf.CA       paf.N        paf.HN1             0.2   3.0        0.0   1.0 # FFLD: high 0 H-NT-CT1-HC ==> H-NT-CT-HC
+paf.HA       paf.CA       paf.N        paf.HN2             0.2   3.0        0.0   1.0 # FFLD: high 0 H-NT-CT1-HC ==> H-NT-CT-HC
+paf.HB1      paf.CB       paf.CA       paf.N              0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT1-NT ==> HC-CT-CT-??
+paf.HB2      paf.CB       paf.CA       paf.N              0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT1-NT ==> HC-CT-CT-??
+paf.HD1      paf.CD1      paf.CE1      paf.HE1           3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-HA ==> HA-CA-CA-HA
+paf.HD2      paf.CD2      paf.CE2      paf.HE2           3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-HA ==> HA-CA-CA-HA
+paf.HE1      paf.CE1      paf.CZ       paf.NZ            3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-NE ==> ??-CA-CA-??
+paf.HE2      paf.CE2      paf.CZ       paf.NZ            3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-NE ==> ??-CA-CA-??
+paf.HO       paf.O        paf.C        paf.OXT           0.922   1.0        0.0   1.0 # FFLD: high 0 HO-OH-C-O ==> HO-OH-C-O
+paf.HO       paf.O        paf.C        paf.OXT           3.741   2.0      180.0   1.0 # FFLD: high 0 HO-OH-C-O ==> HO-OH-C-O
+paf.N        paf.CA       paf.C        paf.O               0.4   3.0        0.0   1.0 # FFLD: med 0 NT-CT1-C-OH ==> ??-CT-C-OS
+paf.N        paf.CA       paf.C        paf.OXT          0.3015   2.0      180.0   1.0 # FFLD: high 0 NT-CT1-C-O ==> ??-CT-C-O
+
+[impropers]
+paf.CA       paf.C        paf.O        paf.OXT            10.5      180.0 # FFLD: high carbonyl and analogs
+paf.CB       paf.CG       paf.CD1      paf.CD2             4.0      180.0 # FFLD: high aromatic atom
+paf.CD1      paf.CE1      paf.CZ       paf.HE1             1.1      180.0 # FFLD: high aromatic atom
+paf.CD2      paf.CE2      paf.CZ       paf.HE2             1.1      180.0 # FFLD: high aromatic atom
+paf.CE1      paf.CD1      paf.CG       paf.HD1             1.1      180.0 # FFLD: high aromatic atom
+paf.CE1      paf.CZ       paf.CE2      paf.NZ              4.0      180.0 # FFLD: high aromatic atom
+paf.CE2      paf.CD2      paf.CG       paf.HD2             1.1      180.0 # FFLD: high aromatic atom
+paf.CZ       paf.NZ       paf.HZ1      paf.HZ2             1.0      180.0 # FFLD: high amino substituted aromatic rings
+
