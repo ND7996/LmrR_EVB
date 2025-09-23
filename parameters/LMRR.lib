@@ -1,0 +1,339 @@
+# Generated with q_ffld2q.py, version 0.7.0
+# Date: Tue Sep 23 16:49:05 2025
+#
+{ind}
+    [atoms]
+        1  N1     ind.N1        -0.478600
+        2  C1     ind.C1         0.286000
+        3  C2     ind.C2         0.123300
+        4  C3     ind.C3        -0.256700
+        5  C4     ind.C4        -0.354100
+        6  C5     ind.C5        -0.224300
+        7  C6     ind.C6        -0.029300
+        8  C7     ind.C7        -0.088800
+        9  C8     ind.C8        -0.222200
+       10  C9     ind.C9        -0.065000
+       11  H1     ind.H1         0.357700
+       12  H2     ind.H2         0.137700
+       13  H3     ind.H3         0.179600
+       14  H4     ind.H4         0.169900
+       15  H5     ind.H5         0.135900
+       16  H6     ind.H6         0.148900
+       17  H7     ind.H7         0.060000
+       18  H8     ind.H8         0.060000
+       19  H9     ind.H9         0.060000
+    [bonds]
+        N1    C1
+        N1    C6
+        N1    H1
+        C1    C2
+        C1    C4
+        C2    C3
+        C2    C5
+        C3    C6
+        C3    H2
+        C4    C7
+        C4    H3
+        C5    C8
+        C5    H4
+        C6    C9
+        C7    C8
+        C7    H5
+        C8    H6
+        C9    H7
+        C9    H8
+        C9    H9
+    [impropers]
+        C1    N1    C6    H1
+        C2    C1    C4    N1
+        C1    C2    C3    C5
+        C2    C3    C6    H2
+        C1    C4    C7    H3
+        C2    C5    C8    H4
+        C3    C6    C9    N1
+        C4    C7    C8    H5
+        C5    C8    C7    H6
+    [charge_groups]
+        N1 C1 C2 C3 C4 C5 C6 C7 C8 C9 H1 H2 H3 H4 H5 H6 H7 H8 H9
+*--------------------------------------------------------------------------------
+
+# Generated with q_ffld2q.py, version 0.7.0
+# Date: Tue Sep 23 16:57:01 2025
+#
+{paf}
+    [atoms]
+        1  O1     paf.O1        -0.530000
+        2  O2     paf.O2        -0.440000
+        3  N1     paf.N1        -0.943900
+        4  N2     paf.N2        -0.900000
+        5  C1     paf.C1        -0.005000
+        6  C2     paf.C2         0.163900
+        7  C3     paf.C3        -0.115000
+        8  C4     paf.C4        -0.115000
+        9  C5     paf.C5        -0.115000
+       10  C6     paf.C6         0.520000
+       11  C7     paf.C7        -0.115000
+       12  C8     paf.C8        -0.115000
+       13  C9     paf.C9         0.180000
+       14  H1     paf.H1         0.450000
+       15  H2     paf.H2         0.360000
+       16  H3     paf.H3         0.360000
+       17  H4     paf.H4         0.360000
+       18  H5     paf.H5         0.360000
+       19  H6     paf.H6         0.060000
+       20  H7     paf.H7         0.060000
+       21  H8     paf.H8         0.060000
+       22  H9     paf.H9         0.115000
+       23  H10    paf.H10        0.115000
+       24  H11    paf.H11        0.115000
+       25  H12    paf.H12        0.115000
+    [bonds]
+        O1    C6
+        O1    H1
+        O2    C6
+        N1    C2
+        N1    H2
+        N1    H3
+        N2    C9
+        N2    H4
+        N2    H5
+        C1    C2
+        C1    C3
+        C1    H6
+        C1    H7
+        C2    C6
+        C2    H8
+        C3    C4
+        C3    C5
+        C4    C7
+        C4    H9
+        C5    C8
+        C5    H10
+        C7    C9
+        C7    H11
+        C8    C9
+        C8    H12
+    [impropers]
+        C9    N2    H4    H5
+        C1    C3    C4    C5
+        C3    C4    C7    H9
+        C3    C5    C8    H10
+        C2    C6    O1    O2
+        C4    C7    C9    H11
+        C5    C8    C9    H12
+        C7    C9    C8    N2
+    [charge_groups]
+        O1 O2 N1 N2 C1 C2 C3 C4 C5 C6 C7 C8 C9 H1 H2 H3 H4 H5 H6 H7 H8 H9 H10 H11 H12
+*--------------------------------------------------------------------------------
+
+# Generated with q_ffld2q.py, version 0.7.0
+# Date: Tue Sep 23 16:55:15 2025
+#
+{prd}
+    [atoms]
+        1  N1     prd.N1        -0.478600
+        2  C1     prd.C1         0.286000
+        3  C2     prd.C2         0.123300
+        4  C3     prd.C3        -0.174900
+        5  C4     prd.C4        -0.354100
+        6  C5     prd.C5        -0.224300
+        7  C6     prd.C6        -0.029300
+        8  C7     prd.C7        -0.088800
+        9  C8     prd.C8        -0.222200
+       10  C9     prd.C9        -0.065000
+       11  C10    prd.C10       -0.004100
+       12  C11    prd.C11       -0.120000
+       13  C12    prd.C12        0.145000
+       14  O1     prd.O1        -0.683000
+       15  C13    prd.C13       -0.120000
+       16  C14    prd.C14       -0.120000
+       17  C15    prd.C15       -0.180000
+       18  H1     prd.H1         0.357700
+       19  H2     prd.H2         0.179600
+       20  H3     prd.H3         0.169900
+       21  H4     prd.H4         0.135900
+       22  H5     prd.H5         0.148900
+       23  H6     prd.H6         0.060000
+       24  H7     prd.H7         0.060000
+       25  H8     prd.H8         0.060000
+       26  H9     prd.H9         0.060000
+       27  H10    prd.H10        0.060000
+       28  H11    prd.H11        0.060000
+       29  H12    prd.H12        0.060000
+       30  H13    prd.H13        0.060000
+       31  H14    prd.H14        0.418000
+       32  H15    prd.H15        0.060000
+       33  H16    prd.H16        0.060000
+       34  H17    prd.H17        0.060000
+       35  H18    prd.H18        0.060000
+       36  H19    prd.H19        0.060000
+       37  H20    prd.H20        0.060000
+       38  H21    prd.H21        0.060000
+    [bonds]
+        N1    C1
+        N1    C6
+        N1    H1
+        C1    C2
+        C1    C4
+        C2    C3
+        C2    C5
+        C3    C6
+        C3    C10
+        C4    C7
+        C4    H2
+        C5    C8
+        C5    H3
+        C6    C9
+        C7    C8
+        C7    H4
+        C8    H5
+        C9    H6
+        C9    H7
+        C9    H8
+        C10   C11
+        C10   C13
+        C10   H9
+        C11   C12
+        C11   H10
+        C11   H11
+        C12   O1
+        C12   H12
+        C12   H13
+        O1    H14
+        C13   C14
+        C13   H15
+        C13   H16
+        C14   C15
+        C14   H17
+        C14   H18
+        C15   H19
+        C15   H20
+        C15   H21
+    [impropers]
+        C1    N1    C6    H1
+        C2    C1    C4    N1
+        C1    C2    C3    C5
+        C10   C3    C2    C6
+        C1    C4    C7    H2
+        C2    C5    C8    H3
+        C3    C6    C9    N1
+        C4    C7    C8    H4
+        C5    C8    C7    H5
+    [charge_groups]
+        N1 C1 C2 C3 C4 C5 C6 C7 C8 C9 C10 C11 C12 O1 C13 C14 C15 H1 H2 H3 H4 H5 H6 H7 H8 H9 H10 H11 H12 H13 H14 H15 H16 H17 H18 H19 H20 H21
+*--------------------------------------------------------------------------------
+
+{HO2} !TIP3P water
+    [atoms]
+         1 O3     HO2.ow         -0.8
+         2 H4     HO2.hw          0.4
+         3 H5     HO2.hw          0.4
+    [bonds]
+       O3   H4
+       O3   H5
+    [charge_groups]
+       O3   H4   H5
+       
+*--------------------------------------------------------------------------------
+# Generated with q_ffld2q.py, version 0.7.0
+# Date: Tue Sep 23 16:52:46 2025
+#
+{imi}
+    [atoms]
+        1  O1     imi.O1        -0.530000
+        2  O2     imi.O2        -0.440000
+        3  N1     imi.N1        -0.943900
+        4  N2     imi.N2        -0.139000
+        5  C1     imi.C1        -0.005000
+        6  C2     imi.C2         0.163900
+        7  C3     imi.C3        -0.115000
+        8  C4     imi.C4        -0.115000
+        9  C5     imi.C5        -0.115000
+       10  C6     imi.C6         0.520000
+       11  C7     imi.C7        -0.115000
+       12  C8     imi.C8        -0.115000
+       13  C9     imi.C9         0.122500
+       14  C10    imi.C10        0.263400
+       15  C11    imi.C11       -0.115000
+       16  C12    imi.C12       -0.115000
+       17  C13    imi.C13       -0.120000
+       18  C14    imi.C14       -0.120000
+       19  C15    imi.C15       -0.180000
+       20  H1     imi.H1         0.450000
+       21  H2     imi.H2         0.360000
+       22  H3     imi.H3         0.360000
+       23  H4     imi.H4         0.480000
+       24  H5     imi.H5         0.060000
+       25  H6     imi.H6         0.060000
+       26  H7     imi.H7         0.060000
+       27  H8     imi.H8         0.115000
+       28  H9     imi.H9         0.115000
+       29  H10    imi.H10        0.115000
+       30  H11    imi.H11        0.115000
+       31  H12    imi.H12        0.273100
+       32  H13    imi.H13        0.115000
+       33  H14    imi.H14        0.115000
+       34  H15    imi.H15        0.060000
+       35  H16    imi.H16        0.060000
+       36  H17    imi.H17        0.060000
+       37  H18    imi.H18        0.060000
+       38  H19    imi.H19        0.060000
+       39  H20    imi.H20        0.060000
+       40  H21    imi.H21        0.060000
+    [bonds]
+        O1    C6
+        O1    H1
+        O2    C6
+        N1    C2
+        N1    H2
+        N1    H3
+        N2    C9
+        N2    C10
+        N2    H4
+        C1    C2
+        C1    C3
+        C1    H5
+        C1    H6
+        C2    C6
+        C2    H7
+        C3    C4
+        C3    C5
+        C4    C7
+        C4    H8
+        C5    C8
+        C5    H9
+        C7    C9
+        C7    H10
+        C8    C9
+        C8    H11
+        C10   C11
+        C10   H12
+        C11   C12
+        C11   H13
+        C12   C13
+        C12   H14
+        C13   C14
+        C13   H15
+        C13   H16
+        C14   C15
+        C14   H17
+        C14   H18
+        C15   H19
+        C15   H20
+        C15   H21
+    [impropers]
+        C10   N2    C9    H4
+        C1    C3    C4    C5
+        C3    C4    C7    H8
+        C3    C5    C8    H9
+        C2    C6    O1    O2
+        C4    C7    C9    H10
+        C5    C8    C9    H11
+        C7    C9    C8    N2
+        C11   C10   H12   N2
+        C10   C11   C12   H13
+        C11   C12   C13   H14
+    [charge_groups]
+        O1 O2 N1 N2 C1 C2 C3 C4 C5 C6 C7 C8 C9 C10 C11 C12 C13 C14 C15 H1 H2 H3 H4 H5 H6 H7 H8 H9 H10 H11 H12 H13 H14 H15 H16 H17 H18 H19 H20 H21
+*--------------------------------------------------------------------------------
+
