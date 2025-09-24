@@ -1,7 +1,7 @@
 # Generated with q_ffld2q.py, version 0.7.0
 # Date: Tue Sep 23 16:49:05 2025
 #
-{ind}
+{IND}
     [atoms]
         1  N1     ind.N1        -0.478600
         2  C1     ind.C1         0.286000
@@ -60,7 +60,7 @@
 # Generated with q_ffld2q.py, version 0.7.0
 # Date: Tue Sep 23 16:57:01 2025
 #
-{paf}
+{PAF}
     [atoms]
         1  O1     paf.O1        -0.530000
         2  O2     paf.O2        -0.440000
@@ -129,7 +129,7 @@
 # Generated with q_ffld2q.py, version 0.7.0
 # Date: Tue Sep 23 16:55:15 2025
 #
-{prd}
+{PRD}
     [atoms]
         1  N1     prd.N1        -0.478600
         2  C1     prd.C1         0.286000
@@ -238,7 +238,7 @@
 # Generated with q_ffld2q.py, version 0.7.0
 # Date: Tue Sep 23 16:52:46 2025
 #
-{imi}
+{IMI}
     [atoms]
         1  O1     imi.O1        -0.530000
         2  O2     imi.O2        -0.440000
