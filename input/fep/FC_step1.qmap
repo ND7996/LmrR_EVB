@@ -1,51 +1,63 @@
 # q atom (q)         PDB ID      RS          PS
-# pAF (para-aminophenylalanine) backbone and side chain atoms
-q     pAF.N          pAF.N       PAF.N       IML.N1       # Backbone amide N becomes iminium N
-q     pAF.HN         pAF.HN      PAF.HN      IML.HN
-q     pAF.CA         pAF.CA      PAF.CA      IML.CA
-q     pAF.HA         pAF.HA      PAF.HA      IML.HA
-q     pAF.CB         pAF.CB      PAF.CB      IML.CB
-q     pAF.HB1        pAF.HB1     PAF.HB1     IML.HB1
-q     pAF.HB2        pAF.HB2     PAF.HB2     IML.HB2
-q     pAF.CG         pAF.CG      PAF.CG      IML.CG
-q     pAF.CD1        pAF.CD1     PAF.CD1     IML.CD1
-q     pAF.HD1        pAF.HD1     PAF.HD1     IML.HD1
-q     pAF.CD2        pAF.CD2     PAF.CD2     IML.CD2
-q     pAF.HD2        pAF.HD2     PAF.HD2     IML.HD2
-q     pAF.CE1        pAF.CE1     PAF.CE1     IML.CE1
-q     pAF.HE1        pAF.HE1     PAF.HE1     IML.HE1
-q     pAF.CE2        pAF.CE2     PAF.CE2     IML.CE2
-q     pAF.HE2        pAF.HE2     PAF.HE2     IML.HE2
-q     pAF.CZ         pAF.CZ      PAF.CZ      IML.CZ
-q     pAF.NZ         pAF.NZ      PAF.NZ      IML.N1       # Bonds HEX.C1 (iminium formation)
-q     pAF.HZ1        pAF.HZ1     PAF.HZ1     WAT.H1       # Proton transferred to water
-q     pAF.HZ2        pAF.HZ2     PAF.HZ2     IML.HZ2      # Proton retained on N
+# IMI (para-aminophenylalanine) backbone and side chain atoms (iminium, reactant)
+q     IMI.N1         IMI.N1      IMI.N1      PAF.N1       # Blue ring N1 breaks bond to C10, proton transfer starts
+q     IMI.H2         IMI.H2      IMI.H2      PAF.H1       # Protonation of N1 from water
+q     IMI.C1         IMI.C1      IMI.C1      PAF.C1
+q     IMI.H6         IMI.H6      IMI.H6      PAF.H6
+q     IMI.C2         IMI.C2      IMI.C2      PAF.C2
+q     IMI.H7         IMI.H7      IMI.H7      PAF.H7
+q     IMI.C3         IMI.C3      IMI.C3      PAF.C3
+q     IMI.H8         IMI.H8      IMI.H8      PAF.H8
+q     IMI.C4         IMI.C4      IMI.C4      PAF.C4
+q     IMI.H10        IMI.H10     IMI.H10     PAF.H10
+q     IMI.C5         IMI.C5      IMI.C5      PAF.C5
+q     IMI.H9         IMI.H9      IMI.H9      PAF.H9
+q     IMI.C6         IMI.C6      IMI.C6      PAF.C6
+q     IMI.O1         IMI.O1      IMI.O1      WAT.O        # Water oxygen starts bonded to carbonyl O in IMI state
+q     IMI.H1         IMI.H1      IMI.H1      WAT.H2       # Proton transferred to water from HEX hydrogen
+q     IMI.C7         IMI.C7      IMI.C7      PAF.C7
+q     IMI.H13        IMI.H13     IMI.H13     PAF.H13
+q     IMI.C8         IMI.C8      IMI.C8      PAF.C8
+q     IMI.H11        IMI.H11     IMI.H11     PAF.H11
+q     IMI.C9         IMI.C9      IMI.C9      PAF.C9
+q     IMI.N2         IMI.N2      IMI.N2      PAF.N2       # Bonds with C10 and proton transfer
+q     IMI.C10        IMI.C10     IMI.C10     PAF.C10      # Breaks bond with N2, forms new bonds with WAT.O and WAT.H2
+q     IMI.H4         IMI.H4      IMI.H4      PAF.H4
+q     IMI.H12        IMI.H12     IMI.H12     PAF.H12
+q     IMI.C11        IMI.C11     IMI.C11     PAF.C11
+q     IMI.H13        IMI.H13     IMI.H13     PAF.H13
+q     IMI.C12        IMI.C12     IMI.C12     PAF.C12
+q     IMI.H14        IMI.H14     IMI.H14     PAF.H14
+q     IMI.C13        IMI.C13     IMI.C13     PAF.C13
+q     IMI.H15        IMI.H15     IMI.H15     PAF.H15
+q     IMI.C14        IMI.C14     IMI.C14     PAF.C14
+q     IMI.H16        IMI.H16     IMI.H16     PAF.H16
+q     IMI.C15        IMI.C15     IMI.C15     PAF.C15
+q     IMI.H19        IMI.H19     IMI.H19     PAF.H19
+q     IMI.H20        IMI.H20     IMI.H20     PAF.H20
 
-# trans-2-hexenal (HEX)
-q     HEX.C1         HEX.C1      HEX.C1      IML.C1       # Bonds pAF.NZ (iminium)
-q     HEX.O1         HEX.O1      HEX.O1      WAT.O        # Water oxygen from carbonyl O
-q     HEX.H1         HEX.H1      HEX.H1      WAT.H2       # Water proton from HEX hydrogen
-q     HEX.C2         HEX.C2      HEX.C2      HEP.C2
-q     HEX.H2         HEX.H2      HEX.H2      HEP.H2
-q     HEX.C3         HEX.C3      HEX.C3      HEP.C3       # Bonds IND.C3 (Friedel-Crafts alkylation)
-q     HEX.H3         HEX.H3      HEX.H3      HEP.H3
-q     HEX.C4         HEX.C4      HEX.C4      HEP.C4
-q     HEX.H4         HEX.H4      HEX.H4      HEP.H4
-q     HEX.C5         HEX.C5      HEX.C5      HEP.C5
-q     HEX.H5         HEX.H5      HEX.H5      HEP.H5
-q     HEX.C6         HEX.C6      HEX.C6      HEP.C6
-q     HEX.H6         HEX.H6      HEX.H6      HEP.H6
+# Water (WAT)
+q     WAT.O          WAT.O       WAT.O       PAF.O        # Oxygen from water bonds to carbonyl oxygen site ending in PAF
+q     WAT.H1         WAT.H1      WAT.H1      PAF.H1       # Proton transfers to IMI.N2 in RS, bonded to PAF.H1 in PS
+q     WAT.H2         WAT.H2      WAT.H2      PAF.H2       # Proton transfers to IMI.C10 in RS, bonded to PAF.H2 in PS
 
 # Indole (IND)
-q     IND.N1         IND.N1      IND.N1      INP.N1
-q     IND.C2         IND.C2      IND.C2      INP.C2
-q     IND.C3         IND.C3      IND.C3      HEP.C3       # Bond formed with HEX.C3
-q     IND.H3         IND.H3      IND.H3      INP.H3
-q     IND.C4         IND.C4      IND.C4      INP.C4
-q     IND.H4         IND.H4      IND.H4      INP.H4
-q     IND.C5         IND.C5      IND.C5      INP.C5
-q     IND.H5         IND.H5      IND.H5      INP.H5
-q     IND.C6         IND.C6      IND.C6      INP.C6
-q     IND.H6         IND.H6      IND.H6      INP.H6
-q     IND.C7         IND.C7      IND.C7      INP.C7
-q     IND.H7         IND.H7      IND.H7      INP.H7
+q     IND.N1         IND.N1      IND.N1      PRD.N1       # Product indole nitrogen
+q     IND.C1         IND.C1      IND.C1      PRD.C1
+q     IND.C2         IND.C2      IND.C2      PRD.C2
+q     IND.C3         IND.C3      IND.C3      PRD.C3       # Friedel-Crafts bond formation with IMI.C3
+q     IND.C4         IND.C4      IND.C4      PRD.C4
+q     IND.C5         IND.C5      IND.C5      PRD.C5
+q     IND.C6         IND.C6      IND.C6      PRD.C6
+q     IND.C7         IND.C7      IND.C7      PRD.C7
+q     IND.C8         IND.C8      IND.C8      PRD.C8
+q     IND.C9         IND.C9      IND.C9      PRD.C9
+q     IND.H1         IND.H1      IND.H1      PRD.H1
+q     IND.H2         IND.H2      IND.H2      PRD.H2
+q     IND.H3         IND.H3      IND.H3      PRD.H3
+q     IND.H4         IND.H4      IND.H4      PRD.H4
+q     IND.H5         IND.H5      IND.H5      PRD.H5
+q     IND.H6         IND.H6      IND.H6      PRD.H6
+q     IND.H7         IND.H7      IND.H7      PRD.H7
+q     IND.H8         IND.H8      IND.H8      PRD.H8
+q     IND.H9         IND.H9      IND.H9      PRD.H9
