@@ -1,5 +1,5 @@
 # Generated with q_ffld2q.py, version 0.7.0
-# Date: Tue Sep 23 16:57:01 2025
+# Date: Fri Sep 26 22:50:22 2025
 #
 [options]
 
@@ -19,9 +19,9 @@ paf.H10         69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 #
 paf.H11         69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HA_H6_146 high Benzene H - 12 site JACS,112,4768-90
 paf.H12         69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HA_H6_146 high Benzene H - 12 site JACS,112,4768-90
 paf.H2           0.0054     0.0054     0.0433     0.0038     0.0306     1.0079 # FFLD: H_H8_240 high H on neutral N
+paf.H22          0.0054     0.0054     0.0433     0.0038     0.0306     1.0079 # FFLD: H_H8_240 high H on neutral N
 paf.H3           0.0054     0.0054     0.0433     0.0038     0.0306     1.0079 # FFLD: H_H8_240 high H on neutral N
 paf.H4           0.0054     0.0054     0.0433     0.0038     0.0306     1.0079 # FFLD: H_H8_240 high H on neutral N
-paf.H5           0.0054     0.0054     0.0433     0.0038     0.0306     1.0079 # FFLD: H_H8_240 high H on neutral N
 paf.H6          84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
 paf.H7          84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
 paf.H8           59.802     59.802     3.8273    42.2864     2.7063     1.0079 # FFLD: HC_H2_140 high H(C)-N in glycin
@@ -54,9 +54,9 @@ paf.C8       paf.H12           734.0       1.08 # FFLD: high 0 => 0 CA-HA ==> HA
 paf.C9       paf.N2            962.0      1.393 # FFLD: high 0 => 0 NE-CA ==> NE-CA
 paf.H1       paf.O1           1106.0      0.945 # FFLD: high 0 => 0 OH-HO ==> OH-HO
 paf.H2       paf.N1            868.0       1.01 # FFLD: high 0 => 0 NT-H ==> NT-H
+paf.H22      paf.N2            868.0       1.01 # FFLD: high 0 => 0 NE-H ==> NE-H
 paf.H3       paf.N1            868.0       1.01 # FFLD: high 0 => 0 NT-H ==> NT-H
 paf.H4       paf.N2            868.0       1.01 # FFLD: high 0 => 0 NE-H ==> NE-H
-paf.H5       paf.N2            868.0       1.01 # FFLD: high 0 => 0 NE-H ==> NE-H
 
 [angles]
 paf.C1       paf.C2       paf.C6            126.0      111.1 # FFLD: high 0 CT-CT1-C ==> CT-CT1-C
@@ -92,10 +92,10 @@ paf.C8       paf.C5       paf.H10            70.0      120.0 # FFLD: high 0 CA-C
 paf.C8       paf.C9       paf.N2            140.0      120.1 # FFLD: high 0 NE-CA-CA ==> NE-CA-CA
 paf.C9       paf.C7       paf.H11            70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
 paf.C9       paf.C8       paf.H12            70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
+paf.C9       paf.N2       paf.H22            70.0      113.5 # FFLD: high 0 CA-NE-H ==> H-NE-CA
 paf.C9       paf.N2       paf.H4             70.0      113.5 # FFLD: high 0 CA-NE-H ==> H-NE-CA
-paf.C9       paf.N2       paf.H5             70.0      113.5 # FFLD: high 0 CA-NE-H ==> H-NE-CA
 paf.H2       paf.N1       paf.H3             87.2      106.4 # FFLD: high 0 H-NT-H ==> H-NT-H
-paf.H4       paf.N2       paf.H5             70.0      109.0 # FFLD: high 0 H-NE-H ==> H-NE-H
+paf.H22      paf.N2       paf.H4             70.0      109.0 # FFLD: high 0 H-NE-H ==> H-NE-H
 paf.H6       paf.C1       paf.H7             66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
 paf.H8       paf.C2       paf.N1            100.0     109.55 # FFLD: high 0 NT-CT1-HC ==> NT-CT1-HC
 paf.O1       paf.C6       paf.O2            200.0     123.32 # FFLD: high 0 OH-C-O ==> OH-C-O
@@ -151,11 +151,11 @@ paf.C6       paf.C2       paf.N1       paf.H3            0.219   1.0        0.0 
 paf.C6       paf.C2       paf.N1       paf.H3           -0.249   2.0      180.0   1.0 # FFLD: high 0 H-NT-CT1-C ==> H-NT-CT-C
 paf.C6       paf.C2       paf.N1       paf.H3            0.152   3.0        0.0   1.0 # FFLD: high 0 H-NT-CT1-C ==> H-NT-CT-C
 paf.C7       paf.C9       paf.C8       paf.H12           3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-CA ==> HA-CA-CA-CA
+paf.C7       paf.C9       paf.N2       paf.H22             1.0   2.0      180.0   1.0 # FFLD: high 0 H-NE-CA-CA ==> H-NE-CA-CA
 paf.C7       paf.C9       paf.N2       paf.H4              1.0   2.0      180.0   1.0 # FFLD: high 0 H-NE-CA-CA ==> H-NE-CA-CA
-paf.C7       paf.C9       paf.N2       paf.H5              1.0   2.0      180.0   1.0 # FFLD: high 0 H-NE-CA-CA ==> H-NE-CA-CA
 paf.C8       paf.C9       paf.C7       paf.H11           3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-CA ==> HA-CA-CA-CA
+paf.C8       paf.C9       paf.N2       paf.H22             1.0   2.0      180.0   1.0 # FFLD: high 0 H-NE-CA-CA ==> H-NE-CA-CA
 paf.C8       paf.C9       paf.N2       paf.H4              1.0   2.0      180.0   1.0 # FFLD: high 0 H-NE-CA-CA ==> H-NE-CA-CA
-paf.C8       paf.C9       paf.N2       paf.H5              1.0   2.0      180.0   1.0 # FFLD: high 0 H-NE-CA-CA ==> H-NE-CA-CA
 paf.C9       paf.C7       paf.C4       paf.H9            3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-CA ==> HA-CA-CA-CA
 paf.C9       paf.C8       paf.C5       paf.H10           3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-CA ==> HA-CA-CA-CA
 paf.H1       paf.O1       paf.C6       paf.O2            0.922   1.0        0.0   1.0 # FFLD: high 0 HO-OH-C-O ==> HO-OH-C-O
@@ -183,5 +183,5 @@ paf.C3       paf.C5       paf.C8       paf.H10             1.1      180.0 # FFLD
 paf.C4       paf.C7       paf.C9       paf.H11             1.1      180.0 # FFLD: high aromatic atom
 paf.C5       paf.C8       paf.C9       paf.H12             1.1      180.0 # FFLD: high aromatic atom
 paf.C7       paf.C9       paf.C8       paf.N2              4.0      180.0 # FFLD: high aromatic atom
-paf.C9       paf.N2       paf.H4       paf.H5              1.0      180.0 # FFLD: high amino substituted aromatic rings
+paf.C9       paf.N2       paf.H22      paf.H4              1.0      180.0 # FFLD: high amino substituted aromatic rings
 

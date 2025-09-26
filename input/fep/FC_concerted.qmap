@@ -38,10 +38,10 @@ q				224.H19		IMI.H19		PRD.H19
 q				224.H20		IMI.H20		PRD.H20
 q				224.H21		IMI.H21		PRD.H21
 
-# HO2 group - OH goes to C10, only H1 goes to N2
-q				226.O		HO2.O		PRD.O1
-q				226.H1		HO2.H1		PRD.H14
-q				226.H2		HO2.H2		PAF.H5
+# HO2 group 
+q				226.O3		HO2.O3		PRD.O3
+q				226.H23		HO2.H23		PRD.H23
+q				226.H22		HO2.H22		PAF.H22
 
 # Indole atoms - transforms to PRD, C3 bonds to IMI.C12
 q				225.C1		IND.C1		PRD.C1

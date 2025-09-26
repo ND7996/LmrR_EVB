@@ -1,0 +1,181 @@
+# This is an example input for relaxation inputs generation with q_genrelax.py
+# I know it's a horrible and not really clear way of generating inputs, 
+# but it still seems better than manually modifying 15 input files just to change a sequence restraint 
+# or to hard code certain values in arrays in a bash script (I'm looking at you Paul)
+#
+# Basically, there are three sections in curly braces:
+# SCRIPT_VARS   -   contains user defined constants that will be replaced with their values if they appear in this input. Useful for seq.restr. Example:  RESTRAINT1     5993  6003
+#                   try to make them unique and descriptive, not something like MD (that would suck for you)
+# GENERAL       -   qdyn5 parameters, used in all steps.
+# STEPS         -   qdyn5 parameters for each relaxation step, separated by "________________". These values override the ones defined in the GENERAL section.
+#
+#
+# Run MD @ 0.1K to "min$224ze" the badly positioned 
+# water molecules and to remove bad contacts
+#
+
+#######################################################
+{SCRIPT_VARS}
+#######################################################
+SOLUTE            $1.N$      $223.O$
+
+#######################################################
+{GENERAL}
+#######################################################
+[MD]
+temperature              0.1
+initial_temperature      0.1
+stepsize                 0.1
+bath_coupling            0.1
+random_seed               -1
+separate_scaling          on
+lrf                       on
+shake_solvent             on
+
+[cut-offs]
+solute_solute             10
+solute_solvent            10
+solvent_solvent           10
+q_atom                    99
+
+[sphere]
+shell_force              0.0
+shell_radius            200.0
+
+[intervals]
+non_bond                 25
+output                   10 
+trajectory               10
+temperature              10
+
+[lambdas]
+1.00  0.
+
+[distance_restraints]
+
+$224.C12$   $225.C3$      0.0  3.2  200. 0 
+$224.C10$   $224.N2$      0.0  3.2  200. 0 
+$226.H2$    $226.O$       0.0  3.2  200. 0 
+$226.H2$    $224.N2$      0.0  3.2  200. 0 
+$226.O$     $224.C10$     0.0  3.2  200. 0 
+$226.H1$    $224.C10$     0.0  3.2  200. 0 
+$224.C10$   $224.C11$     0.0  1.54  200. 0   
+$224.C11$   $224.C12$     0.0  1.54  200. 0   
+$224.C12$   $224.C13$     0.0  1.54  200. 0   
+$224.C13$   $224.C14$     0.0  1.54  200. 0   
+$224.C14$   $224.C15$     0.0  1.54  200. 0   
+$224.C13$   $224.H15$     0.0  1.09  150. 0   
+$224.C12$   $224.H13$     0.0  1.09  150. 0   
+$224.C10$   $224.H12$     0.0  1.09  100. 0   
+$224.C10$   $225.C3$      0.0  1.54  100. 0   
+$224.C12$   $226.O$       0.0  1.43  100. 0   
+$224.C13$   $120.CA$      0.0  8.0  100. 0    
+$224.C14$   $120.CA$      0.0  10.0 100. 0   
+$224.C15$   $120.CA$      0.0  12.0  100. 0  
+$$224.C10$   $$224.H12$   0.0  1.09  100.0  0
+$$224.C11$   $$224.H13$   0.0  1.09  100.0  0
+$$224.C12$   $$224.C13$     0.0  1.54  2000.0  0
+$$224.C14$   $$224.C15$     0.0  1.54  2000.0  0
+$$224.C15$   $$224.H19$     0.0  1.09  100.0  0
+$$224.C15$   $224.H20$     0.0  1.09  100.0  0
+$$224.C15$   $$224.H21$     0.0  1.09  100.0  0
+$$224.C2$    $$224.H7$      0.0  1.09  100.0  0
+$$224.C4$    $$224.H8$      0.0  1.09  100.0  0
+$$224.C5$    $$224.H9$      0.0  1.09  100.0  0
+$$224.C7$    $$224.H10$     0.0  1.09  100.0  0
+$$224.C8$    $$224.H11$     0.0  1.09  100.0  0
+$$224.C10$   $$224.N2$      0.0  1.28  150.0  0
+$$225.C3$    $$225.H2$      0.0  1.09  100.0  0
+$$225.C4$    $$225.H3$      0.0  1.09  100.0  0
+$$225.C5$    $$225.H4$      0.0  1.09  100.0  0
+$$225.C7$    $$225.H5$      0.0  1.09  100.0  0
+$$225.C8$    $$225.H6$      0.0  1.09  100.0  0
+$$225.C9$    $$225.H9$      0.0  1.09  100.0  0
+
+#######################################################
+{STEPS}
+#######################################################
+
+# min$224ze the solvent 
+# - a few short steps to prevent instant hotspots (new velocities)
+
+[MD]
+steps                    100
+
+[sequence_restraints]
+SOLUTE           200.0  0 0 0
+_____________________________________________________________
+
+[MD]
+steps                    100
+
+[sequence_restraints]
+SOLUTE           200.0  0 0 0
+_____________________________________________________________
+
+[MD]
+steps                    100
+
+[sequence_restraints]
+SOLUTE           200.0  0 0 0
+_____________________________________________________________
+
+[MD]
+steps                    2000
+
+[sequence_restraints]
+SOLUTE           200.0  0 0 0
+_____________________________________________________________
+
+[MD]
+steps                    500
+
+[sequence_restraints]
+SOLUTE           200.0  0 0 0
+_____________________________________________________________
+
+[MD]
+steps                   500
+stepsize                 0.5
+bath_coupling            0.5
+
+[intervals]
+output                  1000 
+trajectory              1000
+temperature             1000
+
+[sequence_restraints]
+SOLUTE           200.0  0 0 0
+_____________________________________________________________
+
+
+# min$224ze everything
+[MD]
+steps                    100
+_____________________________________________________________
+
+[MD]
+steps                    100
+_____________________________________________________________
+
+[MD]
+steps                    100
+_____________________________________________________________
+
+[MD]
+steps                    2000
+_____________________________________________________________
+
+[MD]
+steps                    500
+_____________________________________________________________
+
+[MD]
+steps                   500
+stepsize                 0.5
+bath_coupling            0.5
+
+[intervals]
+output                  1000 
+trajectory              1000
+temperature             1000

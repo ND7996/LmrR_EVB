@@ -1,7 +1,7 @@
 # Generated with q_ffld2q.py, version 0.7.0
-# Date: Tue Sep 23 16:57:01 2025
+# Date: Fri Sep 26 22:50:22 2025
 #
-{paf}
+{PAF}
     [atoms]
         1  O1     paf.O1        -0.530000
         2  O2     paf.O2        -0.440000
@@ -20,7 +20,7 @@
        15  H2     paf.H2         0.360000
        16  H3     paf.H3         0.360000
        17  H4     paf.H4         0.360000
-       18  H5     paf.H5         0.360000
+       18  H22    paf.H22        0.360000
        19  H6     paf.H6         0.060000
        20  H7     paf.H7         0.060000
        21  H8     paf.H8         0.060000
@@ -37,7 +37,7 @@
         N1    H3
         N2    C9
         N2    H4
-        N2    H5
+        N2    H22
         C1    C2
         C1    C3
         C1    H6
@@ -55,7 +55,7 @@
         C8    C9
         C8    H12
     [impropers]
-        C9    N2    H4    H5
+        C9    N2    H22   H4
         C1    C3    C4    C5
         C3    C4    C7    H9
         C3    C5    C8    H10
@@ -64,6 +64,6 @@
         C5    C8    C9    H12
         C7    C9    C8    N2
     [charge_groups]
-        O1 O2 N1 N2 C1 C2 C3 C4 C5 C6 C7 C8 C9 H1 H2 H3 H4 H5 H6 H7 H8 H9 H10 H11 H12
+        O1 O2 N1 N2 C1 C2 C3 C4 C5 C6 C7 C8 C9 H1 H2 H3 H4 H22 H6 H7 H8 H9 H10 H11 H12
 *--------------------------------------------------------------------------------
 
