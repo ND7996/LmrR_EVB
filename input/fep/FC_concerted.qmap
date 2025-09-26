@@ -70,7 +70,7 @@ q				120.HN		ALA.HN		ALA.HN
 
 # Bond changes:
 # Bond formed: IMI.C12 - IND.C3 (C12-C3 bond)
-# Bond broken: IMI.N1 - IMI.C10 (N1-C10 bond breaks)
+# Bond broken: IMI.N2 - IMI.C10 (N1-C10 bond breaks)
 # Bond formed: HO2.O - IMI.C10 (OH attaches to C10)
 # Bond formed: HO2.H1 - IMI.N2 (H1 attaches to N2)
 # Bond broken: IND.C3 - IND.H3 (H3 eliminated)
