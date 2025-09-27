@@ -1,19 +1,10 @@
 # q atom (q)                    PDB ID          LIB ID (resname.name)
 # or neighbour (n)?             (resid.name)    STATE 1         STATE 2
 
-# IMI (iminium ion) transforms to PRD, but PAF stays PAF
-# Key changes: C=N bond breaks in IMI part, PAF backbone unchanged
-
-<<<<<<< HEAD
-# HO2 group 
-q				226.O3		HO2.O3		PRD.O3
-q				226.H23		HO2.H23		PRD.H23
-q				226.H22		HO2.H22		PAF.H22
-=======
-# PAF backbone and side chain atoms - UNCHANGED throughout reaction
 q                               224.N1          IMI.N1          PAF.N1
 q                               224.N2          IMI.N2          PAF.N2
 q                               224.O2          IMI.O2          PAF.O2
+q                               224.C1          IMI.C1          PAF.C1
 q                               224.C2          IMI.C2          PAF.C2
 q                               224.C3          IMI.C3          PAF.C3
 q                               224.C4          IMI.C4          PAF.C4
@@ -23,29 +14,24 @@ q                               224.C7          IMI.C7          PAF.C7
 q                               224.C8          IMI.C8          PAF.C8
 q                               224.C9          IMI.C9          PAF.C9
 q                               224.H1          IMI.H1          PAF.H1
-q                               224.H2          IMI.H2          PAF.H2
+q                               224.H2          IMI.H2          PAF.H3
+q                               224.H3          IMI.H3          PAF.H2
 q                               224.H4          IMI.H4          PAF.H4
-q                               224.H6          IMI.H6          PAF.H6
-q                               224.H7          IMI.H7          PAF.H7
-q                               224.H8          IMI.H8          PAF.H8
-q                               224.H9          IMI.H9          PAF.H9
-q                               224.H10         IMI.H10         PAF.H10
-q                               224.H11         IMI.H11         PAF.H11
-q                               224.H12         IMI.H12         PAF.H12
->>>>>>> 337b215c1003b5d120ada9d015afb7ea65fe0341
-
-# REACTION CENTER: IMI part transforms to PRD (C=N bond breaking region)
+q                               224.H5          IMI.H5          PAF.H6
+q                               224.H6          IMI.H6          PAF.H7
+q                               224.H7          IMI.H7          PAF.H8
+q                               224.H8          IMI.H8          PAF.H9
+q                               224.H9          IMI.H9          PAF.H10
+q                               224.H10         IMI.H10         PAF.H11
+q                               224.H11         IMI.H11         PAF.H12
 q                               224.C10         IMI.C10         PRD.C10    # C10 gains hydrogen
 q                               224.C11         IMI.C11         PRD.C11
 q                               224.C12         IMI.C12         PRD.C12
-
-# These atoms are part of the transforming region (IMI → PRD)
 q                               224.C13         IMI.C13         PRD.C13
 q                               224.C14         IMI.C14         PRD.C14
 q                               224.C15         IMI.C15         PRD.C15
 q                               224.H12         IMI.H12         PRD.H12
 q                               224.H13         IMI.H13         PRD.H11
-q                               224.H13         IMI.H14         PRD.H9
 q                               224.H15         IMI.H15         PRD.H15
 q                               224.H16         IMI.H16         PRD.H16
 q                               224.H17         IMI.H17         PRD.H17
@@ -53,9 +39,6 @@ q                               224.H18         IMI.H18         PRD.H18
 q                               224.H19         IMI.H19         PRD.H20
 q                               224.H20         IMI.H20         PRD.H21
 q                               224.H21         IMI.H21         PRD.H19    
-
-#indole
-
 q                               225.C1          IND.C1          PRD.C1
 q                               225.C2          IND.C2          PRD.C2
 q                               225.C3          IND.C3          PRD.C3     # Bonds to C12
@@ -67,45 +50,16 @@ q                               225.C8          IND.C8          PRD.C8
 q                               225.C9          IND.C9          PRD.C9
 q                               225.N1          IND.N1          PRD.N1 
 q                               225.H1          IND.H1          PRD.H1
-q                               225.H2          IND.H2          PRD.H2
+q                               225.H2          IND.H2          PRD.H13
 q                               225.H3          IND.H3          PRD.H2
 q                               225.H4          IND.H4          PRD.H3
 q                               225.H5          IND.H5          PRD.H4
 q                               225.H6          IND.H6          PRD.H5
-q                               225.H7          IND.H7          PRD.H6
-q                               225.H8          IND.H8          PRD.H7
-q                               225.H9          IND.H9          PRD.H8
-
-# HO2 group - provides the transferring hydrogen
+q                               225.H7          IND.H7          PRD.H7
+q                               225.H8          IND.H8          PRD.H8
+q                               225.H9          IND.H9          PRD.H9
 q                               226.O3          HO2.O3          PRD.O3      
 q                               226.H23         HO2.H23         PRD.H23    
 q                               226.H22         HO2.H22         PAF.H22    # This H transfers to C10 (key reaction!)
 
-# Alanine residue - unchanged
-q                               120.CA          ALA.CA          ALA.CA
-q                               120.HA          ALA.HA          ALA.HA
-q                               120.CB          ALA.CB          ALA.CB
-q                               120.HB2         ALA.HB2         ALA.HB2
-q                               120.N           ALA.N           ALA.N
-q                               120.HN          ALA.HN          ALA.HN
 
-# CRITICAL NOTES FOR EVB SUCCESS:
-# 1. Every atom in Q-map MUST exist in both states
-# 2. H13 on C10 in product comes from HO2.H2 in reactant - this is the transfer
-# 3. The C=N bond breaking is handled by different bond parameters between states
-# 4. All atom numbers must match your actual PDB structures exactly
-# 5. Check bond connectivity in your parameter files (.lib files) for both states
-
-# ALTERNATIVE EVB APPROACH:
-# If atom renumbering is problematic, consider:
-# - Renumbering your PDB files to maintain consistent numbering
-# - Using molecular editing software (PyMOL, ChimeraX) to renumber atoms
-# - Creating hybrid intermediate structures for smoother transitions
-
-# DEBUGGING TIPS:
-# 1. Run "q_prep" to check Q-map validity
-# 2. Visualize both states to confirm atom mapping
-# 3. Check .lib files for correct bond definitions
-# 4. Verify charge states match chemical reality
-
-C3 indole - H2 indole breaking

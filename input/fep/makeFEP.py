@@ -7,4 +7,4 @@ fepstring = make_fep(qmap_file="FC_concerted.qmap",
                      parm_files=["/home/hp/nayanika/github/LmrR_EVB/parameters/qoplsaa_all.prm"],
                      lib_files=["/home/hp/nayanika/github/LmrR_EVB/parameters/qoplsaa.lib", "/home/hp/nayanika/github/LmrR_EVB/parameters/LMRR.lib"])
 
-open("LMRR_WT2.fep", "w").write(fepstring)
+open("LMRR_WT3.fep", "w").write(fepstring)

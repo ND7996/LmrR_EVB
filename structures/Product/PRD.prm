@@ -1,286 +1,279 @@
 # Generated with q_ffld2q.py, version 0.7.0
-# Date: Fri Sep 26 22:47:19 2025
+# Date: Sat Sep 27 02:18:27 2025
 #
 [options]
 
 
 [atom_types]
-prd.C1        1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: C56A_C4_589 high C8 in indole ar25
-prd.C10         944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
-prd.C11         944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
-prd.C12         944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
-prd.C13         944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
-prd.C14         944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
-prd.C15         944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
-prd.C2        1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: C56B_C4_594 high C2 in indole ar25
-prd.C3        1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: C5B_C4_595 high C7 in indole ar25
-prd.C4        1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: CA_C4_590 high C3 in indole ar25
-prd.C5        1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: CA_C4_593 high C6 in indole ar25
-prd.C6        1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: C5A_C4_596 high C9 in indole ar25
-prd.C7        1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: CA_C4_591 high C4 in indole ar25
-prd.C8        1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: CA_C4_592 high C5 in indole ar25
-prd.C9          944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
-prd.H1           0.0054     0.0054     0.0433     0.0038     0.0306     1.0079 # FFLD: H_H8_240 high H on neutral N
-prd.H10         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
-prd.H11         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
-prd.H12         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
-prd.H13         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
-prd.H15         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
-prd.H16         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
-prd.H17         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
-prd.H18         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
-prd.H19         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
-prd.H2          69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HA_H6_146 high Benzene H - 12 site JACS,112,4768-90
-prd.H20         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
-prd.H21         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
-prd.H23          0.0054     0.0054     0.0433     0.0038     0.0306     1.0079 # FFLD: HO_H8_240 high H(O): alcohols
-prd.H3          69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HA_H6_146 high Benzene H - 12 site JACS,112,4768-90
-prd.H4          69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HA_H6_146 high Benzene H - 12 site JACS,112,4768-90
-prd.H5          69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HA_H6_146 high Benzene H - 12 site JACS,112,4768-90
-prd.H6          84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
-prd.H7          84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
-prd.H8          84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
-prd.H9          84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
-prd.N1         971.7502   971.7502    28.3077   687.1312    20.0166     14.007 # FFLD: NA_N1_587 high N1 in indole ar25
-prd.O3          760.645    760.645    25.0448   537.8572    17.7093     15.999 # FFLD: OH_O3_154 high O: mono alcohols
+unk.C1        1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: CA_C4_145 high Benzene C - 12 site JACS,112,4768-90
+unk.C10       1103.5878  1103.5878    24.6673   780.3544    17.4424     12.011 # FFLD: CM_C3_141 high alkene C (RH-C=) all atom
+unk.C11       1103.5878  1103.5878    24.6673   780.3544    17.4424     12.011 # FFLD: CM_C3_141 high alkene C (RH-C=) all atom
+unk.C12         944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
+unk.C13         944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
+unk.C14         944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
+unk.C15         944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
+unk.C2        1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: CA_C4_145 high Benzene C - 12 site JACS,112,4768-90
+unk.C3          944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
+unk.C4        1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: CA_C4_145 high Benzene C - 12 site JACS,112,4768-90
+unk.C5        1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: CA_C4_145 high Benzene C - 12 site JACS,112,4768-90
+unk.C6        1802.2385  1802.2385    34.1758  1274.3751    24.1659     12.011 # FFLD: CG_C2_241 high iminium carbon
+unk.C7        1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: CA_C4_145 high Benzene C - 12 site JACS,112,4768-90
+unk.C8        1059.1297  1059.1297    23.6736   748.9178    16.7398     12.011 # FFLD: CA_C4_145 high Benzene C - 12 site JACS,112,4768-90
+unk.C9          944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
+unk.H1          84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+unk.H10         69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HC_H6_146 high alkene H (H-C=) all atom
+unk.H11         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+unk.H12         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+unk.H13          0.0054     0.0054     0.0433     0.0038     0.0306     1.0079 # FFLD: HO_H8_240 high H(O): alcohols
+unk.H14         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+unk.H15         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+unk.H16         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+unk.H17         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+unk.H18         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+unk.H19         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+unk.H2           0.0054     0.0054     0.0433     0.0038     0.0306     1.0079 # FFLD: H_H8_240 high H attached to N+
+unk.H20         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+unk.H3          69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HA_H6_146 high Benzene H - 12 site JACS,112,4768-90
+unk.H4          69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HA_H6_146 high Benzene H - 12 site JACS,112,4768-90
+unk.H5          69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HA_H6_146 high Benzene H - 12 site JACS,112,4768-90
+unk.H6          69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HA_H6_146 high Benzene H - 12 site JACS,112,4768-90
+unk.H7          84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+unk.H8          84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+unk.H9          84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+unk.N1         971.7502   971.7502    28.3077   687.1312    20.0166     14.007 # FFLD: NIP_N7_379 high protonated or alkylated imine N
+unk.O1          760.645    760.645    25.0448   537.8572    17.7093     15.999 # FFLD: OH_O3_154 high O: mono alcohols
 
 [bonds]
-prd.C1       prd.C2            894.0      1.419 # FFLD: high 0 => 0 C56A-C56B ==> C56B-C56A
-prd.C1       prd.C4            938.0        1.4 # FFLD: high 0 => 0 C56A-CA ==> CA-C56A
-prd.C1       prd.N1            856.0       1.38 # FFLD: high 0 => 0 NA-C56A ==> NA-C56A
-prd.C10      prd.C11           536.0      1.529 # FFLD: high 0 => 0 CT-CT ==> CT-CT
-prd.C10      prd.H12           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
-prd.C10      prd.H13           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
-prd.C10      prd.O3            640.0       1.41 # FFLD: high 0 => 0 CT-OH ==> OH-CT
-prd.C11      prd.C12           536.0      1.529 # FFLD: high 0 => 0 CT-CT ==> CT-CT
-prd.C11      prd.H10           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
-prd.C11      prd.H11           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
-prd.C12      prd.C13           536.0      1.529 # FFLD: high 0 => 0 CT-CT ==> CT-CT
-prd.C12      prd.C3            590.0      1.494 # FFLD: high 0 => 0 C5B-CT ==> CT-C5B
-prd.C12      prd.H9            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
-prd.C13      prd.C14           536.0      1.529 # FFLD: high 0 => 0 CT-CT ==> CT-CT
-prd.C13      prd.H15           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
-prd.C13      prd.H16           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
-prd.C14      prd.C15           536.0      1.529 # FFLD: high 0 => 0 CT-CT ==> CT-CT
-prd.C14      prd.H17           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
-prd.C14      prd.H18           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
-prd.C15      prd.H19           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
-prd.C15      prd.H20           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
-prd.C15      prd.H21           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
-prd.C2       prd.C3            760.0       1.44 # FFLD: high 0 => 0 C56B-C5B ==> C5B-C56B
-prd.C2       prd.C5            938.0      1.404 # FFLD: high 0 => 0 C56B-CA ==> CA-C56B
-prd.C3       prd.C6           1040.0       1.37 # FFLD: high 0 => 0 C5B-C5A ==> C5B-C5A
-prd.C4       prd.C7            938.0        1.4 # FFLD: high 0 => 0 CA-CA ==> CA-CA
-prd.C4       prd.H2            734.0       1.08 # FFLD: high 0 => 0 CA-HA ==> HA-CA
-prd.C5       prd.C8            938.0        1.4 # FFLD: high 0 => 0 CA-CA ==> CA-CA
-prd.C5       prd.H3            734.0       1.08 # FFLD: high 0 => 0 CA-HA ==> HA-CA
-prd.C6       prd.C9            590.0      1.489 # FFLD: high 0 => 0 C5A-CT ==> CT-C5A
-prd.C6       prd.N1            854.0      1.381 # FFLD: high 0 => 0 NA-C5A ==> NA-C5A
-prd.C7       prd.C8            938.0        1.4 # FFLD: high 0 => 0 CA-CA ==> CA-CA
-prd.C7       prd.H4            734.0       1.08 # FFLD: high 0 => 0 CA-HA ==> HA-CA
-prd.C8       prd.H5            734.0       1.08 # FFLD: high 0 => 0 CA-HA ==> HA-CA
-prd.C9       prd.H6            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
-prd.C9       prd.H7            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
-prd.C9       prd.H8            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
-prd.H1       prd.N1            868.0       1.01 # FFLD: high 0 => 0 NA-H ==> NA-H
-prd.H23      prd.O3           1106.0      0.945 # FFLD: high 0 => 0 OH-HO ==> OH-HO
+unk.C1       unk.C2            938.0        1.4 # FFLD: high 0 => 0 CA-CA ==> CA-CA
+unk.C1       unk.C4            938.0        1.4 # FFLD: high 0 => 0 CA-CA ==> CA-CA
+unk.C1       unk.N1            680.0      1.432 # FFLD: high 0 => 0 NIP-CA ==> NIP-CA
+unk.C10      unk.C11          1098.0       1.34 # FFLD: high 0 => 0 CM-CM ==> CM-CM
+unk.C10      unk.C13           634.0       1.51 # FFLD: high 0 => 0 CM-CT ==> CT-CM
+unk.C10      unk.C3            634.0       1.51 # FFLD: high 0 => 0 CT-CM ==> CT-CM
+unk.C11      unk.C12           634.0       1.51 # FFLD: high 0 => 0 CM-CT ==> CT-CM
+unk.C11      unk.H10           680.0       1.08 # FFLD: high 0 => 0 CM-HC ==> HC-CM
+unk.C12      unk.H11           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unk.C12      unk.H12           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unk.C12      unk.O1            640.0       1.41 # FFLD: high 0 => 0 CT-OH ==> OH-CT
+unk.C13      unk.C14           536.0      1.529 # FFLD: high 0 => 0 CT-CT ==> CT-CT
+unk.C13      unk.H14           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unk.C13      unk.H15           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unk.C14      unk.C15           536.0      1.529 # FFLD: high 0 => 0 CT-CT ==> CT-CT
+unk.C14      unk.H16           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unk.C14      unk.H17           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unk.C15      unk.H18           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unk.C15      unk.H19           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unk.C15      unk.H20           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unk.C2       unk.C3            634.0       1.51 # FFLD: high 0 => 0 CA-CT ==> CT-CA
+unk.C2       unk.C5            938.0        1.4 # FFLD: high 0 => 0 CA-CA ==> CA-CA
+unk.C3       unk.C6            580.0      1.488 # FFLD: high 0 => 0 CT-CG ==> CT-CG
+unk.C3       unk.H1            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unk.C4       unk.C7            938.0        1.4 # FFLD: high 0 => 0 CA-CA ==> CA-CA
+unk.C4       unk.H3            734.0       1.08 # FFLD: high 0 => 0 CA-HA ==> HA-CA
+unk.C5       unk.C8            938.0        1.4 # FFLD: high 0 => 0 CA-CA ==> CA-CA
+unk.C5       unk.H4            734.0       1.08 # FFLD: high 0 => 0 CA-HA ==> HA-CA
+unk.C6       unk.C9            580.0      1.488 # FFLD: high 0 => 0 CG-CT ==> CT-CG
+unk.C6       unk.N1           1270.0      1.286 # FFLD: high 0 => 0 NIP-CG ==> NIP-CG
+unk.C7       unk.C8            938.0        1.4 # FFLD: high 0 => 0 CA-CA ==> CA-CA
+unk.C7       unk.H5            734.0       1.08 # FFLD: high 0 => 0 CA-HA ==> HA-CA
+unk.C8       unk.H6            734.0       1.08 # FFLD: high 0 => 0 CA-HA ==> HA-CA
+unk.C9       unk.H7            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unk.C9       unk.H8            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unk.C9       unk.H9            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unk.H13      unk.O1           1106.0      0.945 # FFLD: high 0 => 0 OH-HO ==> OH-HO
+unk.H2       unk.N1            980.0      1.015 # FFLD: high 0 => 0 NIP-H ==> NIP-H
 
 [angles]
-prd.C1       prd.C2       prd.C3            160.0    107.436 # FFLD: high 0 C56A-C56B-C5B ==> C5B-C56B-C56A
-prd.C1       prd.C2       prd.C5            170.0      116.2 # FFLD: high 0 C56A-C56B-CA ==> CA-C56B-C56A
-prd.C1       prd.C4       prd.C7            170.0      120.0 # FFLD: high 0 C56A-CA-CA ==> CA-CA-C56A
-prd.C1       prd.C4       prd.H2             70.0      120.0 # FFLD: high 0 C56A-CA-HA ==> HA-CA-C56A
-prd.C1       prd.N1       prd.C6            180.0    107.142 # FFLD: high 0 C56A-NA-C5A ==> C5A-NA-C56A
-prd.C1       prd.N1       prd.H1             70.0      123.1 # FFLD: high 0 C56A-NA-H ==> H-NA-C56A
-prd.C10      prd.C11      prd.C12           116.7      112.7 # FFLD: high 0 CT-CT-CT ==> CT-CT-CT
-prd.C10      prd.C11      prd.H10            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C10      prd.C11      prd.H11            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C10      prd.O3       prd.H23           110.0      108.5 # FFLD: high 0 CT-OH-HO ==> HO-OH-CT
-prd.C11      prd.C10      prd.H12            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C11      prd.C10      prd.H13            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C11      prd.C10      prd.O3            100.0      109.5 # FFLD: high 0 CT-CT-OH ==> OH-CT-CT
-prd.C11      prd.C12      prd.C13           116.7      112.7 # FFLD: high 0 CT-CT-CT ==> CT-CT-CT
-prd.C11      prd.C12      prd.C3            140.0    112.624 # FFLD: high 0 C5B-CT-CT ==> CT-CT-C5B
-prd.C11      prd.C12      prd.H9             75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C12      prd.C11      prd.H10            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C12      prd.C11      prd.H11            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C12      prd.C13      prd.C14           116.7      112.7 # FFLD: high 0 CT-CT-CT ==> CT-CT-CT
-prd.C12      prd.C13      prd.H15            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C12      prd.C13      prd.H16            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C12      prd.C3       prd.C2            110.0     128.73 # FFLD: high 0 C56B-C5B-CT ==> CT-C5B-C56B
-prd.C12      prd.C3       prd.C6            110.0    127.779 # FFLD: high 0 C5A-C5B-CT ==> CT-C5B-C5A
-prd.C13      prd.C12      prd.C3            140.0    112.624 # FFLD: high 0 C5B-CT-CT ==> CT-CT-C5B
-prd.C13      prd.C12      prd.H9             75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C13      prd.C14      prd.C15           116.7      112.7 # FFLD: high 0 CT-CT-CT ==> CT-CT-CT
-prd.C13      prd.C14      prd.H17            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C13      prd.C14      prd.H18            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C14      prd.C13      prd.H15            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C14      prd.C13      prd.H16            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C14      prd.C15      prd.H19            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C14      prd.C15      prd.H20            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C14      prd.C15      prd.H21            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C15      prd.C14      prd.H17            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C15      prd.C14      prd.H18            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
-prd.C2       prd.C1       prd.C4            170.0      122.7 # FFLD: high 0 C56B-C56A-CA ==> CA-C56A-C56B
-prd.C2       prd.C1       prd.N1            140.0      104.4 # FFLD: high 0 NA-C56A-C56B ==> NA-C56A-C56B
-prd.C2       prd.C3       prd.C6            160.0    105.829 # FFLD: high 0 C56B-C5B-C5A ==> C5A-C5B-C56B
-prd.C2       prd.C5       prd.C8            126.0      120.0 # FFLD: high 0 C56B-CA-CA ==> CA-CA-C56B
-prd.C2       prd.C5       prd.H3             70.0      120.0 # FFLD: high 0 C56B-CA-HA ==> HA-CA-C56B
-prd.C3       prd.C12      prd.H9             90.0    111.117 # FFLD: high 0 C5B-CT-HC ==> HC-CT-C5B
-prd.C3       prd.C2       prd.C5            100.0    134.855 # FFLD: high 0 C5B-C56B-CA ==> CA-C56B-C5B
-prd.C3       prd.C6       prd.C9            110.0    130.442 # FFLD: high 0 C5B-C5A-CT ==> CT-C5A-C5B
-prd.C3       prd.C6       prd.N1            140.0      106.3 # FFLD: high 0 NA-C5A-C5B ==> NA-C5A-C5B
-prd.C4       prd.C1       prd.N1            140.0      132.8 # FFLD: high 0 NA-C56A-CA ==> NA-C56A-CA
-prd.C4       prd.C7       prd.C8            126.0      120.0 # FFLD: high 0 CA-CA-CA ==> CA-CA-CA
-prd.C4       prd.C7       prd.H4             70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
-prd.C5       prd.C8       prd.C7            126.0      120.0 # FFLD: high 0 CA-CA-CA ==> CA-CA-CA
-prd.C5       prd.C8       prd.H5             70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
-prd.C6       prd.C9       prd.H6             90.0    110.474 # FFLD: high 0 C5A-CT-HC ==> HC-CT-C5A
-prd.C6       prd.C9       prd.H7             90.0    110.474 # FFLD: high 0 C5A-CT-HC ==> HC-CT-C5A
-prd.C6       prd.C9       prd.H8             90.0    110.474 # FFLD: high 0 C5A-CT-HC ==> HC-CT-C5A
-prd.C6       prd.N1       prd.H1             70.0      120.0 # FFLD: high 0 C5A-NA-H ==> H-NA-C5A
-prd.C7       prd.C4       prd.H2             70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
-prd.C7       prd.C8       prd.H5             70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
-prd.C8       prd.C5       prd.H3             70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
-prd.C8       prd.C7       prd.H4             70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
-prd.C9       prd.C6       prd.N1            130.0    122.569 # FFLD: high 0 NA-C5A-CT ==> NA-C5A-CT
-prd.H10      prd.C11      prd.H11            66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
-prd.H12      prd.C10      prd.H13            66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
-prd.H12      prd.C10      prd.O3             70.0      109.5 # FFLD: high 0 OH-CT-HC ==> OH-CT-HC
-prd.H13      prd.C10      prd.O3             70.0      109.5 # FFLD: high 0 OH-CT-HC ==> OH-CT-HC
-prd.H15      prd.C13      prd.H16            66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
-prd.H17      prd.C14      prd.H18            66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
-prd.H19      prd.C15      prd.H20            66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
-prd.H19      prd.C15      prd.H21            66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
-prd.H20      prd.C15      prd.H21            66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
-prd.H6       prd.C9       prd.H7             66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
-prd.H6       prd.C9       prd.H8             66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
-prd.H7       prd.C9       prd.H8             66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+unk.C1       unk.C2       unk.C3            140.0      120.0 # FFLD: high 0 CA-CA-CT ==> CT-CA-CA
+unk.C1       unk.C2       unk.C5            126.0      120.0 # FFLD: high 0 CA-CA-CA ==> CA-CA-CA
+unk.C1       unk.C4       unk.C7            126.0      120.0 # FFLD: high 0 CA-CA-CA ==> CA-CA-CA
+unk.C1       unk.C4       unk.H3             70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
+unk.C1       unk.N1       unk.C6            130.0     127.86 # FFLD: high 0 CA-NIP-CG ==> CG-NIP-CA
+unk.C1       unk.N1       unk.H2             90.0     117.88 # FFLD: high 0 CA-NIP-H ==> H-NIP-CA
+unk.C10      unk.C11      unk.C12           140.0      124.0 # FFLD: high 0 CM-CM-CT ==> CT-CM-CM
+unk.C10      unk.C11      unk.H10            70.0      120.0 # FFLD: high 0 CM-CM-HC ==> HC-CM-CM
+unk.C10      unk.C13      unk.C14           140.0    112.027 # FFLD: high 0 CM-CT-CT ==> CT-CT-CM
+unk.C10      unk.C13      unk.H14            70.0      109.5 # FFLD: high 0 CM-CT-HC ==> HC-CT-CM
+unk.C10      unk.C13      unk.H15            70.0      109.5 # FFLD: high 0 CM-CT-HC ==> HC-CT-CM
+unk.C10      unk.C3       unk.C2            140.0    112.996 # FFLD: high 0 CA-CT-CM ==> CM-CT-CA
+unk.C10      unk.C3       unk.C6            140.0    110.516 # FFLD: high 0 CG-CT-CM ==> CD-CT-CM
+unk.C10      unk.C3       unk.H1             70.0      109.5 # FFLD: high 0 CM-CT-HC ==> HC-CT-CM
+unk.C11      unk.C10      unk.C13           140.0      124.0 # FFLD: high 0 CM-CM-CT ==> CT-CM-CM
+unk.C11      unk.C10      unk.C3            140.0      124.0 # FFLD: high 0 CT-CM-CM ==> CT-CM-CM
+unk.C11      unk.C12      unk.H11            70.0      109.5 # FFLD: high 0 CM-CT-HC ==> HC-CT-CM
+unk.C11      unk.C12      unk.H12            70.0      109.5 # FFLD: high 0 CM-CT-HC ==> HC-CT-CM
+unk.C11      unk.C12      unk.O1            180.0    110.392 # FFLD: high 0 CM-CT-OH ==> OH-CT-CM
+unk.C12      unk.C11      unk.H10            70.0      117.0 # FFLD: high 0 CT-CM-HC ==> HC-CM-CT
+unk.C12      unk.O1       unk.H13           110.0      108.5 # FFLD: high 0 CT-OH-HO ==> HO-OH-CT
+unk.C13      unk.C10      unk.C3            130.0    117.927 # FFLD: high 0 CT-CM-CT ==> CT-CM-CT
+unk.C13      unk.C14      unk.C15           116.7      112.7 # FFLD: high 0 CT-CT-CT ==> CT-CT-CT
+unk.C13      unk.C14      unk.H16            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
+unk.C13      unk.C14      unk.H17            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
+unk.C14      unk.C13      unk.H14            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
+unk.C14      unk.C13      unk.H15            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
+unk.C14      unk.C15      unk.H18            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
+unk.C14      unk.C15      unk.H19            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
+unk.C14      unk.C15      unk.H20            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
+unk.C15      unk.C14      unk.H16            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
+unk.C15      unk.C14      unk.H17            75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
+unk.C2       unk.C1       unk.C4            126.0      120.0 # FFLD: high 0 CA-CA-CA ==> CA-CA-CA
+unk.C2       unk.C1       unk.N1            140.0    116.833 # FFLD: high 0 NIP-CA-CA ==> NIP-CA-CA
+unk.C2       unk.C3       unk.C6            130.0     115.96 # FFLD: high 0 CA-CT-CG ==> CG-CT-CA
+unk.C2       unk.C3       unk.H1             70.0      109.5 # FFLD: high 0 CA-CT-HC ==> HC-CT-CA
+unk.C2       unk.C5       unk.C8            126.0      120.0 # FFLD: high 0 CA-CA-CA ==> CA-CA-CA
+unk.C2       unk.C5       unk.H4             70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
+unk.C3       unk.C2       unk.C5            140.0      120.0 # FFLD: high 0 CT-CA-CA ==> CT-CA-CA
+unk.C3       unk.C6       unk.C9            120.0     123.32 # FFLD: high 0 CT-CG-CT ==> CT-CG-CT
+unk.C3       unk.C6       unk.N1            140.0    120.652 # FFLD: high 0 NIP-CG-CT ==> NIP-CG-CT
+unk.C4       unk.C1       unk.N1            140.0    116.833 # FFLD: high 0 NIP-CA-CA ==> NIP-CA-CA
+unk.C4       unk.C7       unk.C8            126.0      120.0 # FFLD: high 0 CA-CA-CA ==> CA-CA-CA
+unk.C4       unk.C7       unk.H5             70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
+unk.C5       unk.C8       unk.C7            126.0      120.0 # FFLD: high 0 CA-CA-CA ==> CA-CA-CA
+unk.C5       unk.C8       unk.H6             70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
+unk.C6       unk.C3       unk.H1             90.0    109.334 # FFLD: high 0 CG-CT-HC ==> HC-CT-CG
+unk.C6       unk.C9       unk.H7             90.0    109.334 # FFLD: high 0 CG-CT-HC ==> HC-CT-CG
+unk.C6       unk.C9       unk.H8             90.0    109.334 # FFLD: high 0 CG-CT-HC ==> HC-CT-CG
+unk.C6       unk.C9       unk.H9             90.0    109.334 # FFLD: high 0 CG-CT-HC ==> HC-CT-CG
+unk.C6       unk.N1       unk.H2             90.0    118.895 # FFLD: high 0 CG-NIP-H ==> H-NIP-CG
+unk.C7       unk.C4       unk.H3             70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
+unk.C7       unk.C8       unk.H6             70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
+unk.C8       unk.C5       unk.H4             70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
+unk.C8       unk.C7       unk.H5             70.0      120.0 # FFLD: high 0 CA-CA-HA ==> HA-CA-CA
+unk.C9       unk.C6       unk.N1            140.0    120.652 # FFLD: high 0 NIP-CG-CT ==> NIP-CG-CT
+unk.H11      unk.C12      unk.H12            66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+unk.H11      unk.C12      unk.O1             70.0      109.5 # FFLD: high 0 OH-CT-HC ==> OH-CT-HC
+unk.H12      unk.C12      unk.O1             70.0      109.5 # FFLD: high 0 OH-CT-HC ==> OH-CT-HC
+unk.H14      unk.C13      unk.H15            66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+unk.H16      unk.C14      unk.H17            66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+unk.H18      unk.C15      unk.H19            66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+unk.H18      unk.C15      unk.H20            66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+unk.H19      unk.C15      unk.H20            66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+unk.H7       unk.C9       unk.H8             66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+unk.H7       unk.C9       unk.H9             66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+unk.H8       unk.C9       unk.H9             66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
 
 [torsions]
-prd.C1       prd.C2       prd.C3       prd.C12           3.625   2.0      180.0   1.0 # FFLD: high 0 C56A-C56B-C5B-CT ==> CT-CA-CA-CA
-prd.C1       prd.C2       prd.C3       prd.C6              3.5   2.0      180.0   1.0 # FFLD: high 0 C56A-C56B-C5B-C5A ==> CA-CA-C56B-C56A
-prd.C1       prd.C2       prd.C5       prd.C8              3.5   2.0      180.0   1.0 # FFLD: high 0 C56A-C56B-CA-CA ==> CA-CA-C56B-C56A
-prd.C1       prd.C2       prd.C5       prd.H3              3.5   2.0      180.0   1.0 # FFLD: high 0 C56A-C56B-CA-HA ==> HA-CA-C56B-C56A
-prd.C1       prd.C4       prd.C7       prd.C8            3.625   2.0      180.0   1.0 # FFLD: high 0 C56A-CA-CA-CA ==> CA-CA-CA-C56A
-prd.C1       prd.C4       prd.C7       prd.H4            3.625   2.0      180.0   1.0 # FFLD: high 0 C56A-CA-CA-HA ==> HA-CA-CA-C56A
-prd.C1       prd.N1       prd.C6       prd.C3            3.625   2.0      180.0   1.0 # FFLD: high 0 C56A-NA-C5A-C5B ==> ??-NA-CA-??
-prd.C1       prd.N1       prd.C6       prd.C9            3.625   2.0      180.0   1.0 # FFLD: high 0 C56A-NA-C5A-CT ==> ??-NA-CA-??
-prd.C10      prd.C11      prd.C12      prd.C13          0.5675   1.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-CT ==> CT-CT-CT-CT
-prd.C10      prd.C11      prd.C12      prd.C13         -0.0755   2.0      180.0   1.0 # FFLD: high 0 CT-CT-CT-CT ==> CT-CT-CT-CT
-prd.C10      prd.C11      prd.C12      prd.C13             0.2   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-CT ==> CT-CT-CT-CT
-prd.C10      prd.C11      prd.C12      prd.C3           -0.037   1.0        0.0   1.0 # FFLD: high 0 C5B-CT-CT-CT ==> CT-CT-CT-CA
-prd.C10      prd.C11      prd.C12      prd.C3            0.372   2.0      180.0   1.0 # FFLD: high 0 C5B-CT-CT-CT ==> CT-CT-CT-CA
-prd.C10      prd.C11      prd.C12      prd.C3           -0.473   3.0        0.0   1.0 # FFLD: high 0 C5B-CT-CT-CT ==> CT-CT-CT-CA
-prd.C10      prd.C11      prd.C12      prd.H9             0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-CT ==> HC-CT-CT-CT
-prd.C11      prd.C10      prd.O3       prd.H23          -0.116   1.0        0.0   1.0 # FFLD: high 0 CT-CT-OH-HO ==> HO-OH-CT-CT
-prd.C11      prd.C10      prd.O3       prd.H23         -0.0945   2.0      180.0   1.0 # FFLD: high 0 CT-CT-OH-HO ==> HO-OH-CT-CT
-prd.C11      prd.C10      prd.O3       prd.H23          0.2125   3.0        0.0   1.0 # FFLD: high 0 CT-CT-OH-HO ==> HO-OH-CT-CT
-prd.C11      prd.C12      prd.C13      prd.C14          0.5675   1.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-CT ==> CT-CT-CT-CT
-prd.C11      prd.C12      prd.C13      prd.C14         -0.0755   2.0      180.0   1.0 # FFLD: high 0 CT-CT-CT-CT ==> CT-CT-CT-CT
-prd.C11      prd.C12      prd.C13      prd.C14             0.2   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-CT ==> CT-CT-CT-CT
-prd.C11      prd.C12      prd.C13      prd.H15            0.15   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-HC ==> HC-CT-CT-CT
-prd.C11      prd.C12      prd.C13      prd.H16            0.15   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-HC ==> HC-CT-CT-CT
-prd.C11      prd.C12      prd.C3       prd.C2           0.0415   2.0      180.0   1.0 # FFLD: high 0 C56B-C5B-CT-CT ==> CT-CT-CA-CA
-prd.C11      prd.C12      prd.C3       prd.C6           0.0415   2.0      180.0   1.0 # FFLD: high 0 C5A-C5B-CT-CT ==> CT-CT-CA-CA
-prd.C12      prd.C11      prd.C10      prd.H12            0.15   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-HC ==> HC-CT-CT-CT
-prd.C12      prd.C11      prd.C10      prd.H13            0.15   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-HC ==> HC-CT-CT-CT
-prd.C12      prd.C11      prd.C10      prd.O3            0.865   1.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-OH ==> OH-CT-CT-CT
-prd.C12      prd.C11      prd.C10      prd.O3           -0.175   2.0      180.0   1.0 # FFLD: high 0 CT-CT-CT-OH ==> OH-CT-CT-CT
-prd.C12      prd.C11      prd.C10      prd.O3            0.208   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-OH ==> OH-CT-CT-CT
-prd.C12      prd.C13      prd.C14      prd.C15          0.5675   1.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-CT ==> CT-CT-CT-CT
-prd.C12      prd.C13      prd.C14      prd.C15         -0.0755   2.0      180.0   1.0 # FFLD: high 0 CT-CT-CT-CT ==> CT-CT-CT-CT
-prd.C12      prd.C13      prd.C14      prd.C15             0.2   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-CT ==> CT-CT-CT-CT
-prd.C12      prd.C13      prd.C14      prd.H17            0.15   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-HC ==> HC-CT-CT-CT
-prd.C12      prd.C13      prd.C14      prd.H18            0.15   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-HC ==> HC-CT-CT-CT
-prd.C12      prd.C3       prd.C2       prd.C5            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-C56B-C5B-CT ==> CT-CA-CA-CA
-prd.C12      prd.C3       prd.C6       prd.C9            3.625   2.0      180.0   1.0 # FFLD: high 0 CT-C5B-C5A-CT ==> ??-CA-CA-??
-prd.C12      prd.C3       prd.C6       prd.N1            3.625   2.0      180.0   1.0 # FFLD: high 0 CT-C5B-C5A-NA ==> ??-CA-CA-??
-prd.C13      prd.C12      prd.C11      prd.H10            0.15   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-HC ==> HC-CT-CT-CT
-prd.C13      prd.C12      prd.C11      prd.H11            0.15   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-HC ==> HC-CT-CT-CT
-prd.C13      prd.C12      prd.C3       prd.C2           0.0415   2.0      180.0   1.0 # FFLD: high 0 C56B-C5B-CT-CT ==> CT-CT-CA-CA
-prd.C13      prd.C12      prd.C3       prd.C6           0.0415   2.0      180.0   1.0 # FFLD: high 0 C5A-C5B-CT-CT ==> CT-CT-CA-CA
-prd.C13      prd.C14      prd.C15      prd.H19            0.15   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-HC ==> HC-CT-CT-CT
-prd.C13      prd.C14      prd.C15      prd.H20            0.15   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-HC ==> HC-CT-CT-CT
-prd.C13      prd.C14      prd.C15      prd.H21            0.15   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-HC ==> HC-CT-CT-CT
-prd.C14      prd.C13      prd.C12      prd.C3           -0.037   1.0        0.0   1.0 # FFLD: high 0 C5B-CT-CT-CT ==> CT-CT-CT-CA
-prd.C14      prd.C13      prd.C12      prd.C3            0.372   2.0      180.0   1.0 # FFLD: high 0 C5B-CT-CT-CT ==> CT-CT-CT-CA
-prd.C14      prd.C13      prd.C12      prd.C3           -0.473   3.0        0.0   1.0 # FFLD: high 0 C5B-CT-CT-CT ==> CT-CT-CT-CA
-prd.C14      prd.C13      prd.C12      prd.H9             0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-CT ==> HC-CT-CT-CT
-prd.C15      prd.C14      prd.C13      prd.H15            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-CT ==> HC-CT-CT-CT
-prd.C15      prd.C14      prd.C13      prd.H16            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-CT ==> HC-CT-CT-CT
-prd.C2       prd.C1       prd.C4       prd.C7            3.625   2.0      180.0   1.0 # FFLD: high 0 C56B-C56A-CA-CA ==> CA-CA-C56A-C56B
-prd.C2       prd.C1       prd.C4       prd.H2            3.625   2.0      180.0   1.0 # FFLD: high 0 C56B-C56A-CA-HA ==> HA-CA-C56A-C56B
-prd.C2       prd.C1       prd.N1       prd.C6            3.625   2.0      180.0   1.0 # FFLD: high 0 C5A-NA-C56A-C56B ==> ??-NA-CA-??
-prd.C2       prd.C1       prd.N1       prd.H1            1.525   2.0      180.0   1.0 # FFLD: high 0 H-NA-C56A-C56B ==> H-NA-C56A-C56B
-prd.C2       prd.C3       prd.C12      prd.H9              0.0   1.0        0.0   1.0 # FFLD: high 0 C56B-C5B-CT-HC ==> HC-CT-CA-CA
-prd.C2       prd.C3       prd.C6       prd.C9            3.625   2.0      180.0   1.0 # FFLD: high 0 C56B-C5B-C5A-CT ==> CT-CA-CA-CA
-prd.C2       prd.C3       prd.C6       prd.N1            3.625   2.0      180.0   1.0 # FFLD: high 0 C56B-C5B-C5A-NA ==> ??-CA-CA-??
-prd.C2       prd.C5       prd.C8       prd.C7            3.625   2.0      180.0   1.0 # FFLD: high 0 C56B-CA-CA-CA ==> CA-CA-CA-C56B
-prd.C2       prd.C5       prd.C8       prd.H5            3.625   2.0      180.0   1.0 # FFLD: high 0 C56B-CA-CA-HA ==> HA-CA-CA-C56B
-prd.C3       prd.C12      prd.C11      prd.H10           0.432   3.0        0.0   1.0 # FFLD: high 0 C5B-CT-CT-HC ==> HC-CT-CT-CA
-prd.C3       prd.C12      prd.C11      prd.H11           0.432   3.0        0.0   1.0 # FFLD: high 0 C5B-CT-CT-HC ==> HC-CT-CT-CA
-prd.C3       prd.C12      prd.C13      prd.H15           0.432   3.0        0.0   1.0 # FFLD: high 0 C5B-CT-CT-HC ==> HC-CT-CT-CA
-prd.C3       prd.C12      prd.C13      prd.H16           0.432   3.0        0.0   1.0 # FFLD: high 0 C5B-CT-CT-HC ==> HC-CT-CT-CA
-prd.C3       prd.C2       prd.C1       prd.C4              3.0   2.0      180.0   1.0 # FFLD: high 0 CA-C56A-C56B-C5B ==> CA-C56B-C56A-CA
-prd.C3       prd.C2       prd.C1       prd.N1              3.0   2.0      180.0   1.0 # FFLD: high 0 NA-C56A-C56B-C5B ==> CA-C56B-C56A-NA
-prd.C3       prd.C2       prd.C5       prd.C8            3.625   2.0      180.0   1.0 # FFLD: high 0 C5B-C56B-CA-CA ==> CA-CA-CA-CA
-prd.C3       prd.C2       prd.C5       prd.H3            3.625   2.0      180.0   1.0 # FFLD: high 0 C5B-C56B-CA-HA ==> HA-CA-CA-CA
-prd.C3       prd.C6       prd.C9       prd.H6              0.0   1.0        0.0   1.0 # FFLD: high 0 C5B-C5A-CT-HC ==> HC-CT-CA-CA
-prd.C3       prd.C6       prd.C9       prd.H7              0.0   1.0        0.0   1.0 # FFLD: high 0 C5B-C5A-CT-HC ==> HC-CT-CA-CA
-prd.C3       prd.C6       prd.C9       prd.H8              0.0   1.0        0.0   1.0 # FFLD: high 0 C5B-C5A-CT-HC ==> HC-CT-CA-CA
-prd.C3       prd.C6       prd.N1       prd.H1              1.4   2.0      180.0   1.0 # FFLD: high 0 H-NA-C5A-C5B ==> H-NA-C5A-C5B
-prd.C4       prd.C1       prd.C2       prd.C5              3.0   2.0      180.0   1.0 # FFLD: high 0 CA-C56A-C56B-CA ==> CA-C56B-C56A-CA
-prd.C4       prd.C1       prd.N1       prd.C6            3.625   2.0      180.0   1.0 # FFLD: high 0 C5A-NA-C56A-CA ==> ??-NA-CA-??
-prd.C4       prd.C1       prd.N1       prd.H1            1.525   2.0      180.0   1.0 # FFLD: high 0 H-NA-C56A-CA ==> H-NA-C56A-CA
-prd.C4       prd.C7       prd.C8       prd.C5            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-CA ==> CA-CA-CA-CA
-prd.C4       prd.C7       prd.C8       prd.H5            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-HA ==> HA-CA-CA-CA
-prd.C5       prd.C2       prd.C1       prd.N1              3.0   2.0      180.0   1.0 # FFLD: high 0 NA-C56A-C56B-CA ==> CA-C56B-C56A-NA
-prd.C5       prd.C2       prd.C3       prd.C6            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-C56B-C5B-C5A ==> CA-CA-CA-CA
-prd.C5       prd.C8       prd.C7       prd.H4            3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-CA ==> HA-CA-CA-CA
-prd.C6       prd.C3       prd.C12      prd.H9              0.0   1.0        0.0   1.0 # FFLD: high 0 C5A-C5B-CT-HC ==> HC-CT-CA-CA
-prd.C7       prd.C4       prd.C1       prd.N1            3.625   2.0      180.0   1.0 # FFLD: high 0 NA-C56A-CA-CA ==> CA-CA-C56A-NA
-prd.C7       prd.C8       prd.C5       prd.H3            3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-CA ==> HA-CA-CA-CA
-prd.C8       prd.C7       prd.C4       prd.H2            3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-CA ==> HA-CA-CA-CA
-prd.C9       prd.C6       prd.N1       prd.H1              2.0   2.0      180.0   1.0 # FFLD: high 0 H-NA-C5A-CT ==> H-NA-CA-??
-prd.H10      prd.C11      prd.C10      prd.H12            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
-prd.H10      prd.C11      prd.C10      prd.H13            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
-prd.H10      prd.C11      prd.C10      prd.O3            0.234   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-OH ==> O?-CT-CT-HC
-prd.H10      prd.C11      prd.C12      prd.H9             0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
-prd.H11      prd.C11      prd.C10      prd.H12            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
-prd.H11      prd.C11      prd.C10      prd.H13            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
-prd.H11      prd.C11      prd.C10      prd.O3            0.234   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-OH ==> O?-CT-CT-HC
-prd.H11      prd.C11      prd.C12      prd.H9             0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
-prd.H12      prd.C10      prd.O3       prd.H23          0.1945   3.0        0.0   1.0 # FFLD: high 0 HC-CT-OH-HO ==> HO-OH-CT-HC
-prd.H13      prd.C10      prd.O3       prd.H23          0.1945   3.0        0.0   1.0 # FFLD: high 0 HC-CT-OH-HO ==> HO-OH-CT-HC
-prd.H15      prd.C13      prd.C12      prd.H9             0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
-prd.H15      prd.C13      prd.C14      prd.H17            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
-prd.H15      prd.C13      prd.C14      prd.H18            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
-prd.H16      prd.C13      prd.C12      prd.H9             0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
-prd.H16      prd.C13      prd.C14      prd.H17            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
-prd.H16      prd.C13      prd.C14      prd.H18            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
-prd.H17      prd.C14      prd.C15      prd.H19            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
-prd.H17      prd.C14      prd.C15      prd.H20            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
-prd.H17      prd.C14      prd.C15      prd.H21            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
-prd.H18      prd.C14      prd.C15      prd.H19            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
-prd.H18      prd.C14      prd.C15      prd.H20            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
-prd.H18      prd.C14      prd.C15      prd.H21            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
-prd.H2       prd.C4       prd.C1       prd.N1            3.625   2.0      180.0   1.0 # FFLD: high 0 NA-C56A-CA-HA ==> HA-CA-C56A-NA
-prd.H2       prd.C4       prd.C7       prd.H4            3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-HA ==> HA-CA-CA-HA
-prd.H3       prd.C5       prd.C8       prd.H5            3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-HA ==> HA-CA-CA-HA
-prd.H4       prd.C7       prd.C8       prd.H5            3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-HA ==> HA-CA-CA-HA
-prd.H6       prd.C9       prd.C6       prd.N1              0.0   1.0        0.0   1.0 # FFLD: high 0 NA-C5A-CT-HC ==> HC-CT-CA-??
-prd.H7       prd.C9       prd.C6       prd.N1              0.0   1.0        0.0   1.0 # FFLD: high 0 NA-C5A-CT-HC ==> HC-CT-CA-??
-prd.H8       prd.C9       prd.C6       prd.N1              0.0   1.0        0.0   1.0 # FFLD: high 0 NA-C5A-CT-HC ==> HC-CT-CA-??
+unk.C1       unk.C2       unk.C3       unk.C10          0.1805   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CT-CM ==> CM-CT-CA-CA
+unk.C1       unk.C2       unk.C3       unk.C6           0.1805   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CT-CG ==> CM-CT-CA-CA
+unk.C1       unk.C2       unk.C3       unk.H1              0.0   1.0        0.0   1.0 # FFLD: high 0 CA-CA-CT-HC ==> HC-CT-CA-CA
+unk.C1       unk.C2       unk.C5       unk.C8            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-CA ==> CA-CA-CA-CA
+unk.C1       unk.C2       unk.C5       unk.H4            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-HA ==> HA-CA-CA-CA
+unk.C1       unk.C4       unk.C7       unk.C8            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-CA ==> CA-CA-CA-CA
+unk.C1       unk.C4       unk.C7       unk.H5            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-HA ==> HA-CA-CA-CA
+unk.C1       unk.N1       unk.C6       unk.C3              2.0   2.0      180.0   1.0 # FFLD: med 0 CA-NIP-CG-CT ==> ??-NIP-CG-??
+unk.C1       unk.N1       unk.C6       unk.C9              2.0   2.0      180.0   1.0 # FFLD: med 0 CA-NIP-CG-CT ==> ??-NIP-CG-??
+unk.C10      unk.C11      unk.C12      unk.H11             0.0   1.0        0.0   1.0 # FFLD: high 0 CM-CM-CT-HC ==> HC-CT-CM-CM
+unk.C10      unk.C11      unk.C12      unk.H12             0.0   1.0        0.0   1.0 # FFLD: high 0 CM-CM-CT-HC ==> HC-CT-CM-CM
+unk.C10      unk.C11      unk.C12      unk.O1            0.678   1.0        0.0   1.0 # FFLD: high 0 CM-CM-CT-OH ==> OH-CT-CM-CM
+unk.C10      unk.C11      unk.C12      unk.O1           0.4705   2.0      180.0   1.0 # FFLD: high 0 CM-CM-CT-OH ==> OH-CT-CM-CM
+unk.C10      unk.C11      unk.C12      unk.O1           -0.625   3.0        0.0   1.0 # FFLD: high 0 CM-CM-CT-OH ==> OH-CT-CM-CM
+unk.C10      unk.C13      unk.C14      unk.C15           0.344   1.0        0.0   1.0 # FFLD: high 0 CM-CT-CT-CT ==> CT-CT-CT-CM
+unk.C10      unk.C13      unk.C14      unk.C15          0.0945   2.0      180.0   1.0 # FFLD: high 0 CM-CT-CT-CT ==> CT-CT-CT-CM
+unk.C10      unk.C13      unk.C14      unk.C15           0.111   3.0        0.0   1.0 # FFLD: high 0 CM-CT-CT-CT ==> CT-CT-CT-CM
+unk.C10      unk.C13      unk.C14      unk.H16            0.15   3.0        0.0   1.0 # FFLD: high 0 CM-CT-CT-HC ==> HC-CT-CT-??
+unk.C10      unk.C13      unk.C14      unk.H17            0.15   3.0        0.0   1.0 # FFLD: high 0 CM-CT-CT-HC ==> HC-CT-CT-??
+unk.C10      unk.C3       unk.C2       unk.C5           0.1805   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CT-CM ==> CM-CT-CA-CA
+unk.C10      unk.C3       unk.C6       unk.C9              0.0   1.0        0.0   1.0 # FFLD: high 0 CM-CT-CG-CT ==> ??-CT-CD-??
+unk.C10      unk.C3       unk.C6       unk.N1              0.0   1.0        0.0   1.0 # FFLD: high 0 CM-CT-CG-NIP ==> ??-CT-CD-??
+unk.C11      unk.C10      unk.C13      unk.C14          0.0985   1.0        0.0   1.0 # FFLD: high 0 CM-CM-CT-CT ==> CT-CT-CM-CM
+unk.C11      unk.C10      unk.C13      unk.C14          0.1525   2.0      180.0   1.0 # FFLD: high 0 CM-CM-CT-CT ==> CT-CT-CM-CM
+unk.C11      unk.C10      unk.C13      unk.C14         -0.5065   3.0        0.0   1.0 # FFLD: high 0 CM-CM-CT-CT ==> CT-CT-CM-CM
+unk.C11      unk.C10      unk.C13      unk.H14             0.0   1.0        0.0   1.0 # FFLD: high 0 CM-CM-CT-HC ==> HC-CT-CM-CM
+unk.C11      unk.C10      unk.C13      unk.H15             0.0   1.0        0.0   1.0 # FFLD: high 0 CM-CM-CT-HC ==> HC-CT-CM-CM
+unk.C11      unk.C10      unk.C3       unk.C2           1.4445   1.0        0.0   1.0 # FFLD: high 0 CA-CT-CM-CM ==> CA-CT-CM-CM
+unk.C11      unk.C10      unk.C3       unk.C2            0.066   2.0      180.0   1.0 # FFLD: high 0 CA-CT-CM-CM ==> CA-CT-CM-CM
+unk.C11      unk.C10      unk.C3       unk.C2           0.2925   3.0        0.0   1.0 # FFLD: high 0 CA-CT-CM-CM ==> CA-CT-CM-CM
+unk.C11      unk.C10      unk.C3       unk.C6           -0.283   1.0        0.0   1.0 # FFLD: high 0 CG-CT-CM-CM ==> CM-CT-CM-CM
+unk.C11      unk.C10      unk.C3       unk.C6            0.267   2.0      180.0   1.0 # FFLD: high 0 CG-CT-CM-CM ==> CM-CT-CM-CM
+unk.C11      unk.C10      unk.C3       unk.C6           -0.633   3.0        0.0   1.0 # FFLD: high 0 CG-CT-CM-CM ==> CM-CT-CM-CM
+unk.C11      unk.C10      unk.C3       unk.H1              0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT-CM-CM ==> HC-CT-CM-CM
+unk.C11      unk.C12      unk.O1       unk.H13          -0.078   1.0        0.0   1.0 # FFLD: high 0 CM-CT-OH-HO ==> HO-OH-CT-CM
+unk.C11      unk.C12      unk.O1       unk.H13          -0.215   2.0      180.0   1.0 # FFLD: high 0 CM-CT-OH-HO ==> HO-OH-CT-CM
+unk.C11      unk.C12      unk.O1       unk.H13         -0.0315   3.0        0.0   1.0 # FFLD: high 0 CM-CT-OH-HO ==> HO-OH-CT-CM
+unk.C12      unk.C11      unk.C10      unk.C13             7.0   2.0      180.0   1.0 # FFLD: high 0 CT-CM-CM-CT ==> ??-CM-CM-??
+unk.C12      unk.C11      unk.C10      unk.C3              7.0   2.0      180.0   1.0 # FFLD: high 0 CT-CM-CM-CT ==> ??-CM-CM-??
+unk.C13      unk.C10      unk.C11      unk.H10             7.0   2.0      180.0   1.0 # FFLD: high 0 CT-CM-CM-HC ==> ??-CM-CM-??
+unk.C13      unk.C10      unk.C3       unk.C2            0.097   1.0        0.0   1.0 # FFLD: med 0 CA-CT-CM-CT ==> ??-CT-CM-??
+unk.C13      unk.C10      unk.C3       unk.C2            0.156   2.0      180.0   1.0 # FFLD: med 0 CA-CT-CM-CT ==> ??-CT-CM-??
+unk.C13      unk.C10      unk.C3       unk.C2           -0.508   3.0        0.0   1.0 # FFLD: med 0 CA-CT-CM-CT ==> ??-CT-CM-??
+unk.C13      unk.C10      unk.C3       unk.C6            0.097   1.0        0.0   1.0 # FFLD: med 0 CG-CT-CM-CT ==> ??-CT-CM-??
+unk.C13      unk.C10      unk.C3       unk.C6            0.156   2.0      180.0   1.0 # FFLD: med 0 CG-CT-CM-CT ==> ??-CT-CM-??
+unk.C13      unk.C10      unk.C3       unk.C6           -0.508   3.0        0.0   1.0 # FFLD: med 0 CG-CT-CM-CT ==> ??-CT-CM-??
+unk.C13      unk.C10      unk.C3       unk.H1            0.348   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CM-CT ==> HC-CT-CM-CT
+unk.C13      unk.C14      unk.C15      unk.H18            0.15   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-HC ==> HC-CT-CT-CT
+unk.C13      unk.C14      unk.C15      unk.H19            0.15   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-HC ==> HC-CT-CT-CT
+unk.C13      unk.C14      unk.C15      unk.H20            0.15   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CT-HC ==> HC-CT-CT-CT
+unk.C14      unk.C13      unk.C10      unk.C3           0.4685   1.0        0.0   1.0 # FFLD: high 0 CT-CM-CT-CT ==> CT-CT-CM-CT
+unk.C14      unk.C13      unk.C10      unk.C3           0.0855   2.0      180.0   1.0 # FFLD: high 0 CT-CM-CT-CT ==> CT-CT-CM-CT
+unk.C14      unk.C13      unk.C10      unk.C3            0.098   3.0        0.0   1.0 # FFLD: high 0 CT-CM-CT-CT ==> CT-CT-CM-CT
+unk.C15      unk.C14      unk.C13      unk.H14            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-CT ==> HC-CT-CT-CT
+unk.C15      unk.C14      unk.C13      unk.H15            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-CT ==> HC-CT-CT-CT
+unk.C2       unk.C1       unk.C4       unk.C7            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-CA ==> CA-CA-CA-CA
+unk.C2       unk.C1       unk.C4       unk.H3            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-HA ==> HA-CA-CA-CA
+unk.C2       unk.C1       unk.N1       unk.C6              1.0   2.0      180.0   1.0 # FFLD: low 0 CG-NIP-CA-CA ==> ??-CA-NIP-??
+unk.C2       unk.C1       unk.N1       unk.H2              1.0   2.0      180.0   1.0 # FFLD: low 0 H-NIP-CA-CA ==> ??-CA-NIP-??
+unk.C2       unk.C3       unk.C6       unk.C9              0.0   1.0        0.0   1.0 # FFLD: high 0 CA-CT-CG-CT ==> ??-CT-CD-??
+unk.C2       unk.C3       unk.C6       unk.N1              0.0   1.0        0.0   1.0 # FFLD: high 0 CA-CT-CG-NIP ==> ??-CT-CD-??
+unk.C2       unk.C5       unk.C8       unk.C7            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-CA ==> CA-CA-CA-CA
+unk.C2       unk.C5       unk.C8       unk.H6            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-HA ==> HA-CA-CA-CA
+unk.C3       unk.C10      unk.C11      unk.H10             7.0   2.0      180.0   1.0 # FFLD: high 0 CT-CM-CM-HC ==> ??-CM-CM-??
+unk.C3       unk.C10      unk.C13      unk.H14           0.348   3.0        0.0   1.0 # FFLD: high 0 CT-CM-CT-HC ==> HC-CT-CM-CT
+unk.C3       unk.C10      unk.C13      unk.H15           0.348   3.0        0.0   1.0 # FFLD: high 0 CT-CM-CT-HC ==> HC-CT-CM-CT
+unk.C3       unk.C2       unk.C1       unk.C4            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-CT ==> CT-CA-CA-CA
+unk.C3       unk.C2       unk.C1       unk.N1            3.625   2.0      180.0   1.0 # FFLD: high 0 NIP-CA-CA-CT ==> ??-CA-CA-??
+unk.C3       unk.C2       unk.C5       unk.C8            3.625   2.0      180.0   1.0 # FFLD: high 0 CT-CA-CA-CA ==> CT-CA-CA-CA
+unk.C3       unk.C2       unk.C5       unk.H4            3.625   2.0      180.0   1.0 # FFLD: high 0 CT-CA-CA-HA ==> HA-CA-CA-CT
+unk.C3       unk.C6       unk.C9       unk.H7            0.348   3.0        0.0   1.0 # FFLD: high 0 CT-CG-CT-HC ==> HC-CT-CM-CT
+unk.C3       unk.C6       unk.C9       unk.H8            0.348   3.0        0.0   1.0 # FFLD: high 0 CT-CG-CT-HC ==> HC-CT-CM-CT
+unk.C3       unk.C6       unk.C9       unk.H9            0.348   3.0        0.0   1.0 # FFLD: high 0 CT-CG-CT-HC ==> HC-CT-CM-CT
+unk.C3       unk.C6       unk.N1       unk.H2              2.0   2.0      180.0   1.0 # FFLD: med 0 H-NIP-CG-CT ==> ??-NIP-CG-??
+unk.C4       unk.C1       unk.C2       unk.C5            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-CA ==> CA-CA-CA-CA
+unk.C4       unk.C1       unk.N1       unk.C6              1.0   2.0      180.0   1.0 # FFLD: low 0 CG-NIP-CA-CA ==> ??-CA-NIP-??
+unk.C4       unk.C1       unk.N1       unk.H2              1.0   2.0      180.0   1.0 # FFLD: low 0 H-NIP-CA-CA ==> ??-CA-NIP-??
+unk.C4       unk.C7       unk.C8       unk.C5            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-CA ==> CA-CA-CA-CA
+unk.C4       unk.C7       unk.C8       unk.H6            3.625   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CA-HA ==> HA-CA-CA-CA
+unk.C5       unk.C2       unk.C1       unk.N1            3.625   2.0      180.0   1.0 # FFLD: high 0 NIP-CA-CA-CA ==> ??-CA-CA-??
+unk.C5       unk.C2       unk.C3       unk.C6           0.1805   2.0      180.0   1.0 # FFLD: high 0 CA-CA-CT-CG ==> CM-CT-CA-CA
+unk.C5       unk.C2       unk.C3       unk.H1              0.0   1.0        0.0   1.0 # FFLD: high 0 CA-CA-CT-HC ==> HC-CT-CA-CA
+unk.C5       unk.C8       unk.C7       unk.H5            3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-CA ==> HA-CA-CA-CA
+unk.C7       unk.C4       unk.C1       unk.N1            3.625   2.0      180.0   1.0 # FFLD: high 0 NIP-CA-CA-CA ==> ??-CA-CA-??
+unk.C7       unk.C8       unk.C5       unk.H4            3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-CA ==> HA-CA-CA-CA
+unk.C8       unk.C7       unk.C4       unk.H3            3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-CA ==> HA-CA-CA-CA
+unk.C9       unk.C6       unk.C3       unk.H1            0.348   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CG-CT ==> HC-CT-CM-CT
+unk.C9       unk.C6       unk.N1       unk.H2              2.0   2.0      180.0   1.0 # FFLD: med 0 H-NIP-CG-CT ==> ??-NIP-CG-??
+unk.H1       unk.C3       unk.C6       unk.N1              0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT-CG-NIP ==> HC-CT-CD-??
+unk.H10      unk.C11      unk.C12      unk.H11           0.331   3.0        0.0   1.0 # FFLD: high 0 HC-CM-CT-HC ==> HC-CT-CM-HC
+unk.H10      unk.C11      unk.C12      unk.H12           0.331   3.0        0.0   1.0 # FFLD: high 0 HC-CM-CT-HC ==> HC-CT-CM-HC
+unk.H10      unk.C11      unk.C12      unk.O1              0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CM-CT-OH ==> ??-CT-CM-HC
+unk.H11      unk.C12      unk.O1       unk.H13          0.1945   3.0        0.0   1.0 # FFLD: high 0 HC-CT-OH-HO ==> HO-OH-CT-HC
+unk.H12      unk.C12      unk.O1       unk.H13          0.1945   3.0        0.0   1.0 # FFLD: high 0 HC-CT-OH-HO ==> HO-OH-CT-HC
+unk.H14      unk.C13      unk.C14      unk.H16            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
+unk.H14      unk.C13      unk.C14      unk.H17            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
+unk.H15      unk.C13      unk.C14      unk.H16            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
+unk.H15      unk.C13      unk.C14      unk.H17            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
+unk.H16      unk.C14      unk.C15      unk.H18            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
+unk.H16      unk.C14      unk.C15      unk.H19            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
+unk.H16      unk.C14      unk.C15      unk.H20            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
+unk.H17      unk.C14      unk.C15      unk.H18            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
+unk.H17      unk.C14      unk.C15      unk.H19            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
+unk.H17      unk.C14      unk.C15      unk.H20            0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
+unk.H3       unk.C4       unk.C1       unk.N1            3.625   2.0      180.0   1.0 # FFLD: high 0 NIP-CA-CA-HA ==> ??-CA-CA-??
+unk.H3       unk.C4       unk.C7       unk.H5            3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-HA ==> HA-CA-CA-HA
+unk.H4       unk.C5       unk.C8       unk.H6            3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-HA ==> HA-CA-CA-HA
+unk.H5       unk.C7       unk.C8       unk.H6            3.625   2.0      180.0   1.0 # FFLD: high 0 HA-CA-CA-HA ==> HA-CA-CA-HA
+unk.H7       unk.C9       unk.C6       unk.N1              0.0   1.0        0.0   1.0 # FFLD: high 0 NIP-CG-CT-HC ==> HC-CT-CD-??
+unk.H8       unk.C9       unk.C6       unk.N1              0.0   1.0        0.0   1.0 # FFLD: high 0 NIP-CG-CT-HC ==> HC-CT-CD-??
+unk.H9       unk.C9       unk.C6       unk.N1              0.0   1.0        0.0   1.0 # FFLD: high 0 NIP-CG-CT-HC ==> HC-CT-CD-??
 
 [impropers]
-prd.C1       prd.C2       prd.C3       prd.C5              4.0      180.0 # FFLD: high aromatic atom
-prd.C1       prd.C4       prd.C7       prd.H2              1.1      180.0 # FFLD: high aromatic atom
-prd.C1       prd.N1       prd.C6       prd.H1              1.0      180.0 # FFLD: high amino substituted aromatic rings
-prd.C12      prd.C3       prd.C2       prd.C6              4.0      180.0 # FFLD: high aromatic atom
-prd.C2       prd.C1       prd.C4       prd.N1              4.0      180.0 # FFLD: high aromatic atom
-prd.C2       prd.C5       prd.C8       prd.H3              1.1      180.0 # FFLD: high aromatic atom
-prd.C3       prd.C6       prd.C9       prd.N1              4.0      180.0 # FFLD: high aromatic atom
-prd.C4       prd.C7       prd.C8       prd.H4              1.1      180.0 # FFLD: high aromatic atom
-prd.C5       prd.C8       prd.C7       prd.H5              1.1      180.0 # FFLD: high aromatic atom
+unk.C1       unk.C2       unk.C3       unk.C5              4.0      180.0 # FFLD: high aromatic atom
+unk.C1       unk.C4       unk.C7       unk.H3              1.1      180.0 # FFLD: high aromatic atom
+unk.C1       unk.N1       unk.C6       unk.H2              1.0      180.0 # FFLD: high amidine-, guanidinium
+unk.C10      unk.C11      unk.C12      unk.H10            15.0      180.0 # FFLD: high C= double bonded
+unk.C11      unk.C10      unk.C13      unk.C3             15.0      180.0 # FFLD: high C= double bonded
+unk.C2       unk.C1       unk.C4       unk.N1              4.0      180.0 # FFLD: high aromatic atom
+unk.C2       unk.C5       unk.C8       unk.H4              1.1      180.0 # FFLD: high aromatic atom
+unk.C3       unk.C6       unk.C9       unk.N1             10.5      180.0 # FFLD: high carbonyl and analogs
+unk.C4       unk.C7       unk.C8       unk.H5              1.1      180.0 # FFLD: high aromatic atom
+unk.C5       unk.C8       unk.C7       unk.H6              1.1      180.0 # FFLD: high aromatic atom
 
