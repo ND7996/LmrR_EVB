@@ -1,0 +1,56 @@
+# Generated with QTools, version 0.7.0
+# Date: Sun Sep 28 04:01:31 2025
+# CWD: /home/hp/nayanika/github/LmrR_EVB/input
+# Cmdline: /home/hp/nayanika/github/qtools/qscripts-cli/q_genrelax.py genrelax_vaccum.proc --top /home/hp/nayanika/github/LmrR_EVB/structures/WT_solvated.top --pdb /home/hp/nayanika/github/LmrR_EVB/structures/WT_solvated.pdb --fep /home/hp/nayanika/github/LmrR_EVB/input/fep/LMRR_WT4.fep --outdir minim --rest top --rs /home/hp/nayanika/github/LmrR_EVB/cluster_scripts/run_qdyn_5.sh
+[md]
+steps                                           100
+random_seed                                  971144
+temperature                                    0.01
+stepsize                                     0.0001
+bath_coupling                                  20.0
+initial_temperature                            0.01
+separate_scaling                                 on
+lrf                                              on
+shake_solvent                                    on
+
+[cut-offs]
+solute_solute                                    10
+solvent_solvent                                  10
+solute_solvent                                   10
+q_atom                                           99
+
+[sphere]
+shell_radius                                   18.0
+shell_force                                    10.0
+
+[solvent]
+polarisation                                     on
+
+[intervals]
+non_bond                                         25
+output                                           10
+temperature                                      10
+trajectory                                       10
+
+[files]
+topology                            WT_solvated.top
+restart                                relax_003.re
+final                                  relax_004.re
+trajectory                            relax_004.dcd
+fep                                    LMRR_WT4.fep
+
+[lambdas]
+1.00  0.00
+
+[distance_restraints]
+3664   3681   0.0    1.09   100.   0     
+3656   3676   0.0    1.09   100.   0     
+3658   3677   0.0    1.09   100.   0     
+3659   3678   0.0    1.09   100.   0     
+3661   3679   0.0    1.09   100.   0     
+3662   3680   0.0    1.09   100.   0     
+3664   3654   0.0    1.34   100.   0     
+3711   3710   0.0    0.96   200.   0     
+3712   3710   0.0    0.96   200.   0     
+3667   3685   0.0    1.09   200.   0     
+3710   3664   0.0    2.0    50.0   0     

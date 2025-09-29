@@ -1,59 +1,47 @@
 #!/bin/bash
+# Run qprep5 to generate minim.pdb for WT and mutants from relax_012.re
+# It will use the .top file that is already present in each folder.
 
-# Base directory containing all system folders
-base_dir="/home/hp/results/C49U"
+PARAMS_DIR="/home/hp/nayanika/github/LmrR_EVB/parameters"
+RESULTS_DIR="/home/hp/results/LMRR_PAF"
 
-# Paths to required files
-lib1="/home/hp/nayanika/github/GPX6/parameters/qoplsaa.lib"
-lib2="/home/hp/nayanika/github/GPX6/parameters/GPX.lib"
-prm="/home/hp/nayanika/github/GPX6/parameters/qoplsaa_all2.prm"
-relax_file="relax_012.re"  # Make sure this file is accessible in the same directory or provide the full path
+# Mutants list (each has its own folder in RESULTS_DIR)
+MUTANTS="ASN18A ASN87A ASP99A GLU7A LEU17A LYS21A MET88A PHE92A SER94A SER96A WT"
 
-# Iterate through each subdirectory in the base directory
-for system_dir in "$base_dir"/*; do
-    if [ -d "$system_dir/minim" ]; then
-        minim_dir="$system_dir/minim"
-        
-        # Find the .top file in the minim directory
-        top_file=$(find "$minim_dir" -maxdepth 1 -name "*.top" | head -n 1)
-        
-        # Check if the .top file exists
-        if [ -f "$top_file" ]; then
-            # Create a temporary input file for the commands
-            input_file="$minim_dir/generate_minim.inp"
-            output_pdb="$minim_dir/minim.pdb"
+for NAME in $MUTANTS; do
+    echo "Processing $NAME ..."
 
-            # Write the commands to the input file
-            cat <<EOF > "$input_file"
-! Read in library files
-readlib $lib1
-readlib $lib2
-! Read in parameter files
-readprm $prm
-! Read in structure
-readtop $(basename "$top_file")
-rx $relax_file
-writepdb $(basename "$output_pdb") y
+    FOLDER="${RESULTS_DIR}/${NAME}"
+
+    TOPFILE=$(ls "$FOLDER"/*.top 2>/dev/null)
+    RXFILE="${FOLDER}/relax_012.re"
+    OUTPDB="${FOLDER}/minim.pdb"
+    INPFILE="${FOLDER}/preprestart.inp"
+
+    if [ ! -f "$TOPFILE" ]; then
+        echo "❌ No .top file found in $FOLDER, skipping."
+        continue
+    fi
+
+    if [ ! -f "$RXFILE" ]; then
+        echo "❌ No relax_012.re file in $FOLDER, skipping."
+        continue
+    fi
+
+    # Create input file for qprep5
+    cat > "$INPFILE" <<EOF
+readlib ${PARAMS_DIR}/qoplsaa.lib
+readlib ${PARAMS_DIR}/LMRR.lib
+readprm ${PARAMS_DIR}/qoplsaa_all.prm
+readtop ${TOPFILE}
+rx ${RXFILE}
+writepdb ${OUTPDB} y
 quit
 EOF
 
-            # Navigate to the minim directory and run qdyn (or appropriate command)
-            cd "$minim_dir" || exit
-            qprep5 < generate_minim.inp  
-            
-            # Log the status
-            if [ -f "$output_pdb" ]; then
-                echo "Generated $output_pdb successfully."
-            else
-                echo "Failed to generate $output_pdb in $minim_dir."
-            fi
-            
-            # Cleanup
-            rm -f "$input_file"
-        else
-            echo "No .top file found in $minim_dir."
-        fi
-    else
-        echo "No 'minim' directory in $system_dir."
-    fi
+    # Run qprep5
+    qprep5 "$INPFILE"
+
 done
+
+echo "✅ All minim.pdb files generated (where inputs existed)."

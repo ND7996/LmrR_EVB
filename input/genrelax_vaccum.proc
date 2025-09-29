@@ -1,0 +1,75 @@
+# Relaxation in solvated sphere for EVB state 1 (reactant)
+# Stabilized reactive water (226) to prevent leaving sphere
+{SCRIPT_VARS}
+#######################################################
+{GENERAL}
+#######################################################
+
+[MD]
+temperature              0.01     # Low temp for minimization-like behavior
+initial_temperature      0.01
+stepsize                 0.0001   # Very small stepsize to prevent overshooting
+bath_coupling            20.0     # Strong damping to stabilize
+random_seed              -1
+separate_scaling         on
+lrf                      on
+shake_solvent            on       # Shake for water stability
+
+[cut-offs]
+solute_solute             10
+solute_solvent            10
+solvent_solvent           10
+q_atom                    99
+
+[sphere]
+shell_radius             18.0     # Stronger shell force to keep atoms inside
+shell_force              10.0   # REDUCED from 30.0 to be well below exclusion
+
+
+[intervals]
+non_bond                 25
+output                   10 
+trajectory               10
+temperature              10
+
+[solvent]
+polarisation             on
+
+[lambdas]
+1.00  0.00
+
+[distance_restraints]
+$224.C10$   $224.H12$      0.0  1.09  100. 0  # imi.C10-imi.H12
+$224.C2$    $224.H7$       0.0  1.09  100. 0  # imi.C2-imi.H7
+$224.C4$    $224.H8$       0.0  1.09  100. 0  # imi.C4-imi.H8
+$224.C5$    $224.H9$       0.0  1.09  100. 0  # imi.C5-imi.H9
+$224.C7$    $224.H10$      0.0  1.09  100. 0  # imi.C7-imi.H10
+$224.C8$    $224.H11$      0.0  1.09  100. 0  # imi.C8-imi.H11
+$224.C10$   $224.N2$       0.0  1.34  100. 0  # imi.C10-imi.N2
+$226.H22$   $226.O3$       0.0  0.96  200. 0  # ho2.H22-ho2.O3 (moderate force)
+$226.H23$   $226.O3$       0.0  0.96  200. 0  # ho2.H23-ho2.O3 (moderate force)
+$224.C13$   $224.H16$      0.0  1.09  200. 0  # imi.C13-imi.H16 (moderate force)
+$226.O3$    $224.C10$      0.0  2.0   50.0  0  # Soft restraint to keep water near reaction site
+
+#######################################################
+{STEPS}
+#######################################################
+
+[MD]
+steps                    100
+
+____________________________
+[MD]
+steps                    100
+
+____________________________
+[MD]
+steps                    100
+
+____________________________
+[MD]
+steps                    100
+
+____________________________
+[MD]
+steps                    100
