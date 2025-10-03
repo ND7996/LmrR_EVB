@@ -1,6 +1,6 @@
 Q topology file
 TITLE      LMRR_WT2_LEU17A_solvated.top
-DATE       20250927
+DATE       20251003
 VERSION     5.06
 LIB_FILES  /home/hp/nayanika/github/LmrR_EVB/parameters/qoplsaa.lib;/home/hp/nayanika/github/LmrR_EVB/parameters/LMRR.lib
 FORCEFIELD OPLS-AA

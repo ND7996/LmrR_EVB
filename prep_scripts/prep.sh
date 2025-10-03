@@ -4,8 +4,8 @@
 # Author: Automated solvation pipeline
 
 # Set directories
-INPUT_DIR="/home/hp/nayanika/github/vaccum/mutations"
-OUTPUT_DIR="/home/hp/nayanika/github/vaccum/mutations"  # Changed to save in mutations folder
+INPUT_DIR="/home/hp/nayanika/github/LmrR_EVB/structures/mutations"
+OUTPUT_DIR="/home/hp/nayanika/github/LmrR_EVB/structures/mutations"  # Changed to save in mutations folder
 PARAM_DIR="/home/hp/nayanika/github/LmrR_EVB/parameters"
 
 # Create output directory if it doesn't exist

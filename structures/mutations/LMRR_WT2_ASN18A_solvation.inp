@@ -1,7 +1,7 @@
 readlib /home/hp/nayanika/github/LmrR_EVB/parameters/qoplsaa.lib
 readlib /home/hp/nayanika/github/LmrR_EVB/parameters/LMRR.lib
 readprm /home/hp/nayanika/github/LmrR_EVB/parameters/qoplsaa_all.prm
-readpdb /home/hp/nayanika/github/LMRR_vaccum/mutations/LMRR_WT2_ASN18A.pdb
+readpdb /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ASN18A.pdb
 set solvent_pack 2.7
 boundary sphere 8:CA 25.
 solvate 8:CA 25. grid HOH

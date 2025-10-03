@@ -44,5 +44,4 @@ run_genrelax PHE92A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_
 run_genrelax SER94A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_SER94A_solvated.top /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_SER94A_solvated.pdb
 run_genrelax SER96A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_SER96A_solvated.top /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_SER96A_solvated.pdb
 run_genrelax ASP99A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ASP99A_solvated.top /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ASP99A_solvated.pdb
-run_genrelax ASP99A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ASP99A_solvated.top /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ASP99A_solvated.pdb
-run_genrelax ASP99A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ASP99A_solvated.top /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ASP99A_solvated.pdb
+run_genrelax TRP95A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_TRP95A_solvated.top /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_TRP95A_solvated.pdb
