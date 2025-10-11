@@ -6,7 +6,7 @@
 #######################################################
 
 [MD]
-stepsize                1    # Suitable for FEP after stable minimization
+stepsize                0.1    # Suitable for FEP after stable minimization
 temperature             300
 initial_temperature     300
 random_seed             1234
