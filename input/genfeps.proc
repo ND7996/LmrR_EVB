@@ -6,7 +6,7 @@
 #######################################################
 
 [MD]
-stepsize                0.001    # Suitable for FEP after stable minimization
+stepsize                1    # Suitable for FEP after stable minimization
 temperature             300
 initial_temperature     300
 random_seed             1234
@@ -48,7 +48,7 @@ steps                   2000
 initial_temperature     1
 temperature             1
 stepsize                0.001    # Keep conservative for initial step
-random_seed              -1
+random_seed             -1
 
 [distance_restraints]
 $224.C10$   $224.H12$   0.0  1.09  20. 0  # imi.C10-imi.H12

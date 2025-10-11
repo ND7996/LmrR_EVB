@@ -30,8 +30,8 @@ run_genrelax() {
 
 # Wild-type
 run_genrelax WT \
-    /home/hp/nayanika/github/LmrR_EVB/structures/WT_solvated.top \
-    /home/hp/nayanika/github/LmrR_EVB/structures/WT_solvated.pdb
+    /home/hp/nayanika/github/LmrR_EVB/structures/LMRR_WT2_solvated.top \
+    /home/hp/nayanika/github/LmrR_EVB/structures/LMRR_WT2_solvated.pdb
 
 # Mutants
 run_genrelax ASN18A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ASN18A_solvated.top /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ASN18A_solvated.pdb

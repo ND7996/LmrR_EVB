@@ -57,17 +57,17 @@ polarisation             on
 1.00  0.00
 
 [distance_restraints]
-$224.C10$   $224.H12$      0.0  1.09  100. 0  # imi.C10-imi.H12
-$224.C2$    $224.H7$       0.0  1.09  100. 0  # imi.C2-imi.H7
-$224.C4$    $224.H8$       0.0  1.09  100. 0  # imi.C4-imi.H8
-$224.C5$    $224.H9$       0.0  1.09  100. 0  # imi.C5-imi.H9
-$224.C7$    $224.H10$      0.0  1.09  100. 0  # imi.C7-imi.H10
-$224.C8$    $224.H11$      0.0  1.09  100. 0  # imi.C8-imi.H11
-$224.C10$   $224.N2$       0.0  1.34  100. 0  # imi.C10-imi.N2
-$226.H22$   $226.O3$       0.0  0.96  200. 0  # ho2.H22-ho2.O3 (moderate force)
-$226.H23$   $226.O3$       0.0  0.96  200. 0  # ho2.H23-ho2.O3 (moderate force)
-$224.C13$   $224.H16$      0.0  1.09  200. 0  # imi.C13-imi.H16 (moderate force)
-$226.O3$    $224.C10$      0.0  2.0   50.0  0  # Soft restraint to keep water near reaction site
+$224.C10$   $224.H12$      0.0  1.09  50.  0  # imi.C10-imi.H12
+$224.C2$    $224.H7$       0.0  1.09  50.  0  # imi.C2-imi.H7
+$224.C4$    $224.H8$       0.0  1.09  50.  0  # imi.C4-imi.H8
+$224.C5$    $224.H9$       0.0  1.09  50.  0  # imi.C5-imi.H9
+$224.C7$    $224.H10$      0.0  1.09  50.  0  # imi.C7-imi.H10
+$224.C8$    $224.H11$      0.0  1.09  50.  0  # imi.C8-imi.H11
+$224.C10$   $224.N2$       0.0  1.34  50.  0  # imi.C10-imi.N2
+$226.H22$   $226.O3$       0.0  0.96  50.  0  # ho2.H22-ho2.O3 (moderate force)
+$226.H23$   $226.O3$       0.0  0.96  50.  0  # ho2.H23-ho2.O3 (moderate force)
+$224.C13$   $224.H16$      0.0  1.09  50.  0  # imi.C13-imi.H16 (moderate force)
+$226.O3$    $224.C10$      0.0  2.0   50.  0  # Soft restraint to keep water near reaction site
 
 #######################################################
 {STEPS}
