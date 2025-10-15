@@ -3,7 +3,7 @@
 # Paths
 PARAMS_DIR="/home/hp/nayanika/github/LmrR_EVB/parameters"
 INPUT_DIR="/home/hp/nayanika/github/LmrR_EVB/input"
-RESULTS_DIR="/home/hp/results/LMRR_PAF"
+RESULTS_DIR="/home/hp/results/LMRR"
 MUTATIONS_DIR="/home/hp/nayanika/github/LmrR_EVB/structures/mutations"
 RS_SCRIPT="/home/hp/nayanika/github/LmrR_EVB/cluster_scripts/run_qdyn_5.sh"
 
