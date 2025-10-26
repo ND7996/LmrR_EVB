@@ -4,7 +4,7 @@
 # Author: Automated solvation pipeline
 
 # Set directories
-INPUT_DIR="/home/hp/nayanika/github/LmrR_EVB/structures/mutations"
+INPUT_DIR="/home/hp/nayanika/github/LmrR_EVB/prep_structures/mutations"
 OUTPUT_DIR="/home/hp/nayanika/github/LmrR_EVB/structures/mutations"  # Changed to save in mutations folder
 PARAM_DIR="/home/hp/nayanika/github/LmrR_EVB/parameters"
 

@@ -1,12 +1,12 @@
 #!/bin/bash
-# Run genrelax for WT and 10 mutants, results stored in /home/hp/results/LMRR_PAF
+# Run genrelax for WT and all mutants, results stored in /home/hp/results/LMRR_PAF
 
 run_genrelax() {
     NAME=$1
     TOP=$2
     PDB=$3
 
-    OUTDIR="/home/hp/results/LMRR_PAF/${NAME}"
+    OUTDIR="/home/hp/results/LMRR/${NAME}"
 
     # Remove old directory if exists
     if [ -d "$OUTDIR" ]; then
@@ -33,7 +33,7 @@ run_genrelax WT \
     /home/hp/nayanika/github/LmrR_EVB/structures/LMRR_WT2_solvated.top \
     /home/hp/nayanika/github/LmrR_EVB/structures/LMRR_WT2_solvated.pdb
 
-# Mutants
+# Original mutants
 run_genrelax ASN18A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ASN18A_solvated.top /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ASN18A_solvated.pdb
 run_genrelax ASN87A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ASN87A_solvated.top /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ASN87A_solvated.pdb
 run_genrelax GLU7A  /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_GLU7A_solvated.top  /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_GLU7A_solvated.pdb
@@ -45,3 +45,12 @@ run_genrelax SER94A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_
 run_genrelax SER96A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_SER96A_solvated.top /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_SER96A_solvated.pdb
 run_genrelax ASP99A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ASP99A_solvated.top /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ASP99A_solvated.pdb
 run_genrelax TRP95A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_TRP95A_solvated.top /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_TRP95A_solvated.pdb
+
+# New mutants
+run_genrelax ASN14A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ASN14A_solvated.top /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ASN14A_solvated.pdb
+run_genrelax LEU9A  /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_LEU9A_solvated.top  /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_LEU9A_solvated.pdb
+run_genrelax ARG10A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ARG10A_solvated.top /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ARG10A_solvated.pdb
+run_genrelax LYS100A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_LYS100A_solvated.top /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_LYS100A_solvated.pdb
+run_genrelax GLU103A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_GLU103A_solvated.top /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_GLU103A_solvated.pdb
+run_genrelax ILE15A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ILE15A_solvated.top /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_ILE15A_solvated.pdb
+run_genrelax VAL98A /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_VAL98A_solvated.top /home/hp/nayanika/github/LmrR_EVB/structures/mutations/LMRR_WT2_VAL98A_solvated.pdb
