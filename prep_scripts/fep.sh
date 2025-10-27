@@ -8,7 +8,7 @@ MUTATIONS_DIR="/home/hp/nayanika/github/LmrR_EVB/structures/mutations"
 RS_SCRIPT="/home/hp/nayanika/github/LmrR_EVB/cluster_scripts/run_qdyn_5.sh"
 
 # Mutants list (WT included at end)
-MUTANTS="ASN18A  ASN87A  ASP99A  GLU7A  LEU17A  LYS21A  MET88A  PHE92A  SER94A  SER96A TRP95A WT2"
+MUTANTS="ASN14A GLU103A VAL98A ARG10A LYS100A LEU9A ILE15A"
 
 for NAME in $MUTANTS; do
     echo "🔹 Processing $NAME ..."
