@@ -14,6 +14,7 @@ data = {
 
 df = pd.DataFrame(data)
 df['Average'] = df[['Replicate_a', 'Replicate_b', 'Replicate_c']].mean(axis=1)
+df['Std_Error'] = df[['Replicate_a', 'Replicate_b', 'Replicate_c']].sem(axis=1)
 
 # Create figure with 2 subplots
 fig, axes = plt.subplots(1, 2, figsize=(16, 6))
@@ -37,7 +38,7 @@ ax1.legend(fontsize=10)
 ax1.grid(axis='y', alpha=0.3)
 ax1.set_ylim(0, 22)
 
-# --- Plot 2: Average Yield (No Error Bars) ---
+# --- Plot 2: Average Yield with Standard Error Bars ---
 ax2 = axes[1]
 # Assign colors: WT gets purple, others get performance-based colors
 colors = []
@@ -53,9 +54,13 @@ for i, (catalyst, avg) in enumerate(zip(df['Catalyst'], df['Average'])):
 
 bars = ax2.bar(x, df['Average'], color=colors, alpha=0.7, edgecolor='black', linewidth=0.5)
 
+# Add error bars (standard error)
+ax2.errorbar(x, df['Average'], yerr=df['Std_Error'], 
+             fmt='none', ecolor='black', elinewidth=1.5, capsize=4, capthick=1.5)
+
 ax2.set_xlabel('Variants', fontweight='bold', fontsize=12)
 ax2.set_ylabel('Average Yield (%)', fontweight='bold', fontsize=12)
-ax2.set_title('Average Yield', fontweight='bold', fontsize=14)
+ax2.set_title('Average Yield with Standard Error', fontweight='bold', fontsize=14)
 ax2.set_xticks(x)
 ax2.set_xticklabels(df['Catalyst'], rotation=45, ha='right')
 ax2.grid(axis='y', alpha=0.3)
@@ -79,5 +84,5 @@ print("CATALYST YIELD ANALYSIS SUMMARY")
 print("="*80)
 print("\nAll Catalysts (sorted by average yield):")
 df_sorted = df.sort_values('Average', ascending=False)
-print(df_sorted[['Catalyst', 'Replicate_a', 'Replicate_b', 'Replicate_c', 'Average']].to_string(index=False))
+print(df_sorted[['Catalyst', 'Replicate_a', 'Replicate_b', 'Replicate_c', 'Average', 'Std_Error']].to_string(index=False))
 print("\n" + "="*80)
