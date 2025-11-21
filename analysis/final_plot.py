@@ -89,8 +89,6 @@ ax1.bar(x1 + width/2, df_overlap['DeltaYield_New'], width,
 ax1.set_xticks(x1)
 ax1.set_xticklabels(variants_overlap, rotation=45, ha='right', fontsize=9)
 ax1.set_ylabel('ΔYield (%)', fontsize=10)
-ax1.set_title(f'Overlapping Variants (n={len(variants_overlap)})\nOld WT: 40% | New WT: 17%', 
-              fontsize=11, fontweight='bold')
 ax1.legend(fontsize=8, loc='lower left')
 ax1.grid(alpha=0.3, axis='y')
 ax1.axhline(y=0, color='black', linestyle='-', linewidth=0.5)
@@ -121,7 +119,7 @@ ax2.bar(x2 + width/2, y_new, width,
 ax2.set_xticks(x2)
 ax2.set_xticklabels(all_unique, rotation=45, ha='right', fontsize=9)
 ax2.set_ylabel('ΔYield (%)', fontsize=10)
-ax2.set_title(f'Unique Variants (New Mutants Tested: {len(variants_unique_new)})\nNew WT: 17%', 
+ax2.set_title(f'Unique Variants (New Mutants Tested: {len(variants_unique_new)})', 
               fontsize=11, fontweight='bold')
 ax2.legend(fontsize=8)
 ax2.grid(alpha=0.3, axis='y')
