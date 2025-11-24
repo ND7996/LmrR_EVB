@@ -1,0 +1,61 @@
+<<<<<<< HEAD
+HYDROGEN BOND ANALYSIS REPORT
+============================================================
+
+Selected Residues: [7, 9, 10, 11, 14, 16, 17, 18, 21, 87, 88, 91, 92, 94, 95, 96, 98, 99, 100, 103]
+
+H-bond cutoff: 3.5 Angstroms
+
+SUMMARY:
+------------------------------------------------------------
+Total H-bond atoms (all): 0
+Total H-bond atoms (internal): 0
+
+H-BONDS WITH ALL ATOMS:
+------------------------------------------------------------
+
+INTERNAL H-BONDS (within selected residues):
+------------------------------------------------------------
+
+============================================================
+Objects created:
+- hbonds_all: H-bonds with all atoms
+- hbonds_internal: H-bonds within selected residues
+
+Files saved:
+- hbonds_session.pse
+- my_residues.pdb
+- hbonds_view.png
+- hbonds_report.txt
+============================================================
+=======
+HYDROGEN BOND ANALYSIS REPORT
+============================================================
+
+Selected Residues: [7, 9, 10, 11, 14, 16, 17, 18, 21, 87, 88, 91, 92, 94, 95, 96, 98, 99, 100, 103]
+
+H-bond cutoff: 3.5 Angstroms
+
+SUMMARY:
+------------------------------------------------------------
+Total H-bond atoms (all): 0
+Total H-bond atoms (internal): 0
+
+H-BONDS WITH ALL ATOMS:
+------------------------------------------------------------
+
+INTERNAL H-BONDS (within selected residues):
+------------------------------------------------------------
+
+============================================================
+Objects created:
+- hbonds_all: H-bonds with all atoms
+- hbonds_internal: H-bonds within selected residues
+
+Files saved:
+- hbonds_session.pse
+- my_residues.pdb
+- hbonds_view.png
+- hbonds_report.txt
+============================================================
+>>>>>>> 5ab00af8f2b3a8fa0c8224ac7705e9b8d1653770
