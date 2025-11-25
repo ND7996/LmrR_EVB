@@ -9,7 +9,7 @@ import re
 previous_data = {
     'Variant': ['L18A', 'K22A', 'F93A', 'S95A', 'S97A',
                 'E7A', 'A11L', 'N19A', 'N88A', 'M89A', 'A92E', 'D100A'],
-    'DeltaYield': [-22, -25, -30, -18, -20, 0, 5, 2, 0, 0, -5, 0]
+    'DeltaYield': [-6.4, 4.3, -11, -3.7, 4.7, -1.7, -0.9, -3.5, -7.8, -4.8, -6.3, -19]
 }
 df_previous = pd.DataFrame(previous_data)
 
@@ -119,7 +119,7 @@ ax2.bar(x2 + width/2, y_new, width,
 ax2.set_xticks(x2)
 ax2.set_xticklabels(all_unique, rotation=45, ha='right', fontsize=9)
 ax2.set_ylabel('ΔYield (%)', fontsize=10)
-ax2.set_title(f'Unique Variants (New Mutants Tested: {len(variants_unique_new)})', 
+ax2.set_title(f'(New Mutants Tested: {len(variants_unique_new)})', 
               fontsize=11, fontweight='bold')
 ax2.legend(fontsize=8)
 ax2.grid(alpha=0.3, axis='y')
