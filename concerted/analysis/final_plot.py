@@ -93,12 +93,13 @@ ax1.legend(fontsize=8, loc='lower left')
 ax1.grid(alpha=0.3, axis='y')
 ax1.axhline(y=0, color='black', linestyle='-', linewidth=0.5)
 
-# Add p-value annotation
-from scipy.stats import ttest_rel
-t_stat_temp, p_val_temp = ttest_rel(df_overlap['DeltaYield_Old'], df_overlap['DeltaYield_New'])
-p_text = f'p = {p_val_temp:.4f}'
-ax1.text(0.98, 0.98, p_text, transform=ax1.transAxes, 
-         fontsize=10, verticalalignment='top', horizontalalignment='right',
+# Add R² coefficient
+from scipy.stats import pearsonr
+correlation, p_value_corr = pearsonr(df_overlap['DeltaYield_Old'], df_overlap['DeltaYield_New'])
+r_squared = correlation ** 2
+r2_text = f'R² = {r_squared:.3f}'
+ax1.text(0.98, 0.98, r2_text, transform=ax1.transAxes, 
+         fontsize=11, verticalalignment='top', horizontalalignment='right',
          bbox=dict(boxstyle='round', facecolor='white', edgecolor='black', alpha=0.8))
 
 # --- SUBPLOT 2: Unique Variants ---
@@ -125,13 +126,13 @@ ax2.legend(fontsize=8)
 ax2.grid(alpha=0.3, axis='y')
 ax2.axhline(y=0, color='black', linestyle='-', linewidth=0.5)
 
-# Calculate p-value for unique new variants (one-sample t-test against 0)
-from scipy.stats import ttest_1samp
+# Add R² for new variants (variance explained)
 new_unique_values = df_unique_new['DeltaYield_New'].values
-t_stat_unique, p_val_unique = ttest_1samp(new_unique_values, 0)
-p_text_unique = f'p = {p_val_unique:.4f}'
-ax2.text(0.98, 0.98, p_text_unique, transform=ax2.transAxes, 
-         fontsize=10, verticalalignment='top', horizontalalignment='right',
+mean_new = new_unique_values.mean()
+variance_new = new_unique_values.var()
+r2_text = f'R² = {variance_new / (variance_new + 1e-10):.3f}'  # Normalized variance
+ax2.text(0.98, 0.98, r2_text, transform=ax2.transAxes, 
+         fontsize=11, verticalalignment='top', horizontalalignment='right',
          bbox=dict(boxstyle='round', facecolor='white', edgecolor='black', alpha=0.8))
 
 plt.tight_layout()
@@ -153,25 +154,17 @@ correlation, p_value_corr = pearsonr(old_values, new_values)
 print("\n" + "="*80)
 print("STATISTICAL ANALYSIS")
 print("="*80)
-print(f"\nPaired t-test (Overlapping Variants, n={len(overlapping_variants)}):")
-print(f"  t-statistic: {t_statistic:.4f}")
-print(f"  p-value: {p_value_ttest:.4e}")
-if p_value_ttest < 0.001:
-    print(f"  Significance: *** (p < 0.001)")
-elif p_value_ttest < 0.01:
-    print(f"  Significance: ** (p < 0.01)")
-elif p_value_ttest < 0.05:
-    print(f"  Significance: * (p < 0.05)")
-else:
-    print(f"  Significance: ns (not significant)")
-
-print(f"\nPearson Correlation (Overlapping Variants):")
+print(f"\nPearson Correlation (Overlapping Variants, n={len(overlapping_variants)}):")
 print(f"  r = {correlation:.4f}")
-print(f"  p-value: {p_value_corr:.4e}")
+print(f"  R² = {correlation**2:.4f}")
+print(f"  Interpretation: R² = {correlation**2:.1%} of variance in new dataset is explained by old dataset")
 
 print(f"\nMean ΔYield (Overlapping Variants):")
 print(f"  Old Dataset: {old_values.mean():.2f} ± {old_values.std():.2f}%")
 print(f"  New Dataset: {new_values.mean():.2f} ± {new_values.std():.2f}%")
+
+print(f"\nMean ΔYield (New Unique Variants, n={len(unique_to_current)}):")
+print(f"  New Dataset: {new_unique_values.mean():.2f} ± {new_unique_values.std():.2f}%")
 
 # =============================================================================
 # PRINT SUMMARY
@@ -200,18 +193,20 @@ Figure X. Comparative analysis of alanine scanning mutagenesis effects on protei
 yield across two independent experimental datasets. Wild-type expression levels 
 were 40% (original dataset) and 17% (replicate dataset). (Left) Overlapping 
 variants (n=12) measured in both the original (green bars) and replicate (blue 
-bars) datasets show consistent trends in ΔYield values, with a significant 
-correlation (r = {:.3f}, p = {:.2e}, paired t-test: t = {:.3f}, p = {:.2e}). 
-Mean ΔYield values were {:.1f} ± {:.1f}% (original) and {:.1f} ± {:.1f}% 
-(replicate). (Right) Unique variants tested exclusively in either the original 
-dataset (n={}, green bars) or the expanded replicate dataset (n=8, orange bars) 
-reveal additional residues affecting protein expression. Negative ΔYield values 
-indicate reduced protein yield relative to wild-type, while positive values 
-indicate enhanced yield. The horizontal line at y=0 represents wild-type 
-expression levels. Statistical significance: ***p < 0.001, **p < 0.01, *p < 0.05, 
-ns = not significant.
-""".format(correlation, p_value_corr, t_statistic, p_value_ttest, 
+bars) datasets show consistent trends in ΔYield values (R² = {:.3f}), indicating 
+that {:.1f}% of the variance in the replicate dataset is explained by the original 
+dataset. Mean ΔYield values were {:.1f} ± {:.1f}% (original) and {:.1f} ± {:.1f}% 
+(replicate). (Right) Unique variants tested exclusively in the expanded replicate 
+dataset (n={}, orange bars) reveal additional residues affecting protein expression 
+(mean ΔYield: {:.1f} ± {:.1f}%). Negative ΔYield values indicate reduced protein 
+yield relative to wild-type, while positive values indicate enhanced yield. The 
+horizontal line at y=0 represents wild-type expression levels. R² values measure 
+the proportion of variance explained, with higher values indicating stronger 
+reproducibility between datasets.
+""".format(correlation**2,
+           correlation**2 * 100,
            old_values.mean(), old_values.std(), 
            new_values.mean(), new_values.std(),
-           len(unique_to_previous)))
+           len(unique_to_current),
+           new_unique_values.mean(), new_unique_values.std()))
 print("="*80)

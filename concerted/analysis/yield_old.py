@@ -1,8 +1,23 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from matplotlib.patches import Patch
+from scipy.stats import ttest_ind
+import os
 
-# Data for all catalysts with their four replicates
+# --------------------------
+# SMALL FONT SETTINGS
+# --------------------------
+plt.rcParams.update({
+    "font.size": 6,
+    "xtick.labelsize": 5,
+    "ytick.labelsize": 5,
+    "legend.fontsize": 6
+})
+
+# --------------------------
+# DATA
+# --------------------------
 data = {
     'Catalyst': ['WT', 'E7A', 'A11L', 'L18A', 'N19A', 'K22A', 'N88A', 
                  'M89A', 'A92E', 'F93A', 'S95A', 'S97A', 'D100A'],
@@ -16,91 +31,122 @@ df = pd.DataFrame(data)
 df['Mean'] = df[['Rep1', 'Rep2', 'Rep3', 'Rep4']].mean(axis=1)
 df['SEM'] = df[['Rep1', 'Rep2', 'Rep3', 'Rep4']].sem(axis=1)
 
-# Create figure with 2 subplots
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
-fig.suptitle('Experimental Yield Analysis', fontsize=16, fontweight='bold')
+# --------------------------
+# CALCULATE P-VALUES VS WT
+# --------------------------
+wt_values = df.loc[df['Catalyst']=='WT', ['Rep1','Rep2','Rep3','Rep4']].values.flatten().astype(float)
 
-# --- Plot 1: Individual Replicates ---
-x = np.arange(len(df))
-w = 0.2
-
-bars1 = ax1.bar(x - 1.5*w, df['Rep1'], w, label='Replicate a', color='#3b82f6', alpha=0.85)
-bars2 = ax1.bar(x - 0.5*w, df['Rep2'], w, label='Replicate b', color='#10b981', alpha=0.85)
-bars3 = ax1.bar(x + 0.5*w, df['Rep3'], w, label='Replicate c', color='#f59e0b', alpha=0.85)
-bars4 = ax1.bar(x + 1.5*w, df['Rep4'], w, label='Replicate d', color='#ec4899', alpha=0.85)
-
-# Add catalyst labels on top and bottom of bars in Plot 1
-for i, catalyst in enumerate(df['Catalyst']):
-    # Top label
-    max_height = max(df.loc[i, ['Rep1', 'Rep2', 'Rep3', 'Rep4']])
-    ax1.text(i, max_height + 2, catalyst, ha='center', va='bottom', 
-             fontsize=9, fontweight='bold', rotation=0)
-    # Bottom label
-    ax1.text(i, -3, catalyst, ha='center', va='top', 
-             fontsize=9, fontweight='bold', rotation=0)
-
-ax1.set_xlabel('Variants', fontweight='bold', fontsize=12)
-ax1.set_ylabel('Yield (%)', fontweight='bold', fontsize=12)
-ax1.set_title('All Replicates', fontweight='bold', fontsize=13)
-ax1.set_xticks(x)
-ax1.set_xticklabels([])
-ax1.legend(loc='upper right', fontsize=10)
-ax1.grid(axis='y', alpha=0.3, linestyle='--')
-ax1.set_ylim(-8, 65)  # Extended range for top and bottom labels
-
-# --- Plot 2: Mean with Error Bars ---
-bar_colors = []
+p_values = []
 for i, row in df.iterrows():
     if row['Catalyst'] == 'WT':
-        bar_colors.append('#8b5cf6')  # Purple for WT
-    elif row['Mean'] >= 40:
-        bar_colors.append('#10b981')  # Green for high
-    elif row['Mean'] >= 30:
-        bar_colors.append('#f59e0b')  # Orange for medium
+        p_values.append(np.nan)
     else:
-        bar_colors.append('#ef4444')  # Red for low
+        mutant_values = row[['Rep1','Rep2','Rep3','Rep4']].values.astype(float)
+        t_stat, p_val = ttest_ind(mutant_values, wt_values, equal_var=False)
+        p_values.append(p_val)
 
-bars = ax2.bar(x, df['Mean'], color=bar_colors, alpha=0.75, edgecolor='black', linewidth=0.8)
-ax2.errorbar(x, df['Mean'], yerr=df['SEM'], fmt='none', 
-             ecolor='black', elinewidth=2, capsize=5, capthick=2)
+df['p_value'] = p_values
 
-# Add catalyst labels on top and bottom of bars in Plot 2
-for i, (bar, mean, sem, catalyst) in enumerate(zip(bars, df['Mean'], df['SEM'], df['Catalyst'])):
-    # Top label
-    height = mean + sem
-    ax2.text(i, height + 2, catalyst, ha='center', va='bottom', 
-             fontsize=9, fontweight='bold', rotation=0)
-    # Bottom label
-    ax2.text(i, -3, catalyst, ha='center', va='top', 
-             fontsize=9, fontweight='bold', rotation=0)
+# --------------------------
+# FORMAT P-VALUES AS NUMERIC
+# --------------------------
+def format_pval_numeric(p):
+    if pd.isna(p):
+        return ""
+    else:
+        return f"{p:.3f}"  # shows 3 decimal places
 
-ax2.set_xlabel('Variants', fontweight='bold', fontsize=12)
-ax2.set_ylabel('Average Yield (%)', fontweight='bold', fontsize=12)
-ax2.set_title('Average Yield with Standard Error', fontweight='bold', fontsize=13)
+df['p_label'] = df['p_value'].apply(format_pval_numeric)
+
+# --------------------------
+# FIGURE
+# --------------------------
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11, 4))
+fig.suptitle('Experimental Yield Analysis', fontsize=9)
+
+x = np.arange(len(df))
+w = 0.18
+
+# --------------------------
+# Plot 1: All Replicates
+# --------------------------
+ax1.bar(x - 1.5*w, df['Rep1'], w, label='Replicate a', alpha=0.85)
+ax1.bar(x - 0.5*w, df['Rep2'], w, label='Replicate b', alpha=0.85)
+ax1.bar(x + 0.5*w, df['Rep3'], w, label='Replicate c', alpha=0.85)
+ax1.bar(x + 1.5*w, df['Rep4'], w, label='Replicate d', alpha=0.85)
+
+# Add catalyst labels
+for i, catalyst in enumerate(df['Catalyst']):
+    top = max(df.loc[i, ['Rep1', 'Rep2', 'Rep3', 'Rep4']])
+    ax1.text(i, top + 1.2, catalyst, ha='center', fontsize=5)
+    ax1.text(i, -3.0, catalyst, ha='center', fontsize=5)
+
+ax1.set_title('All Replicates', fontsize=8)
+ax1.set_ylabel('Yield (%)')
+ax1.set_xticks(x)
+ax1.set_xticklabels([])
+ax1.legend(loc='upper right', fontsize=5)
+ax1.grid(axis='y', alpha=0.3, linestyle='--')
+ax1.set_ylim(-5, 60)
+
+# --------------------------
+# Plot 2: Mean + SEM
+# --------------------------
+# Color logic
+bar_colors = []
+for _, row in df.iterrows():
+    if row['Catalyst'] == 'WT':
+        bar_colors.append('#8b5cf6')
+    elif row['Mean'] >= 40:
+        bar_colors.append('#10b981')
+    elif row['Mean'] >= 30:
+        bar_colors.append('#f59e0b')
+    else:
+        bar_colors.append('#ef4444')
+
+bars = ax2.bar(x, df['Mean'], color=bar_colors, alpha=0.75, edgecolor='black', linewidth=0.5)
+
+ax2.errorbar(
+    x, df['Mean'], yerr=df['SEM'], fmt='none',
+    ecolor='black', elinewidth=1, capsize=2
+)
+
+# Add catalyst labels and numeric p-values
+for i, (mean, sem, catalyst, p_label) in enumerate(zip(df['Mean'], df['SEM'], df['Catalyst'], df['p_label'])):
+    ax2.text(i, mean + sem + 1.5, catalyst, ha='center', fontsize=5)
+    if p_label:
+        ax2.text(i, mean + sem + 5, p_label, ha='center', fontsize=6, color='red')
+    ax2.text(i, -3.0, catalyst, ha='center', fontsize=5)
+
+ax2.set_title('Mean Yield ± SEM', fontsize=8)
+ax2.set_ylabel('Average Yield (%)')
 ax2.set_xticks(x)
 ax2.set_xticklabels([])
 ax2.grid(axis='y', alpha=0.3, linestyle='--')
-ax2.set_ylim(-8, 65)  # Extended range for top and bottom labels
+ax2.set_ylim(-5, 60)
 
-# Legend for color coding
-from matplotlib.patches import Patch
-legend = [Patch(facecolor='#8b5cf6', label='Wild Type (WT)'),
-          Patch(facecolor='#10b981', label='High (≥40%)'),
-          Patch(facecolor='#f59e0b', label='Medium (30-39%)'),
-          Patch(facecolor='#ef4444', label='Low (<30%)')]
-ax2.legend(handles=legend, loc='upper right', fontsize=10)
+# Color legend
+legend_patches = [
+    Patch(facecolor='#8b5cf6', label='Wild Type'),
+    Patch(facecolor='#10b981', label='High (≥40%)'),
+    Patch(facecolor='#f59e0b', label='Medium (30–39%)'),
+    Patch(facecolor='#ef4444', label='Low (<30%)')
+]
+ax2.legend(handles=legend_patches, fontsize=6, loc='upper right')
 
 plt.tight_layout()
-plt.savefig('yield_analysis_labeled.png', dpi=300, bbox_inches='tight')
-plt.show()
 
-# Summary statistics
-print("\n" + "="*90)
-print("CATALYST YIELD ANALYSIS SUMMARY")
-print("="*90)
-df_sorted = df.sort_values('Mean', ascending=False)
-print(df_sorted[['Catalyst', 'Rep1', 'Rep2', 'Rep3', 'Rep4', 'Mean', 'SEM']].to_string(index=False))
-print("\n" + "="*90)
-print(f"Highest Mean: {df_sorted.iloc[0]['Catalyst']} ({df_sorted.iloc[0]['Mean']:.2f}%)")
-print(f"Lowest Mean:  {df_sorted.iloc[-1]['Catalyst']} ({df_sorted.iloc[-1]['Mean']:.2f}%)")
-print("="*90)
+# --------------------------
+# SAVE FIGURES
+# --------------------------
+save_paths = [
+    r"D:\PhD_Thesis\LmrR_EVB\concerted\analysis\yield_analysis.png",
+    r"D:\PhD_Thesis\LmrR_Paper\figures\yield_analysis.png"
+]
+
+for path in save_paths:
+    # Ensure directory exists
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    fig.savefig(path, dpi=300, bbox_inches='tight')
+
+plt.show()
