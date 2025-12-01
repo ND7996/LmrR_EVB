@@ -32,7 +32,7 @@ df['Mean'] = df[['Rep1', 'Rep2', 'Rep3', 'Rep4']].mean(axis=1)
 df['SEM'] = df[['Rep1', 'Rep2', 'Rep3', 'Rep4']].sem(axis=1)
 
 # --------------------------
-# CALCULATE P-VALUES VS WT
+# P-VALUES VS WT
 # --------------------------
 wt_values = df.loc[df['Catalyst']=='WT', ['Rep1','Rep2','Rep3','Rep4']].values.flatten().astype(float)
 
@@ -42,19 +42,17 @@ for i, row in df.iterrows():
         p_values.append(np.nan)
     else:
         mutant_values = row[['Rep1','Rep2','Rep3','Rep4']].values.astype(float)
-        t_stat, p_val = ttest_ind(mutant_values, wt_values, equal_var=False)
+        _, p_val = ttest_ind(mutant_values, wt_values, equal_var=False)
         p_values.append(p_val)
 
 df['p_value'] = p_values
 
-# --------------------------
-# FORMAT P-VALUES AS NUMERIC
-# --------------------------
+# Format p-values
 def format_pval_numeric(p):
     if pd.isna(p):
         return ""
     else:
-        return f"{p:.3f}"  # shows 3 decimal places
+        return f"{p:.3f}"
 
 df['p_label'] = df['p_value'].apply(format_pval_numeric)
 
@@ -68,14 +66,13 @@ x = np.arange(len(df))
 w = 0.18
 
 # --------------------------
-# Plot 1: All Replicates
+# Plot 1: Replicates
 # --------------------------
 ax1.bar(x - 1.5*w, df['Rep1'], w, label='Replicate a', alpha=0.85)
 ax1.bar(x - 0.5*w, df['Rep2'], w, label='Replicate b', alpha=0.85)
 ax1.bar(x + 0.5*w, df['Rep3'], w, label='Replicate c', alpha=0.85)
 ax1.bar(x + 1.5*w, df['Rep4'], w, label='Replicate d', alpha=0.85)
 
-# Add catalyst labels
 for i, catalyst in enumerate(df['Catalyst']):
     top = max(df.loc[i, ['Rep1', 'Rep2', 'Rep3', 'Rep4']])
     ax1.text(i, top + 1.2, catalyst, ha='center', fontsize=5)
@@ -90,9 +87,8 @@ ax1.grid(axis='y', alpha=0.3, linestyle='--')
 ax1.set_ylim(-5, 60)
 
 # --------------------------
-# Plot 2: Mean + SEM
+# Plot 2: Mean + SEM (BLACK p-values above bars)
 # --------------------------
-# Color logic
 bar_colors = []
 for _, row in df.iterrows():
     if row['Catalyst'] == 'WT':
@@ -106,17 +102,16 @@ for _, row in df.iterrows():
 
 bars = ax2.bar(x, df['Mean'], color=bar_colors, alpha=0.75, edgecolor='black', linewidth=0.5)
 
-ax2.errorbar(
-    x, df['Mean'], yerr=df['SEM'], fmt='none',
-    ecolor='black', elinewidth=1, capsize=2
-)
+ax2.errorbar(x, df['Mean'], yerr=df['SEM'], fmt='none',
+             ecolor='black', elinewidth=1, capsize=2)
 
-# Add catalyst labels and numeric p-values
-for i, (mean, sem, catalyst, p_label) in enumerate(zip(df['Mean'], df['SEM'], df['Catalyst'], df['p_label'])):
-    ax2.text(i, mean + sem + 1.5, catalyst, ha='center', fontsize=5)
+# --------------------------
+# ONLY p-values above bars (BLACK font)
+# --------------------------
+for i, (mean, sem, p_label) in enumerate(zip(df['Mean'], df['SEM'], df['p_label'])):
     if p_label:
-        ax2.text(i, mean + sem + 5, p_label, ha='center', fontsize=6, color='red')
-    ax2.text(i, -3.0, catalyst, ha='center', fontsize=5)
+        ax2.text(i, mean + sem + 2, p_label, ha='center', fontsize=6, color='black')
+    ax2.text(i, -3.0, df['Catalyst'][i], ha='center', fontsize=5)
 
 ax2.set_title('Mean Yield ± SEM', fontsize=8)
 ax2.set_ylabel('Average Yield (%)')
@@ -125,7 +120,6 @@ ax2.set_xticklabels([])
 ax2.grid(axis='y', alpha=0.3, linestyle='--')
 ax2.set_ylim(-5, 60)
 
-# Color legend
 legend_patches = [
     Patch(facecolor='#8b5cf6', label='Wild Type'),
     Patch(facecolor='#10b981', label='High (≥40%)'),
@@ -145,7 +139,6 @@ save_paths = [
 ]
 
 for path in save_paths:
-    # Ensure directory exists
     os.makedirs(os.path.dirname(path), exist_ok=True)
     fig.savefig(path, dpi=300, bbox_inches='tight')
 
