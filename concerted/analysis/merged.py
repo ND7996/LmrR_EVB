@@ -37,7 +37,14 @@ for i, row in df1.iterrows():
         _, p_val = ttest_ind(mutant_values, wt_values1, equal_var=False)
         p_values1.append(p_val)
 df1['p_value'] = p_values1
-df1['p_label'] = df1['p_value'].apply(lambda p: f"{p:.3f}" if pd.notna(p) else "")
+
+def format_pvalue(p):
+    if pd.isna(p):
+        return ''
+    else:
+        return f'{p:.3f}'
+
+df1['p_label'] = df1['p_value'].apply(format_pvalue)
 
 # --------------------------
 # DATASET 2
@@ -65,12 +72,13 @@ wt_values2 = wt2[['Replicate_a','Replicate_b','Replicate_c']].values.flatten().a
 p_values2 = []
 for i, row in df2.iterrows():
     if row['Catalyst'] == 'WT':
-        p_values2.append(1.0)
+        p_values2.append(np.nan)
     else:
         variant_values = [row['Replicate_a'], row['Replicate_b'], row['Replicate_c']]
         _, p_val = ttest_ind(wt_values2, variant_values, equal_var=False)
         p_values2.append(p_val)
 df2['p_value'] = p_values2
+df2['p_label'] = df2['p_value'].apply(format_pvalue)
 
 # Color coding for Dataset 2
 def classify_color(value):
@@ -136,11 +144,18 @@ axs[0].set_title('Dataset 1: All Replicates', fontweight='bold')
 axs[0].grid(axis='y', linestyle='--', alpha=0.3)
 axs[0].legend(fontsize=6)
 
-# --- Plot 2: Dataset 1 mean ± SEM ---
+# --- Plot 2: Dataset 1 mean ± SEM with p-values ---
 bar_colors1 = ['#8b5cf6' if c=='WT' else '#10b981' if m>=40 else '#f59e0b' if m>=30 else '#ef4444'
                for c,m in zip(df1['Catalyst'], df1['Mean'])]
 axs[1].bar(x1, df1['Mean'], color=bar_colors1, edgecolor='black', linewidth=0.5)
 axs[1].errorbar(x1, df1['Mean'], yerr=df1['SEM'], fmt='none', ecolor='black', capsize=2)
+
+# Add p-values
+for i, (idx, row) in enumerate(df1.iterrows()):
+    if row['p_label']:
+        y_pos = row['Mean'] + row['SEM'] + 2
+        axs[1].text(i, y_pos, row['p_label'], ha='center', va='bottom', fontsize=6)
+
 axs[1].set_xticks(x1)
 axs[1].set_xticklabels(df1['Catalyst'], rotation=45, ha='right', fontsize=6)
 axs[1].set_ylabel('Average Yield (%)')
@@ -150,7 +165,7 @@ legend_patches1 = [Patch(facecolor='#8b5cf6', label='WT'),
                    Patch(facecolor='#10b981', label='High ≥40'),
                    Patch(facecolor='#f59e0b', label='Medium 30–39'),
                    Patch(facecolor='#ef4444', label='Low <30')]
-axs[1].legend(handles=legend_patches1, fontsize=5)
+axs[1].legend(handles=legend_patches1, fontsize=5, loc='upper left')
 
 # --- Plot 3: Dataset 2 all replicates ---
 width2 = 0.25
@@ -164,9 +179,16 @@ axs[2].set_title('Dataset 2: All Replicates', fontweight='bold')
 axs[2].grid(axis='y', linestyle='--', alpha=0.2)
 axs[2].legend(fontsize=5)
 
-# --- Plot 4: Dataset 2 mean ± SEM ---
+# --- Plot 4: Dataset 2 mean ± SEM with p-values ---
 axs[3].bar(x2, df2['Average'], color=bar_colors2, edgecolor='black', linewidth=0.5)
 axs[3].errorbar(x2, df2['Average'], yerr=df2['Std_Error'], fmt='none', ecolor='black', capsize=4)
+
+# Add p-values
+for i, (idx, row) in enumerate(df2.iterrows()):
+    if row['p_label']:
+        y_pos = row['Average'] + row['Std_Error'] + 0.5
+        axs[3].text(i, y_pos, row['p_label'], ha='center', va='bottom', fontsize=5)
+
 axs[3].set_xticks(x2)
 axs[3].set_xticklabels(df2['Catalyst'], rotation=45, ha='right', fontsize=5)
 axs[3].set_ylabel('Average Yield (%)')
@@ -176,7 +198,7 @@ legend_patches2 = [Patch(facecolor='#800080', label='WT'),
                    Patch(facecolor='#1f77b4', label='Low <10'),
                    Patch(facecolor='#ff7f0e', label='Medium 10–15'),
                    Patch(facecolor='#2ca02c', label='High ≥15')]
-axs[3].legend(handles=legend_patches2, fontsize=5)
+axs[3].legend(handles=legend_patches2, fontsize=5, loc='upper left')
 
 # --- Plot 5: Overlapping ΔYield ---
 variants_overlap = df_overlap['Variant'].tolist()
