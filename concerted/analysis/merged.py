@@ -97,7 +97,7 @@ previous_data = {
 }
 current_data = {
     'Variant': ['W96A','E7A','A11L','L18A','N19A','K22A','N88A','M89A','A92E','F93A','S95A','S97A','D100A','V99A','I16A','N14A','L9A','R10A','K101A','E104A'],
-    'DeltaYield': [-12,0,0.5,-0.5,0,-3.5,-3.5,-4.5,-3,-10,-1.5,-0.5,-13.5,0,-6.5,-4,-1.5,-1,-3.5,-3]
+    'DeltaYield': [-12,0,0.5,-0.5,0,-3.5,-3.5,-4.5,-3,-10,-1.5,0.3,-13.5,0,-6.5,-4,-1.5,-1,-3.5,-3]
 }
 df_prev = pd.DataFrame(previous_data)
 df_curr = pd.DataFrame(current_data)
@@ -110,19 +110,19 @@ df_prev['Position'] = df_prev['Variant'].apply(extract_pos)
 df_curr['Position'] = df_curr['Variant'].apply(extract_pos)
 
 overlap_variants = set(df_prev['Variant']) & set(df_curr['Variant'])
-unique_prev = set(df_prev['Variant']) - set(df_curr['Variant'])
-unique_curr = set(df_curr['Variant']) - set(df_prev['Variant'])
+new_prev = set(df_prev['Variant']) - set(df_curr['Variant'])
+new_curr = set(df_curr['Variant']) - set(df_prev['Variant'])
 
 df_overlap = pd.merge(
     df_prev[['Variant','DeltaYield','Position']],
     df_curr[['Variant','DeltaYield']],
     on='Variant', suffixes=('_Old','_New')
 ).sort_values('Position')
-df_unique_prev = df_prev[df_prev['Variant'].isin(unique_prev)].sort_values('Position')
-df_unique_prev['DeltaYield_New'] = 0
-df_unique_curr = df_curr[df_curr['Variant'].isin(unique_curr)].sort_values('Position')
-df_unique_curr['DeltaYield_Old'] = 0
-df_unique_curr = df_unique_curr.rename(columns={'DeltaYield':'DeltaYield_New'})
+df_new_prev = df_prev[df_prev['Variant'].isin(new_prev)].sort_values('Position')
+df_new_prev['DeltaYield_New'] = 0
+df_new_curr = df_curr[df_curr['Variant'].isin(new_curr)].sort_values('Position')
+df_new_curr['DeltaYield_Old'] = 0
+df_new_curr = df_new_curr.rename(columns={'DeltaYield':'DeltaYield_New'})
 
 # --------------------------
 # FIGURE SETUP
@@ -218,15 +218,15 @@ axs[4].text(0.98, 0.98, f'R² = {corr**2:.3f}', transform=axs[4].transAxes,
             ha='right', va='top', fontsize=8,
             bbox=dict(boxstyle='round', facecolor='white', edgecolor='black', alpha=0.8))
 
-# --- Plot 6: Unique variants ---
-unique_variants = list(df_unique_prev['Variant']) + list(df_unique_curr['Variant'])
-x_unique = np.arange(len(unique_variants))
-y_new = list(df_unique_prev['DeltaYield_New']) + list(df_unique_curr['DeltaYield_New'])
-axs[5].bar(x_unique, y_new, color='#FF6B35', label='Unique')
-axs[5].set_xticks(x_unique)
-axs[5].set_xticklabels(unique_variants, rotation=45, ha='right', fontsize=9)
+# --- Plot 6: new variants ---
+new_variants = list(df_new_prev['Variant']) + list(df_new_curr['Variant'])
+x_new = np.arange(len(new_variants))
+y_new = list(df_new_prev['DeltaYield_New']) + list(df_new_curr['DeltaYield_New'])
+axs[5].bar(x_new, y_new, color='#FF6B35', label='new')
+axs[5].set_xticks(x_new)
+axs[5].set_xticklabels(new_variants, rotation=45, ha='right', fontsize=9)
 axs[5].set_ylabel('ΔYield (%)')
-axs[5].set_title('Alanine Scan: Unique Variants', fontweight='bold')
+axs[5].set_title('Alanine Scan: new Variants', fontweight='bold')
 axs[5].axhline(0, color='black', linewidth=0.5)
 axs[5].grid(axis='y', alpha=0.3)
 axs[5].legend(fontsize=8)
