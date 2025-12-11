@@ -16,34 +16,34 @@ plt.axhline(0, color='gray', linestyle='--', linewidth=1.2, alpha=0.8)
 
 # Transition states
 plt.plot(35, 16.5, 's', color='#D32F2F', markersize=12, markeredgecolor='black', markeredgewidth=1.2, zorder=10)
-plt.plot(55,  9.0, 's', color='#388E3C', markersize=12, markeredgecolor='black', markeredgewidth=1.2, zorder=10)
+plt.plot(55, 9.0, 's', color='#388E3C', markersize=12, markeredgecolor='black', markeredgewidth=1.2, zorder=10)
 plt.plot(78, 20.8, 's', color='#D32F2F', markersize=12, markeredgecolor='black', markeredgewidth=1.2, zorder=10)
 
 # Labels (reduced sizes)
-plt.text(8,   4, 'reactants',   ha='center', fontsize=12, fontweight='bold')
-plt.text(25, -14, '1',          ha='center', fontsize=18, fontweight='bold')
-plt.text(50,  -7, '2',          ha='center', fontsize=18, fontweight='bold')
-plt.text(94, -27, 'products',   ha='center', fontsize=12, fontweight='bold')
+plt.text(8, 4, 'reactants', ha='center', fontsize=12, fontweight='bold')
+plt.text(25, -14, '1', ha='center', fontsize=18, fontweight='bold')
+plt.text(50, -7, '2', ha='center', fontsize=18, fontweight='bold')
+plt.text(94, -27, 'products', ha='center', fontsize=12, fontweight='bold')
 plt.text(23, 13, 'X₁', fontsize=13)
-plt.text(48,  7, 'X₂', fontsize=13)
+plt.text(48, 7, 'X₂', fontsize=13)
 plt.text(72, 16, 'X₃', fontsize=13)
 
 # Ea values (smaller and slightly repositioned)
 plt.text(35, 23, 'Ea₁ = 16.5', ha='center', fontsize=10, color='#D32F2F', fontweight='bold')
-plt.text(55, 14, 'Ea₂ = 9.0',  ha='center', fontsize=10, color='#388E3C', fontweight='bold')
+plt.text(55, 14, 'Ea₂ = 9.0', ha='center', fontsize=10, color='#388E3C', fontweight='bold')
 plt.text(78, 27, 'Ea₃ = 20.8', ha='center', fontsize=10, color='#D32F2F', fontweight='bold')
 
-# 1. Experimental ΔG‡ (purple)
+# 1. Experimental ΔG‡ (purple) - apparent barrier from reactants
 plt.plot([5, 78], [20.8, 20.8], color='#8E24AA', linewidth=4)
-plt.plot([78, 78], [0, 20.8],   color='#8E24AA', linewidth=4)
-plt.text(41, 28, 'ΔG‡ = kcat/KM = 20.8 kcal/mol\n(experimental activation barrier)', 
+plt.plot([78, 78], [0, 20.8], color='#8E24AA', linewidth=4)
+plt.text(41, 28, 'ΔG‡ = 20.8 kcal/mol (kcat/KM)\n(apparent barrier from reactants)', 
          fontsize=11, fontweight='bold', color='#8E24AA', ha='center', va='bottom',
          bbox=dict(boxstyle="round,pad=0.35", facecolor="white", edgecolor="#8E24AA", linewidth=1.5))
 
-# 2. Intrinsic kcat barrier (orange)
+# 2. Intrinsic barrier from deep intermediate (orange)
 plt.plot([25, 78], [20.8, 20.8], color='#FF8F00', linewidth=4)
 plt.plot([25, 25], [-18, 20.8], color='#FF8F00', linewidth=4)
-plt.text(52, 33, 'kcat barrier ≈ 38.8 kcal/mol', 
+plt.text(52, 33, 'intrinsic barrier from deep intermediate ≈ 38.8 kcal/mol', 
          fontsize=11, fontweight='bold', color='#FF8F00', ha='center', va='bottom',
          bbox=dict(boxstyle="round,pad=0.35", facecolor="white", edgecolor="#FF8F00", linewidth=1.5))
 
@@ -54,9 +54,9 @@ plt.text(99.5, -16, 'ΔG° ≈ –32 kcal/mol',
          ha='left', va='center', fontsize=11, fontweight='bold', color='#00695C',
          bbox=dict(boxstyle="round,pad=0.35", facecolor="white", edgecolor="#00695C", linewidth=1.5))
 
-# Title (split into two lines to save vertical space)
-plt.title('Organocatalytic Cycle — Experimental ΔG‡ = 20.8 kcal/mol (kcat/KM)\n'
-          'Rate-limiting step is turnover from deep intermediate', 
+# Title - clarified to show both barriers
+plt.title('Organocatalytic Cycle — Apparent ΔG‡ = 20.8 kcal/mol from reactants\n'
+          'Intrinsic barrier from deep intermediate ≈ 38.8 kcal/mol', 
           fontsize=14, fontweight='bold', pad=20)
 
 plt.ylabel('Free Energy (kcal/mol)', fontsize=13, fontweight='bold')
@@ -68,6 +68,6 @@ plt.yticks(np.arange(-40, 50, 10))
 plt.grid(True, alpha=0.2, linestyle='--')
 
 plt.tight_layout()
-plt.savefig("energy_profile_smaller_fonts.png", dpi=500, bbox_inches='tight')
-plt.savefig("energy_profile_smaller_fonts.pdf", bbox_inches='tight')
+plt.savefig("energy_profile_fixed.png", dpi=500, bbox_inches='tight')
+plt.savefig("energy_profile_fixed.pdf", bbox_inches='tight')
 plt.show()
