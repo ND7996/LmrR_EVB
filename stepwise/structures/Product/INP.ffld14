@@ -1,0 +1,315 @@
+================================================================================
+  ATOMTYPES and PARAMETERS for molecule: 
+
+================================================================================
+
+ Total charge of the system =  0.0000
+Formal charge of the system =  0.0000
+
+
+Charges
+atom  formal fractional formal 
+1       0     0.000  
+2       0     0.000  
+3       0     0.000  
+4       0     0.000  
+5       0     0.000  
+6       0     0.000  
+7       0     0.000  
+8       0     0.000  
+9       0     0.000  
+10      0     0.000  
+11      0     0.000  
+12      0     0.000  
+13      0     0.000  
+14      0     0.000  
+15      0     0.000  
+16      0     0.000  
+17      0     0.000  
+18      0     0.000  
+19      0     0.000  
+20      0     0.000  
+21      0     0.000  
+22      0     0.000  
+23      0     0.000  
+24      0     0.000  
+25      0     0.000  
+26      0     0.000  
+27      0     0.000  
+28      0     0.000  
+29      0     0.000  
+30      0     0.000  
+
+BCI's             index  type   type    bci        assignement info
+ N1      C2          0   901    135     0.2000   exact type       NT-CT
+ N1      C7          0   901    135     0.2000   exact type       NT-CT
+ N1      H12         0   901    240     0.3800   exact type       NT-H
+ C2      C3          0   135    135     0.0000   exact type       CT-CT
+ C2      C5          0   135    135     0.0000   exact type       CT-CT
+ C2      H13         0   135    140     0.0600   exact type       CT-HC
+ C3      C4          0   135    135     0.0000   exact type       CT-CT
+ C3      C6          0   135    135     0.0000   exact type       CT-CT
+ C3      H14         0   135    140     0.0600   exact type       CT-HC
+ C4      C7          0   135    135     0.0000   exact type       CT-CT
+ C4      C11         0   135    135     0.0000   exact type       CT-CT
+ C4      H15         0   135    140     0.0600   exact type       CT-HC
+ C5      C8          0   135    135     0.0000   exact type       CT-CT
+ C5      H16         0   135    140     0.0600   exact type       CT-HC
+ C5      H17         0   135    140     0.0600   exact type       CT-HC
+ C6      C9          0   135    135     0.0000   exact type       CT-CT
+ C6      H18         0   135    140     0.0600   exact type       CT-HC
+ C6      H19         0   135    140     0.0600   exact type       CT-HC
+ C7      C10         0   135    135     0.0000   exact type       CT-CT
+ C7      H20         0   135    140     0.0600   exact type       CT-HC
+ C8      C9          0   135    135     0.0000   exact type       CT-CT
+ C8      H21         0   135    140     0.0600   exact type       CT-HC
+ C8      H22         0   135    140     0.0600   exact type       CT-HC
+ C9      H23         0   135    140     0.0600   exact type       CT-HC
+ C9      H24         0   135    140     0.0600   exact type       CT-HC
+ C10     H25         0   135    140     0.0600   exact type       CT-HC
+ C10     H26         0   135    140     0.0600   exact type       CT-HC
+ C10     H27         0   135    140     0.0600   exact type       CT-HC
+ C11     H28         0   135    140     0.0600   exact type       CT-HC
+ C11     H29         0   135    140     0.0600   exact type       CT-HC
+ C11     H30         0   135    140     0.0600   exact type       CT-HC
+
+OPLSAA FORCE FIELD TYPE ASSIGNED
+-------------------------------------------------------------------------------
+ atom   type  vdw  symbol    charge   sigma    epsilon    pol  quality   comment 
+-------------------------------------------------------------------------------
+ N1       901  N4   NT      -0.7800   3.3000   0.1700   0.0000 high   N secondary aliphatic amines
+ C2       135  C1   CT       0.1400   3.5000   0.0660   0.0000 high   C: alkanes
+ C3       135  C1   CT      -0.0600   3.5000   0.0660   0.0000 high   C: alkanes
+ C4       135  C1   CT      -0.0600   3.5000   0.0660   0.0000 high   C: alkanes
+ C5       135  C1   CT      -0.1200   3.5000   0.0660   0.0000 high   C: alkanes
+ C6       135  C1   CT      -0.1200   3.5000   0.0660   0.0000 high   C: alkanes
+ C7       135  C1   CT       0.1400   3.5000   0.0660   0.0000 high   C: alkanes
+ C8       135  C1   CT      -0.1200   3.5000   0.0660   0.0000 high   C: alkanes
+ C9       135  C1   CT      -0.1200   3.5000   0.0660   0.0000 high   C: alkanes
+ C10      135  C1   CT      -0.1800   3.5000   0.0660   0.0000 high   C: alkanes
+ C11      135  C1   CT      -0.1800   3.5000   0.0660   0.0000 high   C: alkanes
+ H12      240  H8   H        0.3800   0.5000   0.0300   0.0000 high   H on neutral N
+ H13      140  H2   HC       0.0600   2.5000   0.0150   0.0000 high   H(C)-N in amines, diamines
+ H14      140  H1   HC       0.0600   2.5000   0.0300   0.0000 high   H: alkanes
+ H15      140  H1   HC       0.0600   2.5000   0.0300   0.0000 high   H: alkanes
+ H16      140  H1   HC       0.0600   2.5000   0.0300   0.0000 high   H: alkanes
+ H17      140  H1   HC       0.0600   2.5000   0.0300   0.0000 high   H: alkanes
+ H18      140  H1   HC       0.0600   2.5000   0.0300   0.0000 high   H: alkanes
+ H19      140  H1   HC       0.0600   2.5000   0.0300   0.0000 high   H: alkanes
+ H20      140  H2   HC       0.0600   2.5000   0.0150   0.0000 high   H(C)-N in amines, diamines
+ H21      140  H1   HC       0.0600   2.5000   0.0300   0.0000 high   H: alkanes
+ H22      140  H1   HC       0.0600   2.5000   0.0300   0.0000 high   H: alkanes
+ H23      140  H1   HC       0.0600   2.5000   0.0300   0.0000 high   H: alkanes
+ H24      140  H1   HC       0.0600   2.5000   0.0300   0.0000 high   H: alkanes
+ H25      140  H1   HC       0.0600   2.5000   0.0300   0.0000 high   H: alkanes
+ H26      140  H1   HC       0.0600   2.5000   0.0300   0.0000 high   H: alkanes
+ H27      140  H1   HC       0.0600   2.5000   0.0300   0.0000 high   H: alkanes
+ H28      140  H1   HC       0.0600   2.5000   0.0300   0.0000 high   H: alkanes
+ H29      140  H1   HC       0.0600   2.5000   0.0300   0.0000 high   H: alkanes
+ H30      140  H1   HC       0.0600   2.5000   0.0300   0.0000 high   H: alkanes
+------------------------------------------------------------------------------
+
+
+ Stretch            k            r0    quality         bt        comment
+ N1      C2      382.00000    1.44800   high         0  => 0     NT-CT      ==> NT-CT     
+ N1      C7      382.00000    1.44800   high         0  => 0     NT-CT      ==> NT-CT     
+ N1      H12     434.00000    1.01000   high         0  => 0     NT-H       ==> NT-H      
+ C2      C3      268.00000    1.52900   high         0  => 0     CT-CT      ==> CT-CT     
+ C2      C5      268.00000    1.52900   high         0  => 0     CT-CT      ==> CT-CT     
+ C2      H13     340.00000    1.09000   high         0  => 0     CT-HC      ==> HC-CT     
+ C3      C4      268.00000    1.52900   high         0  => 0     CT-CT      ==> CT-CT     
+ C3      C6      268.00000    1.52900   high         0  => 0     CT-CT      ==> CT-CT     
+ C3      H14     340.00000    1.09000   high         0  => 0     CT-HC      ==> HC-CT     
+ C4      C7      268.00000    1.52900   high         0  => 0     CT-CT      ==> CT-CT     
+ C4      C11     268.00000    1.52900   high         0  => 0     CT-CT      ==> CT-CT     
+ C4      H15     340.00000    1.09000   high         0  => 0     CT-HC      ==> HC-CT     
+ C5      C8      268.00000    1.52900   high         0  => 0     CT-CT      ==> CT-CT     
+ C5      H16     340.00000    1.09000   high         0  => 0     CT-HC      ==> HC-CT     
+ C5      H17     340.00000    1.09000   high         0  => 0     CT-HC      ==> HC-CT     
+ C6      C9      268.00000    1.52900   high         0  => 0     CT-CT      ==> CT-CT     
+ C6      H18     340.00000    1.09000   high         0  => 0     CT-HC      ==> HC-CT     
+ C6      H19     340.00000    1.09000   high         0  => 0     CT-HC      ==> HC-CT     
+ C7      C10     268.00000    1.52900   high         0  => 0     CT-CT      ==> CT-CT     
+ C7      H20     340.00000    1.09000   high         0  => 0     CT-HC      ==> HC-CT     
+ C8      C9      268.00000    1.52900   high         0  => 0     CT-CT      ==> CT-CT     
+ C8      H21     340.00000    1.09000   high         0  => 0     CT-HC      ==> HC-CT     
+ C8      H22     340.00000    1.09000   high         0  => 0     CT-HC      ==> HC-CT     
+ C9      H23     340.00000    1.09000   high         0  => 0     CT-HC      ==> HC-CT     
+ C9      H24     340.00000    1.09000   high         0  => 0     CT-HC      ==> HC-CT     
+ C10     H25     340.00000    1.09000   high         0  => 0     CT-HC      ==> HC-CT     
+ C10     H26     340.00000    1.09000   high         0  => 0     CT-HC      ==> HC-CT     
+ C10     H27     340.00000    1.09000   high         0  => 0     CT-HC      ==> HC-CT     
+ C11     H28     340.00000    1.09000   high         0  => 0     CT-HC      ==> HC-CT     
+ C11     H29     340.00000    1.09000   high         0  => 0     CT-HC      ==> HC-CT     
+ C11     H30     340.00000    1.09000   high         0  => 0     CT-HC      ==> HC-CT     
+
+ Bending                      k       theta0    quality   at  comment
+ C2      N1      C7        51.80000  107.20000   high     0   CT-NT-CT          ==> CT-NT-CT         
+ C2      N1      H12       35.00000  109.50000   high     0   CT-NT-H           ==> H-NT-CT          
+ C7      N1      H12       35.00000  109.50000   high     0   CT-NT-H           ==> H-NT-CT          
+ N1      C2      C3        56.20000  109.47000   high     0   NT-CT-CT          ==> NT-CT-CT         
+ N1      C2      C5        56.20000  109.47000   high     0   NT-CT-CT          ==> NT-CT-CT         
+ N1      C2      H13       35.00000  109.50000   high     0   NT-CT-HC          ==> NT-CT-HC         
+ C3      C2      C5        58.35000  112.70000   high     0   CT-CT-CT          ==> CT-CT-CT         
+ C3      C2      H13       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C5      C2      H13       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C2      C3      C4        58.35000  112.70000   high     0   CT-CT-CT          ==> CT-CT-CT         
+ C2      C3      C6        58.35000  112.70000   high     0   CT-CT-CT          ==> CT-CT-CT         
+ C2      C3      H14       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C4      C3      C6        58.35000  112.70000   high     0   CT-CT-CT          ==> CT-CT-CT         
+ C4      C3      H14       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C6      C3      H14       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C3      C4      C7        58.35000  112.70000   high     0   CT-CT-CT          ==> CT-CT-CT         
+ C3      C4      C11       58.35000  112.70000   high     0   CT-CT-CT          ==> CT-CT-CT         
+ C3      C4      H15       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C7      C4      C11       58.35000  112.70000   high     0   CT-CT-CT          ==> CT-CT-CT         
+ C7      C4      H15       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C11     C4      H15       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C2      C5      C8        58.35000  112.70000   high     0   CT-CT-CT          ==> CT-CT-CT         
+ C2      C5      H16       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C2      C5      H17       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C8      C5      H16       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C8      C5      H17       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ H16     C5      H17       33.00000  107.80000   high     0   HC-CT-HC          ==> HC-CT-HC         
+ C3      C6      C9        58.35000  112.70000   high     0   CT-CT-CT          ==> CT-CT-CT         
+ C3      C6      H18       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C3      C6      H19       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C9      C6      H18       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C9      C6      H19       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ H18     C6      H19       33.00000  107.80000   high     0   HC-CT-HC          ==> HC-CT-HC         
+ N1      C7      C4        56.20000  109.47000   high     0   NT-CT-CT          ==> NT-CT-CT         
+ N1      C7      C10       56.20000  109.47000   high     0   NT-CT-CT          ==> NT-CT-CT         
+ N1      C7      H20       35.00000  109.50000   high     0   NT-CT-HC          ==> NT-CT-HC         
+ C4      C7      C10       58.35000  112.70000   high     0   CT-CT-CT          ==> CT-CT-CT         
+ C4      C7      H20       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C10     C7      H20       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C5      C8      C9        58.35000  112.70000   high     0   CT-CT-CT          ==> CT-CT-CT         
+ C5      C8      H21       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C5      C8      H22       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C9      C8      H21       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C9      C8      H22       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ H21     C8      H22       33.00000  107.80000   high     0   HC-CT-HC          ==> HC-CT-HC         
+ C6      C9      C8        58.35000  112.70000   high     0   CT-CT-CT          ==> CT-CT-CT         
+ C6      C9      H23       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C6      C9      H24       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C8      C9      H23       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C8      C9      H24       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ H23     C9      H24       33.00000  107.80000   high     0   HC-CT-HC          ==> HC-CT-HC         
+ C7      C10     H25       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C7      C10     H26       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C7      C10     H27       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ H25     C10     H26       33.00000  107.80000   high     0   HC-CT-HC          ==> HC-CT-HC         
+ H25     C10     H27       33.00000  107.80000   high     0   HC-CT-HC          ==> HC-CT-HC         
+ H26     C10     H27       33.00000  107.80000   high     0   HC-CT-HC          ==> HC-CT-HC         
+ C4      C11     H28       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C4      C11     H29       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ C4      C11     H30       37.50000  110.70000   high     0   CT-CT-HC          ==> HC-CT-CT         
+ H28     C11     H29       33.00000  107.80000   high     0   HC-CT-HC          ==> HC-CT-HC         
+ H28     C11     H30       33.00000  107.80000   high     0   HC-CT-HC          ==> HC-CT-HC         
+ H29     C11     H30       33.00000  107.80000   high     0   HC-CT-HC          ==> HC-CT-HC         
+
+ proper Torsion                     V1      V2      V3      V4    quality  tt  comment
+ C7      N1      C2      C3        0.469   0.041   0.505   0.000    high   0   CT-NT-CT-CT          ==> CT-NT-CT-CT         
+ C7      N1      C2      C5        0.469   0.041   0.505   0.000    high   0   CT-NT-CT-CT          ==> CT-NT-CT-CT         
+ C7      N1      C2      H13       0.000   0.000   0.560   0.000    high   0   CT-NT-CT-HC          ==> CT-NT-CT-HC         
+ H12     N1      C2      C3       -0.319   0.693   0.115   0.000    high   12  H-NT-CT-CT           ==> H-NT-CT-CT          
+ H12     N1      C2      C5       -0.319   0.693   0.115   0.000    high   12  H-NT-CT-CT           ==> H-NT-CT-CT          
+ H12     N1      C2      H13       0.000   0.000   0.400   0.000    high   0   H-NT-CT-HC           ==> H-NT-CT-HC          
+ C2      N1      C7      C4        0.469   0.041   0.505   0.000    high   0   CT-NT-CT-CT          ==> CT-NT-CT-CT         
+ C2      N1      C7      C10       0.469   0.041   0.505   0.000    high   0   CT-NT-CT-CT          ==> CT-NT-CT-CT         
+ C2      N1      C7      H20       0.000   0.000   0.560   0.000    high   0   CT-NT-CT-HC          ==> CT-NT-CT-HC         
+ H12     N1      C7      C4       -0.319   0.693   0.115   0.000    high   12  H-NT-CT-CT           ==> H-NT-CT-CT          
+ H12     N1      C7      C10      -0.119   0.177   0.235   0.000    high   0   H-NT-CT-CT           ==> H-NT-CT-CT          
+ H12     N1      C7      H20       0.000   0.000   0.400   0.000    high   0   H-NT-CT-HC           ==> H-NT-CT-HC          
+ N1      C2      C3      C4        3.068  -0.199   0.114   0.000    high   0   NT-CT-CT-CT          ==> NT-CT-CT-CT         
+ N1      C2      C3      C6        3.068  -0.199   0.114   0.000    high   0   NT-CT-CT-CT          ==> NT-CT-CT-CT         
+ N1      C2      C3      H14       0.000   0.000   0.300   0.000    high   0   NT-CT-CT-HC          ==> HC-CT-CT-??         
+ C5      C2      C3      C4        1.135  -0.151   0.400   0.000    high   0   CT-CT-CT-CT          ==> CT-CT-CT-CT         
+ C5      C2      C3      C6        1.135  -0.151   0.400   0.000    high   0   CT-CT-CT-CT          ==> CT-CT-CT-CT         
+ C5      C2      C3      H14       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ H13     C2      C3      C4        0.000   0.000   0.300   0.000    high   0   HC-CT-CT-CT          ==> HC-CT-CT-CT         
+ H13     C2      C3      C6        0.000   0.000   0.300   0.000    high   0   HC-CT-CT-CT          ==> HC-CT-CT-CT         
+ H13     C2      C3      H14       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ N1      C2      C5      C8        3.068  -0.199   0.114   0.000    high   0   NT-CT-CT-CT          ==> NT-CT-CT-CT         
+ N1      C2      C5      H16       0.000   0.000   0.300   0.000    high   0   NT-CT-CT-HC          ==> HC-CT-CT-??         
+ N1      C2      C5      H17       0.000   0.000   0.300   0.000    high   0   NT-CT-CT-HC          ==> HC-CT-CT-??         
+ C3      C2      C5      C8        1.135  -0.151   0.400   0.000    high   0   CT-CT-CT-CT          ==> CT-CT-CT-CT         
+ C3      C2      C5      H16       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ C3      C2      C5      H17       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ H13     C2      C5      C8        0.000   0.000   0.300   0.000    high   0   HC-CT-CT-CT          ==> HC-CT-CT-CT         
+ H13     C2      C5      H16       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ H13     C2      C5      H17       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ C2      C3      C4      C7        1.135  -0.151   0.400   0.000    high   0   CT-CT-CT-CT          ==> CT-CT-CT-CT         
+ C2      C3      C4      C11       1.135  -0.151   0.400   0.000    high   0   CT-CT-CT-CT          ==> CT-CT-CT-CT         
+ C2      C3      C4      H15       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ C6      C3      C4      C7        1.135  -0.151   0.400   0.000    high   0   CT-CT-CT-CT          ==> CT-CT-CT-CT         
+ C6      C3      C4      C11       1.135  -0.151   0.400   0.000    high   0   CT-CT-CT-CT          ==> CT-CT-CT-CT         
+ C6      C3      C4      H15       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ H14     C3      C4      C7        0.000   0.000   0.300   0.000    high   0   HC-CT-CT-CT          ==> HC-CT-CT-CT         
+ H14     C3      C4      C11       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-CT          ==> HC-CT-CT-CT         
+ H14     C3      C4      H15       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ C2      C3      C6      C9        1.135  -0.151   0.400   0.000    high   0   CT-CT-CT-CT          ==> CT-CT-CT-CT         
+ C2      C3      C6      H18       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ C2      C3      C6      H19       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ C4      C3      C6      C9        1.135  -0.151   0.400   0.000    high   0   CT-CT-CT-CT          ==> CT-CT-CT-CT         
+ C4      C3      C6      H18       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ C4      C3      C6      H19       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ H14     C3      C6      C9        0.000   0.000   0.300   0.000    high   0   HC-CT-CT-CT          ==> HC-CT-CT-CT         
+ H14     C3      C6      H18       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ H14     C3      C6      H19       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ C3      C4      C7      N1        3.068  -0.199   0.114   0.000    high   0   CT-CT-CT-NT          ==> NT-CT-CT-CT         
+ C3      C4      C7      C10       1.135  -0.151   0.400   0.000    high   0   CT-CT-CT-CT          ==> CT-CT-CT-CT         
+ C3      C4      C7      H20       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ C11     C4      C7      N1        3.068  -0.199   0.114   0.000    high   0   CT-CT-CT-NT          ==> NT-CT-CT-CT         
+ C11     C4      C7      C10       1.135  -0.151   0.400   0.000    high   0   CT-CT-CT-CT          ==> CT-CT-CT-CT         
+ C11     C4      C7      H20       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ H15     C4      C7      N1        0.000   0.000   0.300   0.000    high   0   HC-CT-CT-NT          ==> HC-CT-CT-??         
+ H15     C4      C7      C10       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-CT          ==> HC-CT-CT-CT         
+ H15     C4      C7      H20       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ C3      C4      C11     H28       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ C3      C4      C11     H29       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ C3      C4      C11     H30       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ C7      C4      C11     H28       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ C7      C4      C11     H29       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ C7      C4      C11     H30       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ H15     C4      C11     H28       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ H15     C4      C11     H29       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ H15     C4      C11     H30       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ C2      C5      C8      C9        1.135  -0.151   0.400   0.000    high   0   CT-CT-CT-CT          ==> CT-CT-CT-CT         
+ C2      C5      C8      H21       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ C2      C5      C8      H22       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ H16     C5      C8      C9        0.000   0.000   0.300   0.000    high   0   HC-CT-CT-CT          ==> HC-CT-CT-CT         
+ H16     C5      C8      H21       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ H16     C5      C8      H22       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ H17     C5      C8      C9        0.000   0.000   0.300   0.000    high   0   HC-CT-CT-CT          ==> HC-CT-CT-CT         
+ H17     C5      C8      H21       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ H17     C5      C8      H22       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ C3      C6      C9      C8        1.135  -0.151   0.400   0.000    high   0   CT-CT-CT-CT          ==> CT-CT-CT-CT         
+ C3      C6      C9      H23       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ C3      C6      C9      H24       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ H18     C6      C9      C8        0.000   0.000   0.300   0.000    high   0   HC-CT-CT-CT          ==> HC-CT-CT-CT         
+ H18     C6      C9      H23       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ H18     C6      C9      H24       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ H19     C6      C9      C8        0.000   0.000   0.300   0.000    high   0   HC-CT-CT-CT          ==> HC-CT-CT-CT         
+ H19     C6      C9      H23       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ H19     C6      C9      H24       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ N1      C7      C10     H25       0.000   0.000   0.300   0.000    high   0   NT-CT-CT-HC          ==> HC-CT-CT-??         
+ N1      C7      C10     H26       0.000   0.000   0.300   0.000    high   0   NT-CT-CT-HC          ==> HC-CT-CT-??         
+ N1      C7      C10     H27       0.000   0.000   0.300   0.000    high   0   NT-CT-CT-HC          ==> HC-CT-CT-??         
+ C4      C7      C10     H25       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ C4      C7      C10     H26       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ C4      C7      C10     H27       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ H20     C7      C10     H25       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ H20     C7      C10     H26       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ H20     C7      C10     H27       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ C5      C8      C9      C6        1.135  -0.151   0.400   0.000    high   0   CT-CT-CT-CT          ==> CT-CT-CT-CT         
+ C5      C8      C9      H23       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ C5      C8      C9      H24       0.000   0.000   0.300   0.000    high   0   CT-CT-CT-HC          ==> HC-CT-CT-CT         
+ H21     C8      C9      C6        0.000   0.000   0.300   0.000    high   0   HC-CT-CT-CT          ==> HC-CT-CT-CT         
+ H21     C8      C9      H23       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ H21     C8      C9      H24       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ H22     C8      C9      C6        0.000   0.000   0.300   0.000    high   0   HC-CT-CT-CT          ==> HC-CT-CT-CT         
+ H22     C8      C9      H23       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+ H22     C8      C9      H24       0.000   0.000   0.300   0.000    high   0   HC-CT-CT-HC          ==> HC-CT-CT-HC         
+
+
