@@ -1,0 +1,115 @@
+# Generated with q_ffld2q.py, version 0.7.0
+# Date: Thu May  7 14:31:14 2026
+#
+[options]
+
+
+[atom_types]
+unl.C1          944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
+unl.C2          944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
+unl.C3        1103.5878  1103.5878    24.6673   780.3544    17.4424     12.011 # FFLD: CM_C3_141 high alkene C (RH-C=) all atom
+unl.C4        1103.5878  1103.5878    24.6673   780.3544    17.4424     12.011 # FFLD: CM_C3_141 high alkene C (RH-C=) all atom
+unl.C5        1802.2385  1802.2385    34.1758  1274.3751    24.1659     12.011 # FFLD: CO4_C2_277 high C: aldehyde - for C-alpha use 135
+unl.C6          944.518    944.518    22.0296   667.8751    15.5773     12.011 # FFLD: CT_C1_135 high C: alkanes
+unl.H1          84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+unl.H10         84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+unl.H2          84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+unl.H3          49.2003    49.2003     3.4715    34.7899     2.4547     1.0079 # FFLD: HC_H7_140 high H on C-alpha in ketone & aldehyde
+unl.H4          49.2003    49.2003     3.4715    34.7899     2.4547     1.0079 # FFLD: HC_H7_140 high H on C-alpha in ketone & aldehyde
+unl.H5          69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HC_H6_146 high alkene H (H-C=) all atom
+unl.H6          69.5797    69.5797     4.9095    49.2003     3.4715     1.0079 # FFLD: HC_H6_146 high alkene H (H-C=) all atom
+unl.H7          49.2003    49.2003     3.4715    34.7899     2.4547     1.0079 # FFLD: HC_H7_146 high H-alpha in aldehyde & formamide & formic acid
+unl.H8          84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+unl.H9          84.5728    84.5728     5.4127     59.802     3.8274     1.0079 # FFLD: HC_H1_140 high H: alkanes
+unl.O          616.4387   616.4387    23.7692    435.888    16.8074     15.999 # FFLD: O_O2_281 high O: ketone, aldehyde, ester, acid
+
+[bonds]
+unl.C1       unl.C2            536.0      1.529 # FFLD: high 0 => 0 CT-CT ==> CT-CT
+unl.C1       unl.C3            634.0       1.51 # FFLD: high 0 => 0 CT-CM ==> CT-CM
+unl.C1       unl.H1            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unl.C1       unl.H2            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unl.C2       unl.C5            634.0      1.522 # FFLD: high 0 => 0 CT-CO4 ==> CT-CO4
+unl.C2       unl.H3            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unl.C2       unl.H4            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unl.C3       unl.C4           1098.0       1.34 # FFLD: high 0 => 0 CM-CM ==> CM-CM
+unl.C3       unl.H5            680.0       1.08 # FFLD: high 0 => 0 CM-HC ==> HC-CM
+unl.C4       unl.C6            634.0       1.51 # FFLD: high 0 => 0 CM-CT ==> CT-CM
+unl.C4       unl.H6            680.0       1.08 # FFLD: high 0 => 0 CM-HC ==> HC-CM
+unl.C5       unl.H7            680.0       1.09 # FFLD: high 0 => 0 CO4-HC ==> HC-CO4
+unl.C5       unl.O            1140.0      1.229 # FFLD: high 0 => 0 O-CO4 ==> O-CO4
+unl.C6       unl.H10           680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unl.C6       unl.H8            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+unl.C6       unl.H9            680.0       1.09 # FFLD: high 0 => 0 CT-HC ==> HC-CT
+
+[angles]
+unl.C1       unl.C2       unl.C5            126.0      111.1 # FFLD: high 0 CT-CT-CO4 ==> CT-CT-CO4
+unl.C1       unl.C2       unl.H3             75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
+unl.C1       unl.C2       unl.H4             75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
+unl.C1       unl.C3       unl.C4            140.0      124.0 # FFLD: high 0 CT-CM-CM ==> CT-CM-CM
+unl.C1       unl.C3       unl.H5             70.0      117.0 # FFLD: high 0 CT-CM-HC ==> HC-CM-CT
+unl.C2       unl.C1       unl.C3            140.0    112.027 # FFLD: high 0 CT-CT-CM ==> CT-CT-CM
+unl.C2       unl.C1       unl.H1             75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
+unl.C2       unl.C1       unl.H2             75.0      110.7 # FFLD: high 0 CT-CT-HC ==> HC-CT-CT
+unl.C2       unl.C5       unl.H7             70.0      115.0 # FFLD: high 0 CT-CO4-HC ==> HC-CO4-CT
+unl.C2       unl.C5       unl.O             160.0      120.4 # FFLD: high 0 O-CO4-CT ==> O-CO4-CT
+unl.C3       unl.C1       unl.H1             70.0      109.5 # FFLD: high 0 CM-CT-HC ==> HC-CT-CM
+unl.C3       unl.C1       unl.H2             70.0      109.5 # FFLD: high 0 CM-CT-HC ==> HC-CT-CM
+unl.C3       unl.C4       unl.C6            140.0      124.0 # FFLD: high 0 CM-CM-CT ==> CT-CM-CM
+unl.C3       unl.C4       unl.H6             70.0      120.0 # FFLD: high 0 CM-CM-HC ==> HC-CM-CM
+unl.C4       unl.C3       unl.H5             70.0      120.0 # FFLD: high 0 CM-CM-HC ==> HC-CM-CM
+unl.C4       unl.C6       unl.H10            70.0      109.5 # FFLD: high 0 CM-CT-HC ==> HC-CT-CM
+unl.C4       unl.C6       unl.H8             70.0      109.5 # FFLD: high 0 CM-CT-HC ==> HC-CT-CM
+unl.C4       unl.C6       unl.H9             70.0      109.5 # FFLD: high 0 CM-CT-HC ==> HC-CT-CM
+unl.C5       unl.C2       unl.H3             70.0      109.5 # FFLD: high 0 CO4-CT-HC ==> HC-CT-CO4
+unl.C5       unl.C2       unl.H4             70.0      109.5 # FFLD: high 0 CO4-CT-HC ==> HC-CT-CO4
+unl.C6       unl.C4       unl.H6             70.0      117.0 # FFLD: high 0 CT-CM-HC ==> HC-CM-CT
+unl.H1       unl.C1       unl.H2             66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+unl.H10      unl.C6       unl.H8             66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+unl.H10      unl.C6       unl.H9             66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+unl.H3       unl.C2       unl.H4             66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+unl.H7       unl.C5       unl.O              70.0      123.0 # FFLD: high 0 O-CO4-HC ==> O-CO4-HC
+unl.H8       unl.C6       unl.H9             66.0      107.8 # FFLD: high 0 HC-CT-HC ==> HC-CT-HC
+
+[torsions]
+unl.C1       unl.C2       unl.C5       unl.H7           0.7455   1.0        0.0   1.0 # FFLD: high 0 CT-CT-CO4-HC ==> CT-CT-C-HC
+unl.C1       unl.C2       unl.C5       unl.H7           -0.005   2.0      180.0   1.0 # FFLD: high 0 CT-CT-CO4-HC ==> CT-CT-C-HC
+unl.C1       unl.C2       unl.C5       unl.O            0.3015   2.0      180.0   1.0 # FFLD: high 0 CT-CT-CO4-O ==> ??-CT-C-O
+unl.C1       unl.C3       unl.C4       unl.C6              7.0   2.0      180.0   1.0 # FFLD: high 0 CT-CM-CM-CT ==> ??-CM-CM-??
+unl.C1       unl.C3       unl.C4       unl.H6              7.0   2.0      180.0   1.0 # FFLD: high 0 CT-CM-CM-HC ==> ??-CM-CM-??
+unl.C2       unl.C1       unl.C3       unl.C4           0.0985   1.0        0.0   1.0 # FFLD: high 0 CT-CT-CM-CM ==> CT-CT-CM-CM
+unl.C2       unl.C1       unl.C3       unl.C4           0.1525   2.0      180.0   1.0 # FFLD: high 0 CT-CT-CM-CM ==> CT-CT-CM-CM
+unl.C2       unl.C1       unl.C3       unl.C4          -0.5065   3.0        0.0   1.0 # FFLD: high 0 CT-CT-CM-CM ==> CT-CT-CM-CM
+unl.C2       unl.C1       unl.C3       unl.H5              0.0   1.0        0.0   1.0 # FFLD: high 0 CT-CT-CM-HC ==> ??-CT-CM-HC
+unl.C3       unl.C1       unl.C2       unl.C5           -0.988   1.0        0.0   1.0 # FFLD: high 0 CM-CT-CT-CO4 ==> CM-CT-CT-C
+unl.C3       unl.C1       unl.C2       unl.C5            0.488   2.0      180.0   1.0 # FFLD: high 0 CM-CT-CT-CO4 ==> CM-CT-CT-C
+unl.C3       unl.C1       unl.C2       unl.C5            0.768   3.0        0.0   1.0 # FFLD: high 0 CM-CT-CT-CO4 ==> CM-CT-CT-C
+unl.C3       unl.C1       unl.C2       unl.H3             0.15   3.0        0.0   1.0 # FFLD: high 0 CM-CT-CT-HC ==> HC-CT-CT-??
+unl.C3       unl.C1       unl.C2       unl.H4             0.15   3.0        0.0   1.0 # FFLD: high 0 CM-CT-CT-HC ==> HC-CT-CT-??
+unl.C3       unl.C4       unl.C6       unl.H10             0.0   1.0        0.0   1.0 # FFLD: high 0 CM-CM-CT-HC ==> HC-CT-CM-CM
+unl.C3       unl.C4       unl.C6       unl.H8              0.0   1.0        0.0   1.0 # FFLD: high 0 CM-CM-CT-HC ==> HC-CT-CM-CM
+unl.C3       unl.C4       unl.C6       unl.H9              0.0   1.0        0.0   1.0 # FFLD: high 0 CM-CM-CT-HC ==> HC-CT-CM-CM
+unl.C4       unl.C3       unl.C1       unl.H1              0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT-CM-CM ==> HC-CT-CM-CM
+unl.C4       unl.C3       unl.C1       unl.H2              0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT-CM-CM ==> HC-CT-CM-CM
+unl.C5       unl.C2       unl.C1       unl.H1          -0.1125   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-CO4 ==> HC-CT-CT-C
+unl.C5       unl.C2       unl.C1       unl.H2          -0.1125   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-CO4 ==> HC-CT-CT-C
+unl.C6       unl.C4       unl.C3       unl.H5              7.0   2.0      180.0   1.0 # FFLD: high 0 HC-CM-CM-CT ==> ??-CM-CM-??
+unl.H1       unl.C1       unl.C2       unl.H3             0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
+unl.H1       unl.C1       unl.C2       unl.H4             0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
+unl.H1       unl.C1       unl.C3       unl.H5            0.331   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CM-HC ==> HC-CT-CM-HC
+unl.H10      unl.C6       unl.C4       unl.H6            0.331   3.0        0.0   1.0 # FFLD: high 0 HC-CM-CT-HC ==> HC-CT-CM-HC
+unl.H2       unl.C1       unl.C2       unl.H3             0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
+unl.H2       unl.C1       unl.C2       unl.H4             0.15   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CT-HC ==> HC-CT-CT-HC
+unl.H2       unl.C1       unl.C3       unl.H5            0.331   3.0        0.0   1.0 # FFLD: high 0 HC-CT-CM-HC ==> HC-CT-CM-HC
+unl.H3       unl.C2       unl.C5       unl.H7              0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT-CO4-HC ==> HC-CT-C-??
+unl.H3       unl.C2       unl.C5       unl.O               0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT-CO4-O ==> HC-CT-C-O
+unl.H4       unl.C2       unl.C5       unl.H7              0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT-CO4-HC ==> HC-CT-C-??
+unl.H4       unl.C2       unl.C5       unl.O               0.0   1.0        0.0   1.0 # FFLD: high 0 HC-CT-CO4-O ==> HC-CT-C-O
+unl.H5       unl.C3       unl.C4       unl.H6              7.0   2.0      180.0   1.0 # FFLD: high 0 HC-CM-CM-HC ==> ??-CM-CM-??
+unl.H6       unl.C4       unl.C6       unl.H8            0.331   3.0        0.0   1.0 # FFLD: high 0 HC-CM-CT-HC ==> HC-CT-CM-HC
+unl.H6       unl.C4       unl.C6       unl.H9            0.331   3.0        0.0   1.0 # FFLD: high 0 HC-CM-CT-HC ==> HC-CT-CM-HC
+
+[impropers]
+unl.C1       unl.C3       unl.C4       unl.H5             15.0      180.0 # FFLD: high C= double bonded
+unl.C2       unl.C5       unl.H7       unl.O              10.5      180.0 # FFLD: high carbonyl and analogs
+unl.C3       unl.C4       unl.C6       unl.H6             15.0      180.0 # FFLD: high C= double bonded
+
