@@ -1,0 +1,20 @@
+name: quimica-echem
+channels:
+  - conda-forge
+  - veloxchem
+dependencies:
+  - python>=3.13,<3.14
+  - jupyterlab
+  - notebook
+  - ipykernel
+  - ipywidgets
+  - numpy
+  - scipy
+  - matplotlib
+  - py3dmol
+  - rdkit
+  - openmm
+  - dftd4-python
+  - xtb-python
+  - veloxchem
+  - pip
