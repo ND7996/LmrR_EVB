@@ -1,7 +1,3 @@
-PRD C-C adduct 
-
-CCCC(CCO)c1c(C)[nH]c2ccccc12
-
 WAT 
 
 O = done
@@ -18,9 +14,12 @@ INDOLE
 
 pAF
 
-OC(=O)[C@@H](N)Cc1ccc(N)cc1
-
+OC(=O)[C@@H](N)Cc1ccc(N)cc1  done
 
 IMI
 
 CCC/C=C/C=[NH+]\c1ccc(C[C@H](N)C(=O)O)cc1
+
+PRD C-C adduct 
+
+CCCC(CCO)c1c(C)[nH]c2ccccc12
