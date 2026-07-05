@@ -8,18 +8,16 @@ O=CCC/C=C/C = done
 
 INDOLE
 
-
 [nH]1c2c(cc1C)cccc2 done
-
 
 pAF
 
 OC(=O)[C@@H](N)Cc1ccc(N)cc1  done
 
 IMI
-
-CCC/C=C/C=[NH+]\c1ccc(C[C@H](N)C(=O)O)cc1
+ 
+CCC/C=C/C=[NH+]\c1ccc(C[C@H](N)C(=O)O)cc1   done
 
 PRD C-C adduct 
 
-CCCC(CCO)c1c(C)[nH]c2ccccc12
+CCCC(CCO)c1c(C)[nH]c2ccccc12 done
