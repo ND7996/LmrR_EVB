@@ -1,0 +1,43 @@
+{
+  "step": "step_1_3",
+  "comment": "Dehydration to iminium.",
+  "charge": 0,
+  "multiplicity": 1,
+  "states": {
+    "RS": "step_1_3_RS.pdb",
+    "TS": "step_1_3_TS.pdb",
+    "PS": "step_1_3_PS.pdb"
+  },
+  "bond_changes": [
+    {
+      "kind": "broken",
+      "serial_i": 27,
+      "serial_j": 29,
+      "note": "W1 hydronium O-H breaks"
+    },
+    {
+      "kind": "formed",
+      "serial_i": 16,
+      "serial_j": 29,
+      "note": "carbinolamine O accepts H29"
+    },
+    {
+      "kind": "broken",
+      "serial_i": 10,
+      "serial_j": 16,
+      "note": "C-O leaving-water bond breaks"
+    },
+    {
+      "kind": "double-bond formed",
+      "serial_i": 1,
+      "serial_j": 10,
+      "note": "iminium N=C forms"
+    }
+  ],
+  "qm_reference": {
+    "functional": "PBE0",
+    "basis": "def2-SVP",
+    "benchmark_basis": "def2-TZVP",
+    "temperature_K": 298.15
+  }
+}

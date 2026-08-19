@@ -1,0 +1,43 @@
+{
+  "step": "step_1_2",
+  "comment": "Two-water proton redistribution.",
+  "charge": 0,
+  "multiplicity": 1,
+  "states": {
+    "RS": "step_1_2_RS.pdb",
+    "TS": "step_1_2_TS.pdb",
+    "PS": "step_1_2_PS.pdb"
+  },
+  "bond_changes": [
+    {
+      "kind": "broken",
+      "serial_i": 1,
+      "serial_j": 29,
+      "note": "PAF N-H breaks"
+    },
+    {
+      "kind": "formed",
+      "serial_i": 27,
+      "serial_j": 29,
+      "note": "W1 accepts H29"
+    },
+    {
+      "kind": "broken",
+      "serial_i": 60,
+      "serial_j": 61,
+      "note": "W2 O-H breaks"
+    },
+    {
+      "kind": "formed",
+      "serial_i": 16,
+      "serial_j": 61,
+      "note": "ENL.O1 accepts H61"
+    }
+  ],
+  "qm_reference": {
+    "functional": "PBE0",
+    "basis": "def2-SVP",
+    "benchmark_basis": "def2-TZVP",
+    "temperature_K": 298.15
+  }
+}

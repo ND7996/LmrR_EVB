@@ -1,0 +1,7 @@
+$constrain
+  distance: 20, 50, 3.5993
+  distance: 60, 50, 0.9697
+  distance: 27, 58, 1.3336
+  distance: 11, 58, 1.3336
+  distance: 1, 10, 1.3602
+$end

@@ -1,0 +1,9 @@
+! PBE0 D3BJ def2-TZVP SP TightSCF
+
+%pal
+  nprocs 8
+end
+
+%maxcore 3000
+
+* xyzfile 0 1 ../geometry/step_2_1_PS_DFT_opt.xyz

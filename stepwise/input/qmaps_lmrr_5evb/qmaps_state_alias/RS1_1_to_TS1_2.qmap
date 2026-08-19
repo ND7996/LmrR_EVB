@@ -1,0 +1,77 @@
+# RS1_1_to_TS1_2
+# RS1.1 (step_1_1_RS.pdb)  ->  TS1.2 (step_1_1_PS.pdb)
+# Nucleophilic addition of the pAF amine to the enal carbonyl carbon; this gives the tetrahedral ammonium/alkoxide state used as TS1.2.
+#
+# q atom (q)         PDB ID          LIB ID (resname.name)
+# or neighbour (n)?  (resid.atom)    RS1.1          TS1.2         
+#
+# STATE-ALIAS MODE: make sure your .lib residue names match these aliases.
+# Component aliases:
+#   ACE: R11A -> T12A
+#   ENL: R11E -> T12E
+#   NME: R11N -> T12N
+#   PAF: R11P -> T12P
+#   WA2: R112 -> T122
+#   WAT: R11W -> T12W
+#
+q                   1.N2            R11P.N2          T12P.N2          # serial 1 PAF A1.N2
+q                   1.C9            R11P.C9          T12P.C9          # serial 2 PAF A1.C9
+q                   1.C7            R11P.C7          T12P.C7          # serial 3 PAF A1.C7
+q                   1.C4            R11P.C4          T12P.C4          # serial 4 PAF A1.C4
+q                   1.C3            R11P.C3          T12P.C3          # serial 5 PAF A1.C3
+q                   1.C5            R11P.C5          T12P.C5          # serial 6 PAF A1.C5
+q                   1.C8            R11P.C8          T12P.C8          # serial 7 PAF A1.C8
+q                   1.C1            R11P.C1          T12P.C1          # serial 8 PAF A1.C1
+q                   1.C2            R11P.C2          T12P.C2          # serial 9 PAF A1.C2
+q                   2.C10           R11E.C10         T12E.C10         # serial 10 ENL B2.C10
+q                   2.C11           R11E.C11         T12E.C11         # serial 11 ENL B2.C11
+q                   2.C12           R11E.C12         T12E.C12         # serial 12 ENL B2.C12
+q                   2.C13           R11E.C13         T12E.C13         # serial 13 ENL B2.C13
+q                   2.C14           R11E.C14         T12E.C14         # serial 14 ENL B2.C14
+q                   2.C15           R11E.C15         T12E.C15         # serial 15 ENL B2.C15
+q                   2.O1            R11E.O1          T12E.O1          # serial 16 ENL B2.O1
+q                   4.O3            R11W.O3          T12W.O3          # serial 27 WAT W4.O3
+q                   1.H4            R11P.H4          T12P.H4          # serial 28 PAF A1.H4
+q                   1.H22           R11P.H22         T12P.H22         # serial 29 PAF A1.H22
+q                   1.H11           R11P.H11         T12P.H11         # serial 30 PAF A1.H11
+q                   1.H9            R11P.H9          T12P.H9          # serial 31 PAF A1.H9
+q                   1.H10           R11P.H10         T12P.H10         # serial 32 PAF A1.H10
+q                   1.H12           R11P.H12         T12P.H12         # serial 33 PAF A1.H12
+q                   1.H6            R11P.H6          T12P.H6          # serial 34 PAF A1.H6
+q                   1.H7            R11P.H7          T12P.H7          # serial 35 PAF A1.H7
+q                   1.H8            R11P.H8          T12P.H8          # serial 36 PAF A1.H8
+q                   1.H2            R11P.H2          T12P.H2          # serial 37 PAF A1.H2
+q                   2.H             R11N.H           T12N.H           # serial 38 NME A2.H
+q                   2.H12           R11E.H12         T12E.H12         # serial 39 ENL B2.H12
+q                   2.H13           R11E.H13         T12E.H13         # serial 40 ENL B2.H13
+q                   2.H14           R11E.H14         T12E.H14         # serial 41 ENL B2.H14
+q                   2.H15           R11E.H15         T12E.H15         # serial 42 ENL B2.H15
+q                   2.H16           R11E.H16         T12E.H16         # serial 43 ENL B2.H16
+q                   2.H17           R11E.H17         T12E.H17         # serial 44 ENL B2.H17
+q                   2.H18           R11E.H18         T12E.H18         # serial 45 ENL B2.H18
+q                   2.H19           R11E.H19         T12E.H19         # serial 46 ENL B2.H19
+q                   2.H20           R11E.H20         T12E.H20         # serial 47 ENL B2.H20
+q                   2.H21           R11E.H21         T12E.H21         # serial 48 ENL B2.H21
+q                   4.H22           R11W.H22         T12W.H22         # serial 58 WAT W4.H22
+q                   4.H23           R11W.H23         T12W.H23         # serial 59 WAT W4.H23
+q                   5.O3            R112.O3          T122.O3          # serial 60 WA2 X5.O3
+q                   5.H22           R112.H22         T122.H22         # serial 61 WA2 X5.H22
+q                   5.H23           R112.H23         T122.H23         # serial 62 WA2 X5.H23
+q                   1.N1            R11P.N1          T12P.N1          # serial 63 PAF A1.N1
+q                   1.C6            R11P.C6          T12P.C6          # serial 64 PAF A1.C6
+q                   1.O2            R11P.O2          T12P.O2          # serial 65 PAF A1.O2
+q                   0.CH3           R11A.CH3         T12A.CH3         # serial 66 ACE A0.CH3
+q                   0.C             R11A.C           T12A.C           # serial 67 ACE A0.C
+q                   0.O             R11A.O           T12A.O           # serial 68 ACE A0.O
+q                   0.HH31          R11A.HH31        T12A.HH31        # serial 69 ACE A0.HH31
+q                   0.HH32          R11A.HH32        T12A.HH32        # serial 70 ACE A0.HH32
+q                   0.HH33          R11A.HH33        T12A.HH33        # serial 71 ACE A0.HH33
+q                   2.N             R11N.N           T12N.N           # serial 72 NME A2.N
+q                   2.CH3           R11N.CH3         T12N.CH3         # serial 73 NME A2.CH3
+q                   2.HH31          R11N.HH31        T12N.HH31        # serial 74 NME A2.HH31
+q                   2.HH32          R11N.HH32        T12N.HH32        # serial 75 NME A2.HH32
+q                   2.HH33          R11N.HH33        T12N.HH33        # serial 76 NME A2.HH33
+
+# Bond changes:
+# formed: 1-10 (PAF.N2 -- ENL.C10); pAF amino N to enal carbonyl C; N-C bond formation
+# weakened: 10-16 (ENL.C10 -- ENL.O1); enal C=O pi bond weakens as alkoxide forms

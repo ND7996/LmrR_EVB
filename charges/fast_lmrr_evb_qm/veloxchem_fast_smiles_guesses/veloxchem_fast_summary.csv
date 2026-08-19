@@ -1,0 +1,2 @@
+step,reactants,products,result_keys,max_mm_lambda,max_qm_lambda,scan_points,folder
+RS2_1_to_TS2_1a,RS2.1,TS2.1a,"breaking_bonds, forming_bonds, static_bonds, reactant, product, lambda_vec, scan, max_mm_xyz, max_mm_lambda, min_mm_conformer_index",0.3,,21,D:\PhD_Thesis\LmrR_EVB\charges\fast_lmrr_evb_qm\veloxchem_fast_smiles_guesses\RS2_1_to_TS2_1a

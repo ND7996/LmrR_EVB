@@ -1,0 +1,5 @@
+# RS1_1_to_TS1_2
+# Step 1.1 addition. Use TS as a starting TS guess; PS is the tetrahedral state.
+# PDB serial -> atom identity; XYZ index is taken from TS map
+formed             PDB   1-10  XYZ   1-10  PAF.N2 -- ENL.C10 ; PAF.N2 attacks ENL.C10; N-C bond formation
+weakened           PDB  10-16  XYZ  10-16  ENL.C10 -- ENL.O1 ; ENL.C10=O1 carbonyl weakens

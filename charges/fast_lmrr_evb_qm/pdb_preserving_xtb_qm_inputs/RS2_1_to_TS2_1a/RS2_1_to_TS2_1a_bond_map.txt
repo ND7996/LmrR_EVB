@@ -1,0 +1,6 @@
+# RS2_1_to_TS2_1a
+# Friedel-Crafts C-C bond formation.
+# PDB serial -> atom identity; XYZ index is taken from TS map
+formed             PDB  12-20  XYZ  12-20  ENL.C12 -- IND.C3 ; new C-C sigma bond ENL.C12--IND.C3
+weakened           PDB   1-10  XYZ   1-10  PAF.N2 -- ENL.C10 ; iminium N=C weakens
+strengthened       PDB  10-11  XYZ  10-11  ENL.C10 -- ENL.C11 ; C10-C11 bond strengthens

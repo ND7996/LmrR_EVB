@@ -1,0 +1,7 @@
+# RS1_2b_to_PS1_3
+# Dehydration to iminium.
+# PDB serial -> atom identity; XYZ index is taken from TS map
+broken             PDB  27-29  XYZ  17-19  WAT.O3 -- PAF.H22 ; W1 hydronium O-H breaks
+formed             PDB  16-29  XYZ  16-19  ENL.O1 -- PAF.H22 ; carbinolamine O accepts H29
+broken             PDB  10-16  XYZ  10-16  ENL.C10 -- ENL.O1 ; C-O leaving-water bond breaks
+double-bond formed PDB   1-10  XYZ   1-10  PAF.N2 -- ENL.C10 ; iminium N=C forms

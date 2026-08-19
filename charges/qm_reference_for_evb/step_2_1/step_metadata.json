@@ -1,0 +1,37 @@
+{
+  "step": "step_2_1",
+  "comment": "Friedel-Crafts C-C bond formation.",
+  "charge": 0,
+  "multiplicity": 1,
+  "states": {
+    "RS": "step_2_1_RS.pdb",
+    "TS": "step_2_1_TS.pdb",
+    "PS": "step_2_1_PS.pdb"
+  },
+  "bond_changes": [
+    {
+      "kind": "formed",
+      "serial_i": 12,
+      "serial_j": 20,
+      "note": "new C-C bond ENL.C12--IND.C3"
+    },
+    {
+      "kind": "weakened",
+      "serial_i": 1,
+      "serial_j": 10,
+      "note": "iminium N=C weakens"
+    },
+    {
+      "kind": "strengthened",
+      "serial_i": 10,
+      "serial_j": 11,
+      "note": "C10-C11 strengthens"
+    }
+  ],
+  "qm_reference": {
+    "functional": "PBE0",
+    "basis": "def2-SVP",
+    "benchmark_basis": "def2-TZVP",
+    "temperature_K": 298.15
+  }
+}

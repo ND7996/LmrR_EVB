@@ -1,0 +1,8 @@
+# TS2_1a_to_PS2_2
+# Combined 2.2 tautomerization. If you want separate 2.2a/2.2b, split this entry.
+# PDB serial -> atom identity; XYZ index is taken from TS map
+broken             PDB  20-50  XYZ  20-50  IND.C3 -- IND.H2 ; IND.C3-H50 breaks
+formed             PDB  60-50  XYZ  60-50  WA2.O3 -- IND.H2 ; W2 accepts H50
+broken             PDB  27-58  XYZ  27-58  WAT.O3 -- WAT.H22 ; W1 O-H58 breaks
+formed             PDB  11-58  XYZ  11-58  ENL.C11 -- WAT.H22 ; ENL.C11 accepts H58
+double-bond formed PDB   1-10  XYZ   1-10  PAF.N2 -- ENL.C10 ; N=C/enamine bond order changes

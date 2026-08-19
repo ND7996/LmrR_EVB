@@ -1,0 +1,6 @@
+step,QM_DeltaE_activation_kJ_mol,QM_DeltaE_reaction_kJ_mol,QM_DeltaG_activation_kJ_mol,EVB_reference_DeltaE_activation_kJ_mol,EVB_DeltaG_activation_kJ_mol,EVB_DeltaG_reaction_kJ_mol,EVB_minus_QM_activation_kJ_mol,notes
+step_1_1,,,,,,,,
+step_1_2,,,,,,,,
+step_1_3,,,,,,,,
+step_2_1,,,,,,,,
+step_2_2,,,,,,,,

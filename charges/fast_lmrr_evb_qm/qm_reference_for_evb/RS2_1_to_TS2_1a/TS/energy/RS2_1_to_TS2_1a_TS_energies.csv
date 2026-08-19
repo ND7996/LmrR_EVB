@@ -1,0 +1,2 @@
+step,role,method,energy_hartree,energy_kjmol,source
+RS2_1_to_TS2_1a,TS,xTB,-110.268057920635,-289508.746154,D:\PhD_Thesis\LmrR_EVB\charges\fast_lmrr_evb_qm\pdb_preserving_xtb_qm_inputs\RS2_1_to_TS2_1a\RS2_1_to_TS2_1a_TS_xtbopt.log

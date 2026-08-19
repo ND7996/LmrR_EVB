@@ -1,0 +1,19 @@
+transition,state1,state2,change,atom_i_serial,atom_i,atom_j_serial,atom_j,note
+RS1_1_to_TS1_2,RS1.1,TS1.2,formed,1,PAF.N2,10,ENL.C10,pAF amino N to enal carbonyl C; N-C bond formation
+RS1_1_to_TS1_2,RS1.1,TS1.2,weakened,10,ENL.C10,16,ENL.O1,enal C=O pi bond weakens as alkoxide forms
+TS1_2_to_PS1_2b,TS1.2,PS1.2b,broken,1,PAF.N2,29,PAF.H22,pAF N-H proton leaves ammonium
+TS1_2_to_PS1_2b,TS1.2,PS1.2b,formed,27,WAT.O3,29,PAF.H22,W1 accepts H29 from pAF nitrogen
+TS1_2_to_PS1_2b,TS1.2,PS1.2b,broken,60,WA2.O3,61,WA2.H22,W2 loses H61
+TS1_2_to_PS1_2b,TS1.2,PS1.2b,formed,16,ENL.O1,61,WA2.H22,enal alkoxide O accepts H61 to give carbinolamine OH
+RS1_2b_to_PS1_3,RS1.2b,PS1.3,broken,27,WAT.O3,29,PAF.H22,W1 hydronium O-H bond breaks
+RS1_2b_to_PS1_3,RS1.2b,PS1.3,formed,16,ENL.O1,29,PAF.H22,"carbinolamine O accepts H29, making leaving water"
+RS1_2b_to_PS1_3,RS1.2b,PS1.3,broken,10,ENL.C10,16,ENL.O1,C-O bond to leaving water breaks
+RS1_2b_to_PS1_3,RS1.2b,PS1.3,double-bond formed,1,PAF.N2,10,ENL.C10,pAF N/enal C iminium double bond forms
+RS2_1_to_TS2_1a,RS2.1,TS2.1a,formed,12,ENL.C12,20,IND.C3,enal beta/gamma carbon to indole C3; new C-C sigma bond
+RS2_1_to_TS2_1a,RS2.1,TS2.1a,weakened,1,PAF.N2,10,ENL.C10,iminium N=C bond weakens during conjugate addition
+RS2_1_to_TS2_1a,RS2.1,TS2.1a,strengthened,10,ENL.C10,11,ENL.C11,enal chain C10-C11 bond strengthens/enamine character changes
+TS2_1a_to_PS2_2,TS2.1a,PS2.2,broken,20,IND.C3,50,IND.H2,indolium C3-H bond breaks
+TS2_1a_to_PS2_2,TS2.1a,PS2.2,formed,60,WA2.O3,50,IND.H2,W2 accepts indole proton H50
+TS2_1a_to_PS2_2,TS2.1a,PS2.2,broken,27,WAT.O3,58,WAT.H22,W1 O-H bond breaks
+TS2_1a_to_PS2_2,TS2.1a,PS2.2,formed,11,ENL.C11,58,WAT.H22,enal alpha carbon accepts H58
+TS2_1a_to_PS2_2,TS2.1a,PS2.2,double-bond formed,1,PAF.N2,10,ENL.C10,N=C iminium/enamine bond order changes toward product state

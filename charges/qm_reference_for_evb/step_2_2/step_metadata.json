@@ -1,0 +1,43 @@
+{
+  "step": "step_2_2",
+  "comment": "Combined 2.2 tautomerization; split into 2.2a/2.2b if required later.",
+  "charge": 0,
+  "multiplicity": 1,
+  "states": {
+    "RS": "step_2_2a_RS.pdb",
+    "TS": "step_2_2b_TS.pdb",
+    "PS": "step_2_2b_PS.pdb"
+  },
+  "bond_changes": [
+    {
+      "kind": "broken",
+      "serial_i": 20,
+      "serial_j": 50,
+      "note": "IND.C3-H50 breaks"
+    },
+    {
+      "kind": "formed",
+      "serial_i": 60,
+      "serial_j": 50,
+      "note": "W2 accepts H50"
+    },
+    {
+      "kind": "broken",
+      "serial_i": 27,
+      "serial_j": 58,
+      "note": "W1 O-H58 breaks"
+    },
+    {
+      "kind": "formed",
+      "serial_i": 11,
+      "serial_j": 58,
+      "note": "ENL.C11 accepts H58"
+    }
+  ],
+  "qm_reference": {
+    "functional": "PBE0",
+    "basis": "def2-SVP",
+    "benchmark_basis": "def2-TZVP",
+    "temperature_K": 298.15
+  }
+}

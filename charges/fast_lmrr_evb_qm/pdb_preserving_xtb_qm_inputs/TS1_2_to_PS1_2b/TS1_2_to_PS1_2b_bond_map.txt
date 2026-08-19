@@ -1,0 +1,7 @@
+# TS1_2_to_PS1_2b
+# Two-water proton redistribution.
+# PDB serial -> atom identity; XYZ index is taken from TS map
+broken             PDB   1-29  XYZ   1-19  PAF.N2 -- PAF.H22 ; PAF N-H breaks
+formed             PDB  27-29  XYZ  17-19  WAT.O3 -- PAF.H22 ; W1 accepts H29
+broken             PDB  60-61  XYZ  41-42  WA2.O3 -- WA2.H22 ; W2 O-H breaks
+formed             PDB  16-61  XYZ  16-42  ENL.O1 -- WA2.H22 ; ENL.O1 accepts H61

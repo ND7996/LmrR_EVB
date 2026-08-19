@@ -1,0 +1,6 @@
+step,energy_method_RS,energy_method_TS,energy_method_PS,RS_energy_Ha,TS_energy_Ha,PS_energy_Ha,QM_DeltaE_activation_kJmol,QM_DeltaE_reaction_kJmol,EVB_DeltaG_activation_kJmol,EVB_DeltaG_reaction_kJmol,EVB_minus_QM_barrier_kJmol,notes
+RS1_1_to_TS1_2,xTB,xTB,xTB,-83.440923188265,-83.439017064962,-83.437296972141,5.004526042013934,9.52062912088384,,,,QM ΔE‡ is an electronic/reference-model quantity; EVB ΔG‡ is the later protein/solvent free-energy quantity.
+TS1_2_to_PS1_2b,xTB,xTB,xTB,-83.439233526871,-83.439165612641,-83.437170433259,0.1783087862840397,5.416651531488469,,,,QM ΔE‡ is an electronic/reference-model quantity; EVB ΔG‡ is the later protein/solvent free-energy quantity.
+RS1_2b_to_PS1_3,xTB,xTB,xTB,-83.460590982424,-83.439171825093,-83.440270437689,56.23598981879527,53.35158284570559,,,,QM ΔE‡ is an electronic/reference-model quantity; EVB ΔG‡ is the later protein/solvent free-energy quantity.
+RS2_1_to_TS2_1a,xTB,xTB,xTB,-110.27139144528,-110.268057920635,-110.268048541953,8.752167748713697,8.776791474932685,,,,QM ΔE‡ is an electronic/reference-model quantity; EVB ΔG‡ is the later protein/solvent free-energy quantity.
+TS2_1a_to_PS2_2,xTB,xTB,xTB,-110.267227010004,-110.273360202592,-110.294660928978,-16.102694919566453,-72.02774433515204,,,,QM ΔE‡ is an electronic/reference-model quantity; EVB ΔG‡ is the later protein/solvent free-energy quantity.

@@ -1,0 +1,19 @@
+transition,state1,state2,change,serial_i,serial_j,endpoint1_atom_i,endpoint1_atom_j,endpoint2_atom_i,endpoint2_atom_j,status,note
+RS1_1_to_TS1_2,RS1.1,TS1.2,formed,1,10,PAF.N2,ENL.C10,PAF.N2,ENL.C10,OK,PAF amine N attacks enal carbonyl C
+RS1_1_to_TS1_2,RS1.1,TS1.2,weakened,10,16,ENL.C10,ENL.O1,ENL.C10,ENL.O1,OK,enal C=O weakens
+TS1_2_to_PS1_2b,TS1.2,PS1.2b,broken,1,29,PAF.N2,PAF.H22,PAF.N2,PAF.H22,OK,pAF N-H breaks
+TS1_2_to_PS1_2b,TS1.2,PS1.2b,formed,27,29,WAT.O3,PAF.H22,WAT.O3,PAF.H22,OK,W1 accepts H29
+TS1_2_to_PS1_2b,TS1.2,PS1.2b,broken,60,61,WA2.O3,WA2.H22,WA2.O3,WA2.H22,OK,W2 O-H breaks
+TS1_2_to_PS1_2b,TS1.2,PS1.2b,formed,16,61,ENL.O1,WA2.H22,ENL.O1,WA2.H22,OK,enal O accepts H61
+RS1_2b_to_PS1_3,RS1.2b,PS1.3,broken,27,29,WAT.O3,PAF.H22,WAT.O3,PAF.H22,OK,W1 O-H breaks
+RS1_2b_to_PS1_3,RS1.2b,PS1.3,formed,16,29,ENL.O1,PAF.H22,ENL.O1,PAF.H22,OK,carbinolamine O accepts H29
+RS1_2b_to_PS1_3,RS1.2b,PS1.3,broken,10,16,ENL.C10,ENL.O1,ENL.C10,ENL.O1,OK,C-O leaving-water bond breaks
+RS1_2b_to_PS1_3,RS1.2b,PS1.3,double-bond formed,1,10,PAF.N2,ENL.C10,PAF.N2,ENL.C10,OK,N=C iminium forms
+RS2_1_to_TS2_1a,RS2.1,TS2.1a,formed,12,20,ENL.C12,IND.C3,ENL.C12,IND.C3,OK,new enal-indole C-C bond
+RS2_1_to_TS2_1a,RS2.1,TS2.1a,weakened,1,10,PAF.N2,ENL.C10,PAF.N2,ENL.C10,OK,N=C weakens
+RS2_1_to_TS2_1a,RS2.1,TS2.1a,strengthened,10,11,ENL.C10,ENL.C11,ENL.C10,ENL.C11,OK,C10-C11 strengthens
+TS2_1a_to_PS2_2,TS2.1a,PS2.2,broken,20,50,IND.C3,IND.H2,IND.C3,IND.H2,OK,indolium C-H breaks
+TS2_1a_to_PS2_2,TS2.1a,PS2.2,formed,60,50,WA2.O3,IND.H2,WA2.O3,IND.H2,OK,W2 accepts H50
+TS2_1a_to_PS2_2,TS2.1a,PS2.2,broken,27,58,WAT.O3,WAT.H22,WAT.O3,WAT.H22,OK,W1 O-H breaks
+TS2_1a_to_PS2_2,TS2.1a,PS2.2,formed,11,58,ENL.C11,WAT.H22,ENL.C11,WAT.H22,OK,enal alpha C accepts H58
+TS2_1a_to_PS2_2,TS2.1a,PS2.2,double-bond formed,1,10,PAF.N2,ENL.C10,PAF.N2,ENL.C10,OK,N=C/enamine bond order changes

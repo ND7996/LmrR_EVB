@@ -1,0 +1,31 @@
+{
+  "step": "step_1_1",
+  "comment": "Step 1.1 addition; TS is the TS starting structure.",
+  "charge": 0,
+  "multiplicity": 1,
+  "states": {
+    "RS": "step_1_1_RS.pdb",
+    "TS": "step_1_1_TS.pdb",
+    "PS": "step_1_1_PS.pdb"
+  },
+  "bond_changes": [
+    {
+      "kind": "formed",
+      "serial_i": 1,
+      "serial_j": 10,
+      "note": "PAF.N2 attacks ENL.C10; N-C formation"
+    },
+    {
+      "kind": "weakened",
+      "serial_i": 10,
+      "serial_j": 16,
+      "note": "ENL.C10=O1 weakens"
+    }
+  ],
+  "qm_reference": {
+    "functional": "PBE0",
+    "basis": "def2-SVP",
+    "benchmark_basis": "def2-TZVP",
+    "temperature_K": 298.15
+  }
+}
