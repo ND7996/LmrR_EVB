@@ -1,0 +1,5 @@
+#!/home/hp/nayanika/github/LmrR_EVB/charges/.conda/bin/python3.12
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()
