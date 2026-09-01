@@ -1,0 +1,138 @@
+protocol,step,role,error
+GFN1_tight,TS1_2_to_PS1_2b,PS,"xTB optimization failed:
+GFN1_tight | TS1_2_to_PS1_2b | PS
+
+abnormal termination of xtb
+"
+GFN1_tight,RS1_2b_to_PS1_3,TS,"xTB optimization failed:
+GFN1_tight | RS1_2b_to_PS1_3 | TS
+
+abnormal termination of xtb
+"
+GFN1_tight,RS1_2b_to_PS1_3,PS,"xTB optimization failed:
+GFN1_tight | RS1_2b_to_PS1_3 | PS
+
+abnormal termination of xtb
+"
+GFN1_tight,RS2_1_to_TS2_1a,RS,"xTB optimization failed:
+GFN1_tight | RS2_1_to_TS2_1a | RS
+
+abnormal termination of xtb
+"
+GFN1_tight,RS2_1_to_TS2_1a,TS,"xTB optimization failed:
+GFN1_tight | RS2_1_to_TS2_1a | TS
+
+abnormal termination of xtb
+"
+GFN1_tight,RS2_1_to_TS2_1a,PS,"xTB optimization failed:
+GFN1_tight | RS2_1_to_TS2_1a | PS
+
+abnormal termination of xtb
+"
+GFN2_tight,TS1_2_to_PS1_2b,PS,"xTB optimization failed:
+GFN2_tight | TS1_2_to_PS1_2b | PS
+
+abnormal termination of xtb
+"
+GFN2_tight,RS1_2b_to_PS1_3,RS,"xTB optimization failed:
+GFN2_tight | RS1_2b_to_PS1_3 | RS
+
+abnormal termination of xtb
+"
+GFN2_tight,RS1_2b_to_PS1_3,TS,"xTB optimization failed:
+GFN2_tight | RS1_2b_to_PS1_3 | TS
+
+abnormal termination of xtb
+"
+GFN2_tight,RS1_2b_to_PS1_3,PS,"xTB optimization failed:
+GFN2_tight | RS1_2b_to_PS1_3 | PS
+
+abnormal termination of xtb
+"
+GFN2_tight,RS2_1_to_TS2_1a,RS,"xTB optimization failed:
+GFN2_tight | RS2_1_to_TS2_1a | RS
+
+abnormal termination of xtb
+"
+GFN2_tight,RS2_1_to_TS2_1a,TS,"xTB optimization failed:
+GFN2_tight | RS2_1_to_TS2_1a | TS
+
+abnormal termination of xtb
+"
+GFN2_tight,RS2_1_to_TS2_1a,PS,"xTB optimization failed:
+GFN2_tight | RS2_1_to_TS2_1a | PS
+
+abnormal termination of xtb
+"
+GFN2_etemp300,TS1_2_to_PS1_2b,PS,"xTB optimization failed:
+GFN2_etemp300 | TS1_2_to_PS1_2b | PS
+
+abnormal termination of xtb
+"
+GFN2_etemp300,RS1_2b_to_PS1_3,RS,"xTB optimization failed:
+GFN2_etemp300 | RS1_2b_to_PS1_3 | RS
+
+abnormal termination of xtb
+"
+GFN2_etemp300,RS1_2b_to_PS1_3,PS,"xTB optimization failed:
+GFN2_etemp300 | RS1_2b_to_PS1_3 | PS
+
+abnormal termination of xtb
+"
+GFN2_etemp300,RS2_1_to_TS2_1a,RS,"xTB optimization failed:
+GFN2_etemp300 | RS2_1_to_TS2_1a | RS
+
+abnormal termination of xtb
+"
+GFN2_etemp300,RS2_1_to_TS2_1a,TS,"xTB optimization failed:
+GFN2_etemp300 | RS2_1_to_TS2_1a | TS
+
+abnormal termination of xtb
+"
+GFN2_etemp300,RS2_1_to_TS2_1a,PS,"xTB optimization failed:
+GFN2_etemp300 | RS2_1_to_TS2_1a | PS
+
+abnormal termination of xtb
+"
+GFN2_etemp500,RS2_1_to_TS2_1a,PS,"Could not find validated Stage-1 charges for:
+RS2_1_to_TS2_1a | PS
+
+Expected one of:
+D:\PhD_Thesis\LmrR_EVB\charges\fast_lmrr_5QM\xtb_preparation\RS2_1_to_TS2_1a\RS2_1_to_TS2_1a_PS_xtb_charges.csv
+D:\PhD_Thesis\LmrR_EVB\charges\fast_lmrr_5QM\xtb_preparation\RS2_1_to_TS2_1a\RS2_1_to_TS2_1a_PS_mulliken_charges.csv
+D:\PhD_Thesis\LmrR_EVB\charges\fast_lmrr_5QM\xtb_preparation\RS2_1_to_TS2_1a\RS2_1_to_TS2_1a_PS_charges.csv"
+GFN2_normal,TS1_2_to_PS1_2b,PS,"xTB optimization failed:
+GFN2_normal | TS1_2_to_PS1_2b | PS
+
+abnormal termination of xtb
+"
+GFN2_normal,RS1_2b_to_PS1_3,RS,"xTB optimization failed:
+GFN2_normal | RS1_2b_to_PS1_3 | RS
+
+abnormal termination of xtb
+"
+GFN2_normal,RS1_2b_to_PS1_3,TS,"xTB optimization failed:
+GFN2_normal | RS1_2b_to_PS1_3 | TS
+
+abnormal termination of xtb
+"
+GFN2_normal,RS1_2b_to_PS1_3,PS,"xTB optimization failed:
+GFN2_normal | RS1_2b_to_PS1_3 | PS
+
+abnormal termination of xtb
+"
+GFN2_normal,RS2_1_to_TS2_1a,RS,"xTB optimization failed:
+GFN2_normal | RS2_1_to_TS2_1a | RS
+
+abnormal termination of xtb
+"
+GFN2_normal,RS2_1_to_TS2_1a,TS,"xTB optimization failed:
+GFN2_normal | RS2_1_to_TS2_1a | TS
+
+abnormal termination of xtb
+"
+GFN2_normal,RS2_1_to_TS2_1a,PS,"xTB optimization failed:
+GFN2_normal | RS2_1_to_TS2_1a | PS
+
+abnormal termination of xtb
+"

@@ -1,0 +1,16 @@
+step,role,protocol_used,E_xtb_hartree,mulliken_charges_json,note
+RS1_1_to_TS1_2,RS,GFN2_tight,,,RUN_FAST_XTB_SP is False -- not running
+RS1_1_to_TS1_2,TS,GFN2_tight,,,RUN_FAST_XTB_SP is False -- not running
+RS1_1_to_TS1_2,PS,GFN2_tight,,,RUN_FAST_XTB_SP is False -- not running
+TS1_2_to_PS1_2b,RS,GFN2_tight,,,RUN_FAST_XTB_SP is False -- not running
+TS1_2_to_PS1_2b,TS,GFN2_tight,,,RUN_FAST_XTB_SP is False -- not running
+TS1_2_to_PS1_2b,PS,GFN2_etemp500,,,RUN_FAST_XTB_SP is False -- not running
+RS1_2b_to_PS1_3,RS,GFN2_etemp500,,,RUN_FAST_XTB_SP is False -- not running
+RS1_2b_to_PS1_3,TS,GFN2_etemp500,,,RUN_FAST_XTB_SP is False -- not running
+RS1_2b_to_PS1_3,PS,GFN2_etemp500,,,RUN_FAST_XTB_SP is False -- not running
+RS2_1_to_TS2_1a,RS,GFN2_etemp500,,,RUN_FAST_XTB_SP is False -- not running
+RS2_1_to_TS2_1a,TS,GFN2_etemp500,,,RUN_FAST_XTB_SP is False -- not running
+RS2_1_to_TS2_1a,PS,GFN2_etemp500,,,RUN_FAST_XTB_SP is False -- not running
+TS2_1a_to_PS2_2,RS,GFN2_tight,,,RUN_FAST_XTB_SP is False -- not running
+TS2_1a_to_PS2_2,TS,GFN2_tight,,,RUN_FAST_XTB_SP is False -- not running
+TS2_1a_to_PS2_2,PS,GFN2_tight,,,RUN_FAST_XTB_SP is False -- not running

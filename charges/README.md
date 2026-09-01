@@ -1,59 +1,107 @@
-# LmrR QM → EVB reference pipeline
 
-This is the modified version of the uploaded `fast_lmrr_evb_qm_workflow.ipynb` logic, reorganized specifically to create an EVB-ready QM reference dataset.
+# LmrR QM benchmark code package
 
-## Output structure
+These scripts were built from the uploaded
+`fast_lmrr_evb_qm_workflow(3).ipynb`.
 
-```text
-qm_reference_for_evb/
-├── step_1_1/
-│   ├── RS/
-│   │   ├── geometry/
-│   │   ├── energy/
-│   │   ├── charges/
-│   │   └── frequencies/
-│   ├── TS/
-│   └── PS/
-├── step_1_2/
-├── step_1_3/
-├── step_2_1/
-├── step_2_2/
-├── summaries/
-│   ├── qm_state_summary.csv
-│   ├── qm_barriers_for_evb_comparison.csv
-│   ├── qm_mulliken_charges_long.csv
-│   ├── qm_frequencies_long.csv
-│   └── qm_mapping_validation.csv
-└── evb_reference/
-    └── qm_vs_evb_comparison_template.csv
-```
+The notebook uses five reaction mappings and the following PDB files:
 
-## Recommended use
+- RS1_1_to_TS1_2 -> step_1_1_RS/TS/PS.pdb
+- TS1_2_to_PS1_2b -> step_1_2_RS/TS/PS.pdb
+- RS1_2b_to_PS1_3 -> step_1_3_RS/TS/PS.pdb
+- RS2_1_to_TS2_1a -> step_2_1_RS/TS/PS.pdb
+- TS2_1a_to_PS2_2 -> step_2_2a_RS.pdb, step_2_2b_TS.pdb, step_2_2b_PS.pdb
 
-1. Put the script in `D:\PhD_Thesis\LmrR_EVB\charges`.
-2. Run:
+## Important correction
 
-```powershell
-python qm_reference_pipeline.py --prepare
-```
+The uploaded notebook actually generates:
+    B3LYP D3BJ / def2-SVP
+for the final ORCA/Gaussian QM optimization/frequency inputs.
 
-3. Run the generated DFT inputs for RS/TS/PS.
-4. Put/copy the completed output files and optimized XYZ geometries into the corresponding state folders.
-5. Run:
+Therefore B3LYP is retained as the reference calculation.
 
-```powershell
-python qm_reference_pipeline.py --collect
-python qm_reference_pipeline.py --validate
-```
+## QM hierarchy
 
-Or run everything after the QM outputs exist:
+1. B3LYP-D3BJ/def2-SVP
+   Main reference geometry optimization + frequencies.
 
-```powershell
-python qm_reference_pipeline.py --all
-```
+2. PBE0-D3BJ/def2-SVP
+   Single-point benchmark on the B3LYP optimized geometry.
 
-The key table for later EVB comparison is:
+3. PBE0-D3BJ/def2-TZVP
+   Higher-basis single-point benchmark.
 
-`qm_reference_for_evb/summaries/qm_barriers_for_evb_comparison.csv`
+4. omegaB97M-V/def2-TZVP
+   Independent modern range-separated hybrid benchmark.
+   VV10 is part of the functional; D3BJ is NOT added.
 
-Do not equate QM ΔE‡ with EVB ΔG‡. Use the QM values as the electronic/reference layer and the EVB values as the protein/explicit-solvent free-energy layer.
+5. omegaB97X-V/def2-TZVP
+   Independent modern range-separated hybrid benchmark.
+   VV10 is part of the functional; D3BJ is NOT added.
+
+6. PBE0-DH/def2-TZVP
+   Expensive double-hybrid benchmark.
+   Test one representative structure first.
+
+## Run
+
+Open PowerShell in this package directory:
+
+    python run_all_qm_benchmarks.py
+
+This only prepares ORCA input files.
+
+It does NOT run ORCA.
+
+## Recommended order
+
+First:
+    B3LYP/def2-SVP optimization + frequencies
+
+Then:
+    PBE0/def2-SVP SP
+    PBE0/def2-TZVP SP
+    omegaB97M-V/def2-TZVP SP
+    omegaB97X-V/def2-TZVP SP
+
+Finally:
+    PBE0-DH/def2-TZVP SP
+
+## Energy interpretation
+
+QM:
+    Delta E_QM^‡ = E_TS - E_RS
+
+EVB:
+    Delta G_EVB^‡ = G_TS - G_RS
+
+These are not the same physical quantity.
+
+Your experimental WT activation free energy:
+    20.8 kcal mol^-1
+
+is the EVB calibration target, not a value that should be inserted directly as a QM energy difference.
+
+## Output organization
+
+charges/
+└── qm_reference_for_evb/
+    ├── B3LYP_def2SVP/
+    ├── PBE0_def2SVP/
+    ├── PBE0_def2TZVP/
+    ├── wB97M-V_def2TZVP/
+    ├── wB97X-V_def2TZVP/
+    └── PBE0-DH_def2TZVP/
+
+Each method contains:
+    step/
+        RS/
+            input/
+            geometry/
+            energy/
+            charges/
+            frequencies/
+        TS/
+        PS/
+
+The existing fast workflow is not overwritten.

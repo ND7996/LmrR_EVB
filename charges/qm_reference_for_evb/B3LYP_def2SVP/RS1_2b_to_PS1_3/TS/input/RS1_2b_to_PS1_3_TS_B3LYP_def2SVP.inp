@@ -1,0 +1,13 @@
+! B3LYP D3BJ def2-SVP OptTS NumFreq TightSCF
+
+%pal
+   nprocs 8
+end
+
+%maxcore 3000
+
+%output
+   Print[P_Mulliken] 1
+end
+
+* xyzfile 0 1 D:\PhD_Thesis\LmrR_EVB\charges\qm_reference_for_evb\B3LYP_def2SVP\RS1_2b_to_PS1_3\TS\geometry\RS1_2b_to_PS1_3_TS_initial.xyz

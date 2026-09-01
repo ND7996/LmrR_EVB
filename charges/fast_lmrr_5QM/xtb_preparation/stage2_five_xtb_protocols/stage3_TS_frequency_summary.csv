@@ -1,0 +1,13 @@
+protocol,step,TS_imaginary_count,TS_imaginary_frequencies_cm-1
+GFN1_tight,RS1_1_to_TS1_2,0.0,
+GFN1_tight,TS2_1a_to_PS2_2,0.0,
+GFN2_tight,RS1_1_to_TS1_2,1.0,-8.48
+GFN2_tight,TS2_1a_to_PS2_2,1.0,-5.63
+GFN2_etemp300,RS1_1_to_TS1_2,1.0,-12.82
+GFN2_etemp300,TS2_1a_to_PS2_2,1.0,-5.87
+GFN2_etemp500,RS1_1_to_TS1_2,0.0,
+GFN2_etemp500,TS1_2_to_PS1_2b,0.0,
+GFN2_etemp500,RS1_2b_to_PS1_3,0.0,
+GFN2_etemp500,TS2_1a_to_PS2_2,1.0,-5.93
+GFN2_normal,RS1_1_to_TS1_2,1.0,-11.68
+GFN2_normal,TS2_1a_to_PS2_2,1.0,-5.66

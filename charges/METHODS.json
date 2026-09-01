@@ -1,0 +1,19 @@
+{
+  "source_notebook": "fast_lmrr_evb_qm_workflow(3).ipynb",
+  "reference_method": "B3LYP-D3BJ/def2-SVP",
+  "benchmarks": [
+    "PBE0-D3BJ/def2-SVP",
+    "PBE0-D3BJ/def2-TZVP",
+    "omegaB97M-V/def2-TZVP",
+    "omegaB97X-V/def2-TZVP",
+    "PBE0-DH/def2-TZVP"
+  ],
+  "steps": [
+    "RS1_1_to_TS1_2",
+    "TS1_2_to_PS1_2b",
+    "RS1_2b_to_PS1_3",
+    "RS2_1_to_TS2_1a",
+    "TS2_1a_to_PS2_2"
+  ],
+  "does_not_launch_orca": true
+}

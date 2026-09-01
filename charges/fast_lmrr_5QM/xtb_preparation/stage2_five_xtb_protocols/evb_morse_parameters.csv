@@ -1,0 +1,9 @@
+step,state,kind,serial_i,serial_j,element_i,element_j,note,k_kcal_per_mol_A2,De_kcal_per_mol,a_per_A,re_A
+RS1_1_to_TS1_2,state1_RS,weakened,10,16,C,O,ENL.C10=O1 carbonyl weakens,320.0,85.0,1.3719886811400708,1.2192000430077305
+RS1_1_to_TS1_2,state2_PS,formed,1,10,N,C,PAF.N2 attacks ENL.C10; N-C bond formation,337.0,73.0,1.5192824550037403,2.348680362807205
+RS1_1_to_TS1_2,state2_PS,weakened,10,16,C,O,ENL.C10=O1 carbonyl weakens,320.0,85.0,1.3719886811400708,1.2255466384003801
+TS2_1a_to_PS2_2,state1_RS,broken,20,50,C,H,IND.C3-H50 breaks,340.0,99.0,1.310408988511494,2.5500917578162206
+TS2_1a_to_PS2_2,state1_RS,broken,27,58,O,H,W1 O-H58 breaks,400.0,80.0,1.5811388300841898,0.959749671882401
+TS2_1a_to_PS2_2,state2_PS,formed,60,50,O,H,W2 accepts H50,400.0,80.0,1.5811388300841898,0.9590827389941794
+TS2_1a_to_PS2_2,state2_PS,formed,11,58,C,H,ENL.C11 accepts H58,340.0,99.0,1.310408988511494,1.0883399233443027
+TS2_1a_to_PS2_2,state2_PS,double-bond formed,1,10,N,C,N=C/enamine bond order changes,615.0,147.0,1.4463183379511848,1.4459144555397967

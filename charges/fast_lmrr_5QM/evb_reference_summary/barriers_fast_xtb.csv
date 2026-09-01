@@ -1,0 +1,6 @@
+step,barrier_kcal_mol,reaction_energy_kcal_mol,note
+RS1_1_to_TS1_2,,,missing xtb energy -- check log parsing above
+RS1_2b_to_PS1_3,,,missing xtb energy -- check log parsing above
+RS2_1_to_TS2_1a,,,missing xtb energy -- check log parsing above
+TS1_2_to_PS1_2b,,,missing xtb energy -- check log parsing above
+TS2_1a_to_PS2_2,,,missing xtb energy -- check log parsing above

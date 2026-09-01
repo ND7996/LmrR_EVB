@@ -1,0 +1,13 @@
+! PBE0 D3BJ def2-TZVP SP TightSCF
+
+%pal
+   nprocs 8
+end
+
+%maxcore 3000
+
+%output
+   Print[P_Mulliken] 1
+end
+
+* xyzfile 0 1 D:\PhD_Thesis\LmrR_EVB\charges\fast_lmrr_evb_qm\pdb_preserving_xtb_qm_inputs\TS2_1a_to_PS2_2\TS2_1a_to_PS2_2_TS_xtbopt.xyz

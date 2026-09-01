@@ -1,0 +1,16 @@
+step,role,resp_done,note
+RS1_1_to_TS1_2,RS,False,vpot output file not found
+RS1_1_to_TS1_2,TS,False,vpot output file not found
+RS1_1_to_TS1_2,PS,False,vpot output file not found
+TS1_2_to_PS1_2b,RS,False,vpot output file not found
+TS1_2_to_PS1_2b,TS,False,vpot output file not found
+TS1_2_to_PS1_2b,PS,False,vpot output file not found
+RS1_2b_to_PS1_3,RS,False,vpot output file not found
+RS1_2b_to_PS1_3,TS,False,vpot output file not found
+RS1_2b_to_PS1_3,PS,False,vpot output file not found
+RS2_1_to_TS2_1a,RS,False,vpot output file not found
+RS2_1_to_TS2_1a,TS,False,vpot output file not found
+RS2_1_to_TS2_1a,PS,False,vpot output file not found
+TS2_1a_to_PS2_2,RS,False,vpot output file not found
+TS2_1a_to_PS2_2,TS,False,vpot output file not found
+TS2_1a_to_PS2_2,PS,False,vpot output file not found
